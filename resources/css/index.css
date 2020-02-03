@@ -1,0 +1,34 @@
+/* Style example */
+#test{
+    color:red;
+}
+
+/* Color scheme */
+/* text on primary color (p_color) should be #ffffff (white) */
+#p_color{
+    color: #263238;
+}
+/* text on p_color_dark should be #ffffff */
+#p_color_dark{
+    color: #000a12;
+}
+/* text on p_color_light should be #ffffff */
+#p_color_light{
+    color: #4f5b62;
+}
+/* text on secondary color (s_color) should be #000000 (black) */
+#s_color{
+    color: #ec407a;
+}
+/* text on s_color_dark should be #ffffff */
+#s_color_dark{
+    color: #b4004e;
+}
+/* text on s_color_light should be #000000 */
+#s_color_light{
+    color: #ff77a9;
+}
+
+.container{
+    
+}
