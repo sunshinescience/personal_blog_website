@@ -3,6 +3,14 @@
     color:red;
 }
 
+body{
+    /* text on background color should be #000000 (black) */
+    background-color: #cfd8dc; 
+    /* background-color: #eceff1 */
+    color: #fffff8;
+    /* font-size: 27px; */
+}
+
 /* Color scheme */
 /* text on primary color (p_color) should be #ffffff (white) */
 #p_color{
@@ -29,6 +37,31 @@
     color: #ff77a9;
 }
 
-.container{
-    
+#typography_1{
+    text-align: center; 
+    font-size: 1em;
+    color: #ffffff;
+    line-height: 3.3em;
+    margin: auto;
+    width: 64%;
+}
+#typography_2{
+    text-align: center; 
+    font-size: 1em;
+    color: #000000;
+    line-height: 3.3em;
+    margin: auto;
+    width: 64%;
+}
+#masthead{
+    display: block;
+}
+
+.container{ 
+    display: flex;
+}
+.box{
+    background-color: #263238;
+    display: inline;
+    border: 2px solid #ec407a;
 }
