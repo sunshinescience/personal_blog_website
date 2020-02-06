@@ -29,9 +29,6 @@ body{
     border: 2px solid white;
 }
 
-/* Adding nested grid for header to separate: logo, introduction, main menu */
-
-
 .box{
     display: flex;
     /* align-items: center; */
@@ -48,6 +45,7 @@ body{
         to split this up into logo, heading phrase, menu: 
         And then can I split menu up with links? */
     }
+        /* Adding nested grid for header to separate: logo, introduction, main menu */
         .nested_grid{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
