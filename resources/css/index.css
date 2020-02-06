@@ -1,8 +1,83 @@
 /* Style example */
-#test{
-    color:#000a12;
+body{
+    /* text on background color should be #000000 (black) */
+    /* background-color: #cfd8dc; */
+    /* background-color: #eceff1; */
+    /* background-color: #4f5b62; */
+    background-color: #263238;
+    /* font-size: 27px; */
+    }
+
+/* Using  CSS grid for page layout */
+.container{ 
+    /* Set display to grid */
+    display: grid;
+    /* Set width of grid */
+    width: 100%;
+    /* Setup rows amd columns */
+    grid-template-columns: repeat(9, 1fr);
+    /* grid-auto-rows: minmax(300px, auto); */
+    grid-template-rows: 150px 300px 30px;
+    /* Name rows and columns */
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd hd"
+    "sd_l main main main main main main main sd_r"
+    "ft ft ft ft ft ft ft ft ft";
+    grid-gap: 15px;
+    margin: auto;
+    justify-content: center;
+    border: 2px solid white;
 }
 
+/* Adding nested grid for header to separate: logo, introduction, main menu */
+
+
+.box{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center; 
+    border: 2px solid #ff77a9;
+    background-color: none;
+} 
+    .header{
+        grid-area: hd;
+        color: #ffffff;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        /* Can I use a nested grid here? 
+        to split this up into logo, heading phrase, menu: 
+        And then can I split menu up with links? */
+    }
+        .nested_grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            grid-gap: 15px;
+            border: 2px solid white;
+            align-items: center; 
+        }
+        .nested_grid > *{
+            border: 2px solid red;
+        } 
+    .sidebar_l{
+        grid-area: sd_l;
+    }
+    .sidebar_r{
+        grid-area: sd_r;
+    }
+    .content{
+        grid-area: main;
+        background-color: #4f5b62;
+        color: #ffffff;
+        /* Can I use a box model here? */
+        /* grid-area property, using only the middle rows, 
+        and then within that, using the grid-auto-rows 
+        property in order to generate the number of rows 
+        based on the content */
+    }
+    .footer{
+        grid-area: ft;
+    }
 
 
 /* Color scheme */
@@ -47,7 +122,5 @@
     margin: auto;
     width: 64%;
 }
-#masthead{
-    display: block;
-}
+
 

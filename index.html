@@ -7,73 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--External link-->
         <link rel="stylesheet" type="text/CSS" href="resources/css/index.css">
-        
-        <!--Style tags-->
-        <style>
-            body{
-                /* text on background color should be #000000 (black) */
-                /* background-color: #cfd8dc; */
-                /* background-color: #eceff1; */
-                background-color: #4f5b62;
-                /* font-size: 27px; */
-                }
-            
-            #test{
-                text-transform: uppercase;
-            }
-        /* Using  CSS grid for page layout */
-            .container{ 
-                /* Set display to grid */
-                display: grid;
-                /* Set width of grid */
-                width: 80%;
-                /* Setup rows amd columns */
-                grid-template-columns: repeat(8, 1fr);
-                /* grid-auto-rows: minmax(300px, auto); */
-                grid-template-rows: 250px 300px;
-                /* Name rows and columns */
-                grid-template-areas: 
-                "hd hd hd hd hd hd hd hd"
-                "sd_l main main main main main main sd_r"
-                "ft ft ft ft ft ft ft ft";
-                grid-gap: 15px;
-                margin: auto;
-                justify-content: center;
-                border: 2px solid black;
-
-            }
-
-            .box{
-                display: flex;
-                /* display: inline; */
-                /* align-items: center; */
-                justify-content: center;
-                border: 2px solid #ff77a9;
-                background-color: none;
-            } 
-            #header{
-                grid-area: hd;
-            }
-            #sidebar_l{
-                grid-area: sd_l;
-            }
-            #sidebar_r{
-                grid-area: sd_r;
-            }
-            #content{
-                grid-area: main;
-            }
-            #footer{
-                grid-area: ft;
-            }
-
-        </style>
     </head>
+
     <body>
-        <section id="masthead">
-
-        </section>
-
         <!-- <h1>This is a heading</h1> -->
         <!-- <p>This is a paragraph</p> -->
         <!-- class + id -->
@@ -81,18 +17,25 @@
         <!--Inline CSS-->
         <!-- <div id="test" style="font-size: 20px;">Transform text example</div> -->
         
-        <!-- img src -->
+        <!-- example img src -->
         <!-- <img src="resources/images/palm_beach.jpg" width="55%"/> -->
 
-        <!-- link href -->
+        <!-- example link href -->
         <!-- <a href="https://sunshinescience.github.io/">Here is a link to my other blog posts</a> -->
 
         <div class="container">
-            <div class="box" id="header">Header</div>
-            <div class="box" id="sidebar_l">Sidebar</div>
-            <div class="box" id="content">Content</div>
-            <div class="box" id="sidebar_r">Sidebar</div>
-            <div class="box" id="footer">Footer</div>
+            <div class="header box">
+                <!-- Create nested grid in header -->
+                <div class="nested_grid">
+                    <div><h1>Logo</h1></div>
+                    <div><h1>Sunshine</h1></div>
+                    <div><h1>Main menu</h1></div>
+                </div>
+            </div>
+            <div class="sidebar_l box">Sidebar</div>
+            <div class="content box">Content</div>
+            <div class="sidebar_r box">Sidebar</div>
+            <div class="footer box">Footer</div>
         </div>
         
         <!-- Example font -->
