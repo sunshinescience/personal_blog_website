@@ -5,7 +5,7 @@ body{
     /* background-color: #eceff1; */
     /* background-color: #4f5b62; */
     background-color: #263238;
-    /* font-size: 27px; */
+    font-size: 16px; 
     }
 
 /* Using  CSS grid for page layout */
@@ -21,17 +21,17 @@ body{
     /* Name rows and columns */
     grid-template-areas: 
     "hd hd hd hd hd hd hd hd hd"
-    "sd_l main main main main main main main sd_r"
+    "sd_l sd_l main main main main main sd_r sd_r"
     "ft ft ft ft ft ft ft ft ft";
     grid-gap: 15px;
     margin: auto;
     justify-content: center;
-    border: 2px solid white;
+    border: 5px solid black;
 }
 
 .box{
-    display: flex;
-    /* align-items: center; */
+    display: flex; 
+    align-items: center; 
     justify-content: center; 
     border: 2px solid #ff77a9;
     background-color: none;
@@ -41,6 +41,7 @@ body{
         color: #ffffff;
         font-family: sans-serif;
         text-transform: uppercase;
+        border: 2px solid #b4004e;
         /* Can I use a nested grid here? 
         to split this up into logo, heading phrase, menu: 
         And then can I split menu up with links? */
@@ -48,15 +49,19 @@ body{
         /* Adding nested grid for header to separate: logo, introduction, main menu */
         .nested_grid{
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
+            height: 100%;
+            grid-template-columns: 1fr 3fr 1fr;
             grid-template-rows: 1fr;
             grid-gap: 15px;
             border: 2px solid white;
             align-items: center; 
+            justify-content: center;
         }
         .nested_grid > *{
-            border: 2px solid red;
+            border: 2px solid yellow;
         } 
+
     .sidebar_l{
         grid-area: sd_l;
     }
