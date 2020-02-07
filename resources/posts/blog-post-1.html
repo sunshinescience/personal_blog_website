@@ -2,17 +2,32 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Page Title</title>
+        <title> Page Title</title>
         <!--Using the viewport meta tag to control layout on mobile browsers -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--External link-->
-        <link rel="stylesheet" type="text/CSS" href="resources/css/index.css">
+        <link rel="stylesheet" type="text/CSS" href="../css/index.css">
     </head>
-    <body>
-        <h1>This is my blog post</h1>
-        <p>This is a paragraph</p>
-        <div class = "container">
-        </div>
-
+        <body>
+            <div class="container">
+                <div class="header box">
+                    <!-- Create nested grid in header -->
+                    <div class="nested-grid">
+                        <img src="../images/my-blog-logo-01.png" width="40%" style="padding:30px"/> <!-- Adding padding to the logo image -->
+                        <div id="typography-2">Sunshine Abbott is a web developer based in the UK.</div>
+                        <div id="typography-1">
+                            <a href="../../index.html" id="typography-1">Portfolio</a>
+                            <a href="../posts/blog-post-1.html" id="typography-1">Articles</a>
+                            <a href="../about/bio.html" id="typography-1">About</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-l box"></div>
+                <div class="content box">
+                    <p><h1>This is my first blog post.</h1></p>
+                </div>
+                <div class="sidebar-r box"></div>
+                <div class="footer box">Footer</div>
+            </div>      
     </body>
 </html>

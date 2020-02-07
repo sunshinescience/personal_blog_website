@@ -1,14 +1,101 @@
-@import "resources/css/index.css";
-.container{
-    
+/* Style example */
+body{
+  /* background-color: #cfd8dc; */
+  /* background-color: #eceff1; */
+  /* background-color: #4f5b62; */
+  background-color: #cfd8dc; 
+  /* background-color: #e8c39d; */
+  font-size: 16px; 
+  }
+
+/* Using  CSS grid for page layout */
+.container{ 
+  /* Set display to grid */
+  display: grid;
+  /* Set width of grid */
+  width: 100%;
+  /* Setup rows amd columns */
+  grid-template-columns: repeat(9, 1fr);
+  /* grid-auto-rows: minmax(300px, auto); */
+  grid-template-rows: 225px 300px 30px;
+  /* Name rows and columns */
+  grid-template-areas: 
+  "hd hd hd hd hd hd hd hd hd"
+  "main main main main main main main main main"
+  "ft ft ft ft ft ft ft ft ft";
+  grid-gap: 15px;
+  margin: auto;
+  justify-content: center;
+  border: 5px solid black;
 }
 
 .box{
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  border: 2px solid #ff77a9;
+  background-color: none;
+} 
 
+  .header{
+      grid-area: hd;
+      border: 2px solid #b4004e;
+  }
+      /* Adding nested grid for header to separate: logo, introduction, main menu */
+      .nested-grid{
+          display: grid;
+          width: 100%;
+          height: 100%;
+          grid-template-columns: 1.4fr 3fr 2fr;
+          grid-template-rows: 1fr;
+          grid-gap: 15px;
+          border: 2px solid white;
+          align-items: center; 
+          justify-content: center; 
+      }
+      .nested-grid > *{
+          border: 2px solid yellow; 
+          /* padding-left: 1em; */
+          padding-right: 1.8em; 
+      } 
+
+  .content{
+      grid-area: main;
+      background-color: #ffffff;
+      /* border: 8px solid black; */
+      color: black;
+      width: 75%;
+      justify-content: center; 
+      align-items: center; 
+      font: 1.5rem palatino, georgia, serif;
+      padding-left: 50px;
+      padding-right: 50px;
+  }
+
+  .footer{
+      grid-area: ft;
+      /* background-color: black; */
+  }
+
+/* Main menu font*/
+#typography-1{
+  text-align: center; 
+  font-size: 1.15em;
+  line-height: 1.2em;
+  margin: auto;
+  text-transform: uppercase;
+  width: 90%;
+  color: #000000;
+  justify-content: center;
+}
+
+/* Main font */
+#typography-2{
+  font-family: CallunaLghtRegular, Georgia, serif;
+  color: #000000;
+  font-size: 1.1em;
+  line-height: 1em;
 }
 
 @media(min-width:900px){
-    .container{
-        
-    }
   }
