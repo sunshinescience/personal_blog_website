@@ -86,6 +86,10 @@ body{
         /* background-color: black; */
     }
 
+.menu-social-links-container{
+    display: grid;
+}
+
 /* Color scheme */
 /* text on primary color (p_color) should be #ffffff (white) */
 #p_color{
