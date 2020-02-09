@@ -86,6 +86,20 @@ body{
         /* background-color: black; */
     }
 
+    .facebook{
+        padding: 0px;
+        width: 40px;
+    }
+    
+    .facebook:hover{
+        opacity: 0.7;
+    }
+
+    .facebook{
+        color: white;
+    }
+
+
 .menu-social-links-container{
     display: grid;
 }
