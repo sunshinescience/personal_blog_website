@@ -86,18 +86,15 @@ body{
         /* background-color: black; */
     }
 
-    .facebook{
-        padding: 0px;
+    .logo{
+        padding: 5px;
         width: 40px;
     }
     
-    .facebook:hover{
+    .logo:hover{
         opacity: 0.7;
     }
 
-    .facebook{
-        color: white;
-    }
 
 
 .menu-social-links-container{
