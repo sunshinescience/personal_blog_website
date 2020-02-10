@@ -14,7 +14,7 @@ body{
   display: grid;
   /* Set width of grid */
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   /* Setup rows amd columns */
   grid-template-columns: repeat(9, 1fr);
   /* grid-auto-rows: minmax(300px, auto); */
@@ -90,6 +90,9 @@ body{
       background-color: #9ea7aa; 
       /* background-color: #4f5b62; */
       width: 100vw;
+      height: 60px;
+      position: absolute;
+      bottom: 0;
   }
 
   .social-media-logo{
@@ -100,42 +103,6 @@ body{
   .social-media-logo:hover{
       opacity: 0.7;
   }
-
-/* perhaps make a container for the social media links?
-.menu-social-links-container{
-  display: grid;
-} */
-
-/* Color scheme */
-/* text on primary color (p_color) should be #ffffff (white) */
-#p_color{
-  color: #263238;
-}
-
-/* text on p_color_dark should be #ffffff */
-#p_color_dark{
-  color: #000a12;
-}
-
-/* text on p_color_light should be #ffffff */
-#p_color_light{
-  color: #4f5b62;
-}
-
-/* text on secondary color (s_color) should be #000000 (black) */
-#s_color{
-  color: #ec407a;
-}
-
-/* text on s_color_dark should be #ffffff */
-#s_color_dark{
-  color: #b4004e;
-}
-
-/* text on s_color_light should be #000000 */
-#s_color_light{
-  color: #ff77a9;
-}
 
 /* Main menu font*/
 #typography-1{
