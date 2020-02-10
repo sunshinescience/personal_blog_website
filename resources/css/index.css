@@ -13,67 +13,71 @@ body{
     /* Set display to grid */
     display: grid;
     /* Set width of grid */
-    width: 100%;
+    width: 100vw;
+    height: 100%;
     /* Setup rows amd columns */
     grid-template-columns: repeat(9, 1fr);
     /* grid-auto-rows: minmax(300px, auto); */
-    grid-template-rows: 225px 300px 30px;
+    grid-template-rows: 245px 300px;
     /* Name rows and columns */
     grid-template-areas: 
     "hd hd hd hd hd hd hd hd hd"
     "sd_l main main main main main main main sd_r"
     "ft ft ft ft ft ft ft ft ft";
-    grid-gap: 15px;
-    margin: auto;
+    grid-gap: 30px;
+    /* margin: auto; */
     justify-content: center;
-    border: 5px solid black;
+    /* border: 5px solid red; */
 }
 
 .box{
     display: flex; 
     align-items: center; 
     justify-content: center; 
-    border: 2px solid #ff77a9;
+    /* border: 2px solid #ff77a9; */
     background-color: none;
 } 
 
     .header{
         grid-area: hd;
-        border: 2px solid #b4004e;
+        /* border: 2px solid #b4004e; */
     }
 
         /* Adding nested grid for header to separate: logo, introduction, main menu */
         .nested-grid{
             display: grid;
-            width: 100%;
+            width: 100vw;
             height: 100%;
             grid-template-columns: 1.4fr 3fr 2fr;
             grid-template-rows: 1fr;
-            grid-gap: 15px;
-            border: 2px solid white;
+            /* grid-gap: 15px; */
+            /* border: 2px solid white; */
             align-items: center; 
             justify-content: center; 
         }
 
         .nested-grid > *{
-            border: 2px solid yellow; 
+            /* border: 2px solid yellow; */
             /* padding-left: 1em; */
             padding-right: 1.8em; 
         } 
 
     .sidebar-l{
         grid-area: sd_l;
+        /* border: 2px solid black; */
     }
 
     .sidebar-r{
         grid-area: sd_r;
+        /* border: 2px solid black; */
     }
 
     .content{
         grid-area: main;
         background-color: #ffffff;
-        border: 8px solid black;
+        /* border: 8px solid black; */
         color: black;
+        padding: 40px;
         /* Can I use a box model here? */
         /* grid-area property, using only the middle rows, 
         and then within that, using the grid-auto-rows 
@@ -83,23 +87,24 @@ body{
 
     .footer{
         grid-area: ft;
-        /* background-color: black; */
+        background-color: #9ea7aa; 
+        /* background-color: #4f5b62; */
+        width: 100vw;
     }
 
-    .logo{
-        padding: 5px;
+    .social-media-logo{
+        padding: 8px;
         width: 40px;
     }
     
-    .logo:hover{
+    .social-media-logo:hover{
         opacity: 0.7;
     }
 
-
-
+/* perhaps make a container for the social media links?
 .menu-social-links-container{
     display: grid;
-}
+} */
 
 /* Color scheme */
 /* text on primary color (p_color) should be #ffffff (white) */
@@ -134,19 +139,22 @@ body{
 
 /* Main menu font*/
 #typography-1{
+    font-family: Helvetica, arial, sans-serif;
+    font-weight: bold; 
     text-align: center; 
-    font-size: 1.15em;
+    font-size: 1.05em;
     line-height: 1.2em;
     margin: auto;
     text-transform: uppercase;
-    width: 90%;
+    width: 98%;
     color: #000000;
     justify-content: center;
+    /* padding: 2px; */
 }
 
 /* Main heading font */
 #typography-2{
-    font-family: CallunaLghtRegular, Georgia, serif;
+    font-family: Georgia, serif, Times;
     color: #000000;
     font-size: 1.1em;
     line-height: 1em;
