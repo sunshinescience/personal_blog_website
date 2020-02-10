@@ -27,7 +27,7 @@ body{
     grid-gap: 30px;
     /* margin: auto; */
     justify-content: center;
-    /* border: 5px solid red; */
+    border: 5px solid red; 
 }
 
 .box{
@@ -90,6 +90,7 @@ body{
         background-color: #9ea7aa; 
         /* background-color: #4f5b62; */
         width: 100vw;
+        /* height: 60px; */
     }
 
     .social-media-logo{
