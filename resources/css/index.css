@@ -6,6 +6,9 @@ body{
     background-color: #cfd8dc; 
     /* background-color: #e8c39d; */
     font-size: 16px; 
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
 }
 
 /* Using  CSS grid for page layout */
@@ -27,7 +30,8 @@ body{
     grid-gap: 30px;
     /* margin: auto; */
     justify-content: center;
-    border: 5px solid red; 
+    /* border: 5px solid red; */
+    position: relative;
 }
 
 .box{
@@ -78,11 +82,6 @@ body{
         /* border: 8px solid black; */
         color: black;
         padding: 40px;
-        /* Can I use a box model here? */
-        /* grid-area property, using only the middle rows, 
-        and then within that, using the grid-auto-rows 
-        property in order to generate the number of rows 
-        based on the content */
     }
 
     .footer{
@@ -90,9 +89,9 @@ body{
         background-color: #9ea7aa; 
         /* background-color: #4f5b62; */
         width: 100vw;
+        height: 60px; 
         position: absolute;
         bottom: 0;
-        height: 60px; 
     }
 
     .social-media-logo{
