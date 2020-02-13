@@ -4,12 +4,12 @@ body{
     /* background-color: #cfd8dc; */
     /* background-color: #eceff1; */
     /* background-color: #4f5b62; */
-    background-color: #cfd8dc; 
     /* background-color: #e8c39d; */
-    font-size: 16px; 
     margin: 0;
     padding: 0;
     height: 100%;
+    background-color: #cfd8dc; 
+    font-size: 16px;
 }
 
 /* Using  CSS grid for page layout */
@@ -19,6 +19,7 @@ body{
     /* Set width of grid */
     width: 100vw;
     min-height: 100%;
+    position: relative;
     /* Setup rows amd columns */
     grid-template-columns: repeat(9, 1fr);
     /* grid-auto-rows: minmax(300px, auto); */
@@ -28,11 +29,10 @@ body{
     "hd hd hd hd hd hd hd hd hd"
     "main main main main main main main main main"
     "ft ft ft ft ft ft ft ft ft";
-    grid-gap: 30px;
+    grid-gap: 10px;
     /* margin: auto; */
     justify-content: center;
     /* border: 5px solid red; */
-    position: relative;
 }
 
 .box{
@@ -62,34 +62,44 @@ body{
         }
 
         .nested-grid > *{
-            /* border: 2px solid yellow; */
+            border: 2px solid yellow; 
             /* padding-left: 1em; */
-            padding-right: 1.8em; 
+            /* padding-right: 1.8em; */
         } 
+
+    .sidebar-l{
+        grid-area: sd_l;
+        /* border: 2px solid black; */
+    }
+    
+    .sidebar-r{
+        grid-area: sd_r;
+        /* border: 2px solid black; */
+    }   
 
     .content{
         grid-area: main;
         background-color: #ffffff;
-        /* border: 8px solid black; */
-        color: black;
-        padding: 40px; 
+        border: 8px solid black; 
+        /* color: black; */
+        padding: 30px; 
         padding-bottom: 60px;
-        margin-right: 100px;
-        margin-left: 100px;
+        width: 100vw;
     }
 
         .nested-grid-content{
             display: grid;
             grid-template-columns: 1fr;
         }
+    
 
     .footer{
         grid-area: ft;
+        position: fixed;
         background-color: #9ea7aa; 
         /* background-color: #4f5b62; */
-        width: 100vw;
+        width: 100%;
         height: 60px; 
-        position: absolute;
         bottom: 0;
     }
 
@@ -177,3 +187,34 @@ body{
 #typography-5{
     font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
 }
+
+@media(min-width:700px){
+
+}
+
+@media(min-width:800px){
+    .container{ 
+        display: grid;
+        width: 100vw;
+        min-height: 100%;
+        position: relative;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: 245px 300px;
+        grid-template-areas: 
+        "hd hd hd hd hd hd hd hd hd"
+        "sd_l main main main main main main main sd_r"
+        "ft ft ft ft ft ft ft ft ft";
+        grid-gap: 10px;
+        justify-content: center;
+    }
+    .footer{
+        grid-area: ft;
+        position: fixed;
+        background-color: #9ea7aa; 
+        /* background-color: #4f5b62; */
+        width: 100%;
+        height: 60px; 
+        bottom: 0;
+    }
+}
+
