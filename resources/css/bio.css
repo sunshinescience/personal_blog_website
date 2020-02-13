@@ -7,8 +7,8 @@ body{
   /* background-color: #e8c39d; */
   font-size: 16px; 
   height: 100%;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 /* Using  CSS grid for page layout */
@@ -124,4 +124,21 @@ body{
   color: #000000;
   font-size: 1.1em;
   line-height: 1em;
+}
+
+/* Code font */
+#typography-3{
+  font-family: Menlo, Monaco, "Courier New", Courier, monospace, Andale Mono, Verdana;
+}
+
+/* Blog font*/
+#typography-4{
+  font-family: CallunaLghtRegular, Georgia, Cambria, serif, "Times New Roman", Times;
+  font-size: 1.35em;
+  line-height: 1.2em;
+}
+
+/* Blog heading font*/
+#typography-5{
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
 }
