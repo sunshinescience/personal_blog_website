@@ -1,174 +1,104 @@
-/* Style example */
 html,
-body{
-    /* background-color: #cfd8dc; */
-    /* background-color: #eceff1; */
-    /* background-color: #4f5b62; */
-    /* background-color: #e8c39d; */
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    background-color: #cfd8dc; 
-    font-size: 16px;
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+   background-color: #cfd8dc; 
+   font-size: 16px;
 }
 
-/* Using  CSS grid for page layout */
-.container{ 
-    /* Set display to grid */
-    display: grid;
-    /* Set width of grid */
-    width: 100vw;
-    min-height: 100%;
-    position: relative;
-    /* Setup rows amd columns */
-    grid-template-columns: 1fr;
-    /* grid-auto-rows: minmax(300px, auto); */
-    /* grid-template-rows: 245px 300px; */
-    grid-template-rows: auto 1fr auto;
+.container {
+   /* Set display to grid */
+   display: grid;
+   /* Set width and height of grid */
+   width: 100vw;
+   min-height:100%;
+   position:relative;
+   /* Initially each element has its own row for small screens */
+   grid-template-columns: 1fr;
+   /* grid-auto-rows: minmax(300px, auto); */
+   grid-template-rows: auto 1fr auto;
     /* Name rows and columns */
     grid-template-areas: 
-    "hd"
-    "main"
-    "ft";
-    grid-gap: 10px;
-    /* margin: auto; */
-    justify-content: center;
-    /* border: 5px solid red; */
+   "hd"
+   "main"
+   "ft";
+   grid-gap: 10px;
+   /* margin: auto; */
+   justify-content: center;
+   /* border: 5px solid red; */
 }
 
 .box{
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    /* border: 2px solid #ff77a9; */
-    background-color: none;
-} 
-
-    .header{
-        grid-area: hd;
-        /* border: 2px solid #b4004e; */
-    }
-
-        /* Adding nested grid for header to separate: logo, introduction, main menu */
-        .nested-grid{
-            display: grid;
-            width: 100vw;
-            height: 100%;
-            grid-template-columns: 1.4fr 3fr 2fr;
-            grid-template-rows: 1fr;
-            /* grid-gap: 15px; */
-            /* border: 2px solid white; */
-            align-items: center; 
-            justify-content: center; 
-        }
-
-        .nested-grid > *{
-            border: 2px solid yellow; 
-            /* padding-left: 1em; */
-            /* padding-right: 1.8em; */
-        } 
-
-    .sidebar-l{
-        grid-area: sd_l;
-        /* border: 2px solid black; */
-    }
-    
-    .sidebar-r{
-        grid-area: sd_r;
-        /* border: 2px solid black; */
-    }   
-
-    .content{
-        grid-area: main;
-        background-color: #ffffff;
-        /* color: black; */
-        padding: 30px; 
-        padding-bottom: 60px;
-        /* width: 100vw; */ /* Note that when width is on here, the footer moves away from the bottom. */
-    }
-
-        .nested-grid-content{
-            display: grid;
-            grid-template-columns: 1fr;
-        }
-    
-
-    .footer{
-        grid-area: ft;
-        position: absolute;
-        background-color: #9ea7aa; 
-        /* background-color: #4f5b62; */
-        width: 100%;
-        height: 60px; 
-        bottom: 0;
-    }
-
-    .social-media-logo{
-        padding: 8px;
-        width: 40px;
-    }
-    
-    .social-media-logo:hover{
-        opacity: 0.7;
-    }
-
-/* Color scheme */
-/* text on primary color (p_color) should be #ffffff (white) */
-#p_color{
-    color: #263238;
+   display: flex; 
+   align-items: center; 
+   justify-content: center; 
+   background-color: none;
 }
 
-/* text on p_color_dark should be #ffffff */
-#p_color_dark{
-    color: #000a12;
+.header {
+   grid-area: hd;
+   /* padding:0px; */
+   /* width: 100%; */
 }
 
-/* text on p_color_light should be #ffffff */
-#p_color_light{
-    color: #4f5b62;
+.content {
+   grid-area: main;
+   padding:40px;
+   padding-bottom:60px;   /* Height of the footer */
+   background-color: #ffffff;
 }
 
-/* text on secondary color (s_color) should be #000000 (black) */
-#s_color{
-    color: #ec407a;
+.nested-grid-content{
+   display: grid;
+   grid-template-columns: 1fr;
 }
 
-/* text on s_color_dark should be #ffffff */
-#s_color_dark{
-    color: #b4004e;
+.footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:#9ea7aa;
 }
 
-/* text on s_color_light should be #000000 */
-#s_color_light{
-    color: #ff77a9;
+.social-media-logo{
+   padding: 8px;
+   width: 40px;
+}
+
+.social-media-logo:hover{
+   opacity: 0.7;
 }
 
 /* Main menu font*/
 #typography-1{
-    font-family: Helvetica, arial, sans-serif;
-    font-weight: bold; 
-    text-align: center; 
-    font-size: 1.05em;
-    line-height: 1.2em;
-    margin: auto;
-    text-transform: uppercase;
-    width: 98%;
-    color: #000000;
-    justify-content: center;
-    /* padding: 2px; */
+   font-family: Helvetica, arial, sans-serif;
+   font-weight: bold; 
+   text-align: center; 
+   font-size: 1.05em;
+   line-height: 1.2em;
+   margin: auto;
+   text-transform: uppercase;
+   width: 98%;
+   color: #000000;
+   justify-content: center;
+   /* padding: 2px; */
 }
 
 /* Main heading font */
 #typography-2{
-    font-family: Georgia, serif, Times;
-    color: #000000;
-    font-size: 1.1em;
-    line-height: 1em;
+   font-family: Georgia, serif, Times;
+   color: #000000;
+   font-size: 1.25em;
+   line-height: 1.1em;
+   padding-bottom: 15px;
+   text-align: center;
 }
 
 /* Code font */
 #typography-3{
-    font-family: Menlo, Monaco, "Courier New", Courier, monospace, Andale Mono, Verdana;
+   font-family: Menlo, Monaco, "Courier New", Courier, monospace, Andale Mono, Verdana;
 }
 
 /* Blog font*/
@@ -180,36 +110,41 @@ body{
 
 /* Blog heading font*/
 #typography-5{
-    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
 }
 
-@media(min-width:700px){
+@media(min-width:900px){  
+   .header{
+      grid-area: hd;
+      /* border: 2px solid #b4004e; */
+  }
 
-}
+      /* Adding nested grid for header to separate: logo, introduction, main menu */
+      .nested-grid{
+          display: grid;
+          width: 100vw;
+          height: 100%;
+          grid-template-columns: 1.4fr 3fr 2fr;
+          grid-template-rows: 1fr;
+          /* grid-gap: 15px; */
+          /* border: 2px solid white; */
+          align-items: center; 
+          justify-content: center; 
+      }
 
-@media(min-width:800px){
-    .container{ 
-        display: grid;
-        width: 100vw;
-        min-height: 100%;
-        position: relative;
-        grid-template-columns: repeat(9, 1fr);
-        grid-template-rows: 245px 300px;
-        grid-template-areas: 
-        "hd hd hd hd hd hd hd hd hd"
-        "sd_l main main main main main main main sd_r"
-        "ft ft ft ft ft ft ft ft ft";
-        grid-gap: 10px;
-        justify-content: center;
-    }
-    .footer{
-        grid-area: ft;
-        position: fixed;
-        background-color: #9ea7aa; 
-        /* background-color: #4f5b62; */
-        width: 100%;
-        height: 60px; 
-        bottom: 0;
-    }
+      .nested-grid > *{
+          /* border: 2px solid yellow; */
+          /* padding-left: 1em; */
+          /* padding-right: 1.8em; */
+      } 
+
+      .content{
+      grid-area: main;
+      padding:40px;
+      padding-bottom:60px;   /* Height of the footer */
+      background-color: #ffffff;
+      margin-right: 70px;
+      margin-left: 70px;
+      }
 }
 
