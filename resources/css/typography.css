@@ -1,0 +1,41 @@
+/* Main menu font*/
+#typography-1{
+    font-family: Helvetica, arial, sans-serif;
+    font-weight: bold; 
+    text-align: center; 
+    font-size: 1.05em;
+    line-height: 1.2em;
+    margin: auto;
+    text-transform: uppercase;
+    width: 98%;
+    color: #000000;
+    justify-content: center;
+    /* padding: 2px; */
+ }
+ 
+ /* Main heading font */
+ #typography-2{
+    font-family: Georgia, serif, Times;
+    color: #000000;
+    font-size: 1.25em;
+    line-height: 1.1em;
+    padding-bottom: 15px; /* Used this to separate the sentence in the header from the main menu */
+    text-align: center;
+ }
+ 
+ /* Code font */
+ #typography-3{
+    font-family: Menlo, Monaco, "Courier New", Courier, monospace, Andale Mono, Verdana;
+ }
+ 
+ /* Blog font*/
+ #typography-4{
+     font-family: CallunaLghtRegular, Georgia, Cambria, serif, "Times New Roman", Times;
+     font-size: 1.35em;
+     line-height: 1.2em;
+ }
+ 
+ /* Blog heading font*/
+ #typography-5{
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+ }
