@@ -1,95 +1,50 @@
 /* Style example for about page */
 
-.content-about{
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
-  background-color: none;
+/* Creating a nested grid for the page layout within the content section (in the about page) */
+.nested-grid-content-about{
+  display: grid;
+  /* box-sizing: border-box; */
+  width: 100vw;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  /* align-items: center; */ 
+  /* justify-content: center; */
+  /* grid-gap: 15px; */
+  grid-template-areas: 
+  "upl upl upr upr"
+  "mid mid mid mid"
+  "low low low low";
+  border: 2px solid yellow;
+}
 
-   grid-area: main;
-   padding:40px;
-   padding-bottom:60px;   /* Height of the footer */
-   background-color: #ffffff;
+.bio-sentence{
+  grid-area: upl;
+  background-color: black;
+}
+
+.bio-image{
+  grid-area: upr;
+}
+
+.bio-text{
+  grid-area: mid;
+}
+
+.bio-imgage-gallery{
+  grid-area: low;
+}
+
+#image-gallery{
+  display: flex;
 }
 
 /* Tablet screen width size, note the width should be 480px */
 @media(min-width:900px){  
-   .header{
-      grid-area: hd;
-      /* border: 2px solid #b4004e; */
-    }
-
-      /* Adding nested grid for header to separate: logo, introduction, main menu */
-      .nested-grid{
-          display: grid;
-          width: 100vw;
-          height: 100%;
-          grid-template-columns: 1.4fr 3fr 2fr;
-          grid-template-rows: 1fr;
-          /* grid-gap: 15px; */
-          /* border: 2px solid white; */
-          align-items: center; 
-          justify-content: center; 
-      }
-
-      .nested-grid > *{
-          /* border: 2px solid yellow; */
-          /* padding-left: 1em; */
-          /* padding-right: 1.8em; */
-      } 
-
-      .content-about{
-      grid-area: main;
-      padding:40px;
-      padding-bottom:60px;   /* Height of the footer */
-      background-color: #ffffff;
-      margin-right: 80px;
-      margin-left: 80px;
-      }
-    
-    #header-logo{
-        width: 45%;
-        padding: 30px; /* Adding padding to the logo image */
-    }
+   
 }
 
 /* Desktop screen width size*/
 @media(min-width:1024px){  
-   .header{
-      grid-area: hd;
-      /* border: 2px solid #b4004e; */
-    }
-
-      /* Adding nested grid for header to separate: logo, introduction, main menu */
-      .nested-grid{
-          display: grid;
-          width: 100vw;
-          height: 100%;
-          grid-template-columns: 1.4fr 3fr 2fr;
-          grid-template-rows: 1fr;
-          /* grid-gap: 15px; */
-          /* border: 2px solid white; */
-          align-items: center; 
-          justify-content: center; 
-      }
-
-      .nested-grid > *{
-          /* border: 2px solid yellow; */
-          /* padding-left: 1em; */
-          /* padding-right: 1.8em; */
-      } 
-
-      .content-about{
-      grid-area: main;
-      padding:40px;
-      padding-bottom:60px;   /* Height of the footer */
-      background-color: #ffffff;
-      margin-right: 80px;
-      margin-left: 80px;
-      }
-    
-    #header-logo{
-        width: 45%;
-        padding: 30px; /* Adding padding to the logo image */
-    }
+  
 }

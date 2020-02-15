@@ -39,3 +39,13 @@
  #typography-5{
     font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
  }
+
+  /* About large font */
+  #typography-6{
+   font-family: Georgia, serif, Times;
+   color: white;
+   font-size: 1.25em;
+   line-height: 1.1em;
+   padding-bottom: 15px; /* Used this to separate the sentence in the header from the main menu */
+   text-align: center;
+}
