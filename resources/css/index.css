@@ -129,7 +129,8 @@ body{
 
 #one{
    /* background-image: url("resources/images/palm_beach.jpg"); */
-   background-image: url("resources/images/meOxfordcopy2.jpg");
+   background-image: url("../images/meOxfordcopy2.jpg");
+   background-size: cover;
 }
 
  /* nested grid for content blog page */
