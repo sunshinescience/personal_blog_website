@@ -1,42 +1,87 @@
 /* Style example for about page */
-
-/* Creating a nested grid for the page layout within the content section (in the about page) */
+/* nested grid for content in about page */
 .nested-grid-content-about{
   display: grid;
-  /* box-sizing: border-box; */
   width: 100vw;
   height: 100%;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  /* align-items: center; */ 
-  /* justify-content: center; */
-  /* grid-gap: 15px; */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  /* border: 2px solid grey; */
   grid-template-areas: 
-  "upl upl upr upr"
-  "mid mid mid mid"
-  "low low low low";
-  border: 2px solid yellow;
+  "hi-l hi-r"
+  "mid mid"
+  "low low";
 }
 
-.bio-sentence{
-  grid-area: upl;
-  background-color: black;
+/* The * means "all elements" (it is a universal selector) */
+.nested-grid-content-about > *{
+  /* border: 2px solid aquamarine; */
 }
 
-.bio-image{
-  grid-area: upr;
+.content-top-left{
+  grid-area: hi-l;
+  background:  black;
+  border: 2px solid red;
+  align-items: center;
+  justify-content: center;
 }
 
-.bio-text{
+.content-top-right{
+  grid-area: hi-r;
+  background:  black;
+  border: 2px solid red;
+  height: 320px;
+}
+
+#about-img{
+  background-image: url("../images/meOxfordcopy2.jpg");
+  background-size: cover;
+}
+
+.content-mid{
   grid-area: mid;
+  border: 2px solid blue;
+  justify-content: center;
+  padding: 40px;
 }
 
-.bio-imgage-gallery{
+.content-bottom{
   grid-area: low;
+  border: 2px solid teal;
 }
 
-#image-gallery{
-  display: flex;
+/* Nested grid within the content-bottom on the about page to make an image gallery */
+.nested-content-bottom{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  border: 3px solid red;
+}
+
+.photo-gallery{
+  width: 1fr;
+  height: 300px;
+  border: 3px solid black;
+}
+
+#one{
+  background-image: url("../images/germanyMe.jpg");
+  background-size: cover;
+}
+
+#two{
+  background-image: url("../images/DSC_0304.JPG");
+  background-size: cover;
+}
+
+#three{
+  background-image: url("../images/205180_1041275348616_9913_n.jpg");
+  background-size: cover;
+}
+
+#four{
+  background-image: url("../images/DSC_0405copy.JPG");
+  background-size: cover;
 }
 
 /* Tablet screen width size, note the width should be 480px */

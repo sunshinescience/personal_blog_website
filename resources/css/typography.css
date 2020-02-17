@@ -1,4 +1,4 @@
-/* Main menu font*/
+/* Main menu font */
 #typography-1{
     font-family: Helvetica, arial, sans-serif;
     font-weight: bold; 
@@ -13,7 +13,7 @@
     /* padding: 2px; */
  }
  
- /* Main heading font */
+ /* Main heading font (at the top of the pages) */
  #typography-2{
     font-family: Georgia, serif, Times;
     color: #000000;
@@ -30,14 +30,16 @@
  
  /* Blog font*/
  #typography-4{
-     font-family: CallunaLghtRegular, Georgia, Cambria, serif, "Times New Roman", Times;
+     font-family: Georgia, Cambria, serif, "Times New Roman", Times;
      font-size: 1.15em;
      line-height: 1.2em;
  }
  
- /* Blog heading font*/
+ /* Heading font for blog */
  #typography-5{
-    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1.8em;
+    line-height: 1.05em;
  }
 
   /* About page large white font */
@@ -48,4 +50,19 @@
    line-height: 1.1em;
    padding-bottom: 15px; /* Used this to separate the sentence in the header from the main menu */
    text-align: center;
+}
+
+#typography-date{
+   font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+   color: #9ea7aa;
+   font-size: 0.8em;
+   line-height: 1em;
+}
+
+#typography-links{
+   font-family: CallunaLghtRegular, Georgia, Cambria, serif, "Times New Roman", Times;
+   font-size: 0.95em;
+   line-height: 1em;
+   color: #b4004e;
+   /* color: #ff77a9; */
 }
