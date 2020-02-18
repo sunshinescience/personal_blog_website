@@ -154,7 +154,7 @@ body{
 }
 
  /* Nested grid for content on the blog homepage */
-.nested-grid-home{
+.cards{
    display: grid;
    grid-area: main;
    padding:0px;
@@ -165,11 +165,24 @@ body{
    justify-content: center;
 }
    
-.nested-grid-home > *{
+.cards > *{
    border: 2px solid yellow;
    background: linear-gradient(90deg, #4f5b62 50%, #ffffff 50%);;
-   grid-gap: 15px;
+   grid-gap: 0px;
 }
+
+.nested-grid-cards{
+   display: grid;
+   grid-template-columns: 35% 65%;
+   border: 2px solid red;
+   margin: 5px;
+}
+
+.nested-grid-cards > *{
+   border: 2px solid yellow;
+   background: white;
+}
+
  /* Nested grid for content on the blog post page */
 .nested-grid-content{
    display: grid;
