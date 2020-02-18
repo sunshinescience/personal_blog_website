@@ -31,7 +31,7 @@
  /* Blog font*/
  #typography-4{
      font-family: Georgia, Cambria, serif, "Times New Roman", Times;
-     font-size: 1.55em;
+     font-size: 1.15em;
      line-height: 1.2em;
  }
  
@@ -64,5 +64,13 @@
    font-size: 0.95em;
    line-height: 1em;
    color: #b4004e;
+   /* color: #ff77a9; */
+}
+
+#typography-caption{
+   font-family: CallunaLghtRegular, Georgia, Cambria, serif, "Times New Roman", Times;
+   font-size: 0.9em;
+   line-height: 1em;
+   color: black;
    /* color: #ff77a9; */
 }

@@ -21,7 +21,7 @@ body{
    /* Initially each element has its own row for small screens (e.g., smartphones) */
    grid-template-columns: 1fr;
    /* grid-auto-rows: minmax(300px, auto); */
-   grid-template-rows: auto 1fr auto;
+   grid-template-rows: auto auto auto;
     /* Name rows and columns */
    grid-template-areas: 
    "hd"
@@ -63,7 +63,7 @@ body{
    grid-area: main;
    padding:0px;
    padding-bottom:60px;   /* Height of the footer */
-   background-color: white;
+   /* background-color: white; */
 }
 
 /* Nested grid for content in about page */
@@ -109,6 +109,7 @@ body{
    grid-area: mid;
    justify-content: center;
    padding: 40px;
+   background: white;
 }
 
 .content-bottom{
@@ -153,39 +154,68 @@ body{
 }
 
  /* Nested grid for content on the blog homepage */
- .nested-grid-home{
+.nested-grid-home{
    display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: 100px 100px;
-   /* grid-gap: 15px; */
-   /* padding: 15px; */
-   border: 5px solid grey; 
-    }
+   grid-area: main;
+   padding:0px;
+   padding-bottom:60px;   /* Height of the footer */
+   grid-template-columns: 90%;
+   grid-auto-rows: minmax(300px, auto);
+   border: 5px solid black;
+   justify-content: center;
+}
    
 .nested-grid-home > *{
    border: 2px solid yellow;
+   background: linear-gradient(90deg, #4f5b62 50%, #ffffff 50%);;
+   grid-gap: 15px;
 }
-
  /* Nested grid for content on the blog post page */
 .nested-grid-content{
    display: grid;
+   background: white;
    grid-template-columns: 1fr;
-   grid-template-rows: 1fr;
+   grid-template-rows: auto auto auto auto auto;
    /* grid-gap: 15px; */
    padding-left: 15px; 
    padding-right: 15px; 
-   border: 5px solid grey; 
+   grid-template-areas: 
+   "title"
+   "date"
+   "img"
+   "cap"
+   "post";
    }
    
 .nested-grid-content > *{
-   /* border: 2px solid yellow; */
    margin: 0;
    padding: 5px;
 }
 
 .date{
+   grid-area: date;
    padding-top: 5px;
    padding-bottom: 15px;
+   text-align: left;
+}
+
+.blog-title{
+   grid-area: title;
+}
+
+.blog-image{
+   grid-area: img;
+   justify-self: center; /* centering the image */
+}
+
+.blog-image-caption{
+   grid-area: cap;
+   padding-bottom: 15px;
+   text-align: center;
+}
+
+.blog-post{
+   grid-area: post;
 }
 
 /* Footer section for the pages */
