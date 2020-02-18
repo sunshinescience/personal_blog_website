@@ -160,7 +160,7 @@ body{
    padding:0px;
    padding-bottom:60px;   /* Height of the footer */
    grid-template-columns: 90%;
-   grid-auto-rows: minmax(220px, auto);
+   grid-auto-rows: minmax(200px, auto);
    justify-content: center;
    margin: 0;
    grid-gap: 15px;
@@ -168,31 +168,73 @@ body{
 
 .nested-grid-cards{
    display: grid;
-   grid-template-columns: 35% 65%;
+   grid-template-columns: 180px 280px;
    grid-template-rows: 100%;
-   border: 2px solid red;
    /* margin: 10px; */ /* Separates the blog post cards */
    padding-top: 0px;
    grid-template-areas: 
    "card-l card-r";
+   justify-content: center;
 }
 
 .nested-grid-cards > *{
-   border: 2px solid yellow;
+   /* border: 2px solid yellow; */
    background: white;
 }
 
-/* Area on left side of card, where the thumbnail image is located */
+/* Area on left side of blog post card, where the thumbnail image is located */
 .card-left{
    grid-area: card-l;
    background: #4f5b62;
    background-size: cover;
-   height: 220px;
+   height: 200px;
+   width: auto;
 }
 
+/* Area on right side of blog post card, where the blog text is located */
 .card-right{
    grid-area: card-r;
    text-align: left;
+   padding-left: 10px;
+   padding-right: 10px;
+   /* word-break: break-all; */
+   word-wrap: break-word; 
+   max-width: 100%;
+}
+
+/* Nested grid for the area on right side of blog post card */
+.nested-card-right{
+   display: grid;
+   grid-template-columns: 100%;
+   grid-template-rows: auto auto auto auto;
+   grid-template-areas: 
+   "c-title"
+   "c-date"
+   "c-sent"
+   "c-read";
+}
+
+.nested-card-right > *{
+   margin: 0;
+   padding: 5px;
+}
+
+.card-title{
+   grid-area: c-title;
+   padding-top: 15px;
+}
+
+.card-date{
+   grid-area: c-date;
+}
+
+.card-sentence{
+   grid-area: c-sent; 
+   padding-bottom: 15px;  
+}
+
+.card-continue{
+   grid-area: c-read;    
 }
 
  /* Nested grid for content on the blog post page */

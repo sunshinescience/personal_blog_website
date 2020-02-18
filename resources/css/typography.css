@@ -52,6 +52,20 @@
    text-align: center;
 }
 
+ /* Heading font for blog post card */
+ #typography-card-head{
+   font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+   font-size: 1.7em;
+   line-height: 1.05em;
+}
+
+ /* Blog post card sentence font*/
+ #typography-card-sent{
+   font-family: Georgia, Cambria, serif, "Times New Roman", Times;
+   font-size: 1.05em;
+   line-height: 1.2em;
+}
+
 #typography-date{
    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
    color: #9ea7aa;
