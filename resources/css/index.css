@@ -161,21 +161,15 @@ body{
    padding-bottom:60px;   /* Height of the footer */
    grid-template-columns: 90%;
    grid-auto-rows: minmax(300px, auto);
-   border: 5px solid black;
    justify-content: center;
-}
-   
-.cards > *{
-   border: 2px solid yellow;
-   background: linear-gradient(90deg, #4f5b62 50%, #ffffff 50%);;
-   grid-gap: 0px;
+   margin: 0;
 }
 
 .nested-grid-cards{
    display: grid;
    grid-template-columns: 35% 65%;
    border: 2px solid red;
-   margin: 5px;
+   margin: 10px;
 }
 
 .nested-grid-cards > *{
