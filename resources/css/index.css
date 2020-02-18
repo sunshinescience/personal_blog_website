@@ -160,21 +160,39 @@ body{
    padding:0px;
    padding-bottom:60px;   /* Height of the footer */
    grid-template-columns: 90%;
-   grid-auto-rows: minmax(300px, auto);
+   grid-auto-rows: minmax(220px, auto);
    justify-content: center;
    margin: 0;
+   grid-gap: 15px;
 }
 
 .nested-grid-cards{
    display: grid;
    grid-template-columns: 35% 65%;
+   grid-template-rows: 100%;
    border: 2px solid red;
-   margin: 10px;
+   /* margin: 10px; */ /* Separates the blog post cards */
+   padding-top: 0px;
+   grid-template-areas: 
+   "card-l card-r";
 }
 
 .nested-grid-cards > *{
    border: 2px solid yellow;
    background: white;
+}
+
+/* Area on left side of card, where the thumbnail image is located */
+.card-left{
+   grid-area: card-l;
+   background: #4f5b62;
+   background-size: cover;
+   height: 220px;
+}
+
+.card-right{
+   grid-area: card-r;
+   text-align: left;
 }
 
  /* Nested grid for content on the blog post page */
