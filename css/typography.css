@@ -1,0 +1,90 @@
+/* Main menu font */
+#typography-1{
+    font-family: Helvetica, arial, sans-serif;
+    font-weight: bold; 
+    text-align: center; 
+    font-size: 1.05em;
+    line-height: 1.2em;
+    margin: auto;
+    text-transform: uppercase;
+    width: 98%;
+    color: #000000;
+    justify-content: center;
+    /* padding: 2px; */
+ }
+ 
+ /* Main heading font (at the top of the pages) */
+ #typography-2{
+    font-family: Georgia, serif, Times;
+    color: #000000;
+    font-size: 1.25em;
+    line-height: 1.1em;
+    padding-bottom: 15px; /* Used this to separate the sentence in the header from the main menu */
+    text-align: center;
+ }
+ 
+ /* Code font */
+ #typography-3{
+    font-family: Menlo, Monaco, "Courier New", Courier, monospace, Andale Mono, Verdana;
+ }
+ 
+ /* Blog font*/
+ #typography-4{
+     font-family: Georgia, Cambria, serif, "Times New Roman", Times;
+     font-size: 1.15em;
+     line-height: 1.2em;
+ }
+ 
+ /* Heading font for blog */
+ #typography-5{
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 2.2em;
+    line-height: 1.05em;
+ }
+
+  /* About page large white font */
+  #typography-6{
+   font-family: Georgia, serif, Times;
+   color: white;
+   font-size: 1.25em;
+   line-height: 1.1em;
+   padding-bottom: 15px; /* Used this to separate the sentence in the header from the main menu */
+   text-align: center;
+}
+
+ /* Heading font for blog post card */
+ #typography-card-head{
+   font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+   font-size: 1.7em;
+   line-height: 1.05em;
+}
+
+ /* Blog post card sentence font*/
+ #typography-card-sent{
+   font-family: Georgia, Cambria, serif, "Times New Roman", Times;
+   font-size: 1.05em;
+   line-height: 1.2em;
+}
+
+#typography-date{
+   font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+   color: #9ea7aa;
+   font-size: 0.8em;
+   line-height: 1em;
+}
+
+#typography-links{
+   font-family: CallunaLghtRegular, Georgia, Cambria, serif, "Times New Roman", Times;
+   font-size: 0.95em;
+   line-height: 1em;
+   color: #b4004e;
+   /* color: #ff77a9; */
+}
+
+#typography-caption{
+   font-family: CallunaLghtRegular, Georgia, Cambria, serif, "Times New Roman", Times;
+   font-size: 0.9em;
+   line-height: 1em;
+   color: black;
+   /* color: #ff77a9; */
+}
