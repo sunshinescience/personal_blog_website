@@ -242,8 +242,8 @@ body{
    border: 0px solid #ddd; /* Gray border */
    border-radius: 0px;  /* Rounded border */
    padding: 0; /* Some padding */
-   /* width: 100%; */
-   justify-self: center;
+   width: 100%; 
+   /* justify-self: center; */
    /* clip-path values are from-top, from-right, from-bottom, from-left */ 
 }
 
