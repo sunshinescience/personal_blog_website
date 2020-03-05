@@ -237,6 +237,16 @@ body{
    grid-area: c-read;    
 }
 
+/* Creating image thumbnail for blog post card */
+#thumbnail{
+   border: 0px solid #ddd; /* Gray border */
+   border-radius: 0px;  /* Rounded border */
+   padding: 0; /* Some padding */
+   /* width: 100%; */
+   justify-self: center;
+   /* clip-path values are from-top, from-right, from-bottom, from-left */ 
+}
+
  /* Nested grid for content on the blog post page */
 .nested-grid-content{
    display: grid;
