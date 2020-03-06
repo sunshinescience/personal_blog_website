@@ -155,9 +155,7 @@ body{
    border: 0px solid #ddd; /* Gray border */
    border-radius: 0px;  /* Rounded border */
    padding: 0; /* Some padding */
-   width: 100%; 
-   /* justify-self: center; */
-   /* clip-path values are from-top, from-right, from-bottom, from-left */ 
+   width: 100%; /* This fits the width of the image inside the thumbnail */
 }
 
  /* Nested grid for content on the blog post page */
@@ -253,8 +251,8 @@ body{
 
       .content{
       grid-area: main;
-      padding:40px;
-      padding-bottom:60px;   /* Height of the footer */
+      padding: 0; 
+      padding-bottom: 60px;   /* Height of the footer */
       background-color: #ffffff;
       margin-right: 80px;
       margin-left: 80px;
@@ -328,7 +326,7 @@ body{
 
       .content{
       grid-area: main;
-      padding:40px;
+      padding: 0;
       padding-bottom:60px;   /* Height of the footer */
       background-color: #ffffff;
       margin-right: 80px;
