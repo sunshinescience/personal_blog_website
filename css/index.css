@@ -218,8 +218,23 @@ body{
    text-align: center;
 }
 
+/* Creating subscribe button for blogs, to be used in the future */
+.button{
+   display: block; /* display set to 'block' and setting the margin to '0 auto' centered the button */
+   margin: 0 auto;
+   background-color: #b4004e; 
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   font-size: 1em;
+   border-radius: 8px;
+   width: 15%;
+ }
+
 /* Footer section for the pages */
-.footer {
+.footer{
    position:absolute;
    bottom:0;
    width: 100%;
