@@ -219,6 +219,7 @@ body{
 }
 
 /* Creating subscribe button for blogs, to be used in the future */
+/* The button does not subscribe, that is beyond the scope of this site, for now */
 .button{
    display: block; /* display set to 'block' and setting the margin to '0 auto' centered the button */
    margin: 0 auto;
@@ -231,7 +232,18 @@ body{
    font-size: 1em;
    border-radius: 8px;
    width: 15%;
+   transition: .1s; /* Change property values smoothly, over a given duration */
  }
+
+/* Button size slightly enlarges with hover */
+ .button:hover{
+   transform: scale(1.1);
+ }
+
+/* Button size decreases with click */
+ .button:active{
+   transform: scale(0.8);
+}
 
 /* Footer section for the pages */
 .footer{
