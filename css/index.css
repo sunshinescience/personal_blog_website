@@ -1,6 +1,6 @@
 @import url("typography.css");
 @import url("social-media-logos.css");
-/* @import url("bio.css") */
+@import url("bio.css");
 
 html,
 body{
@@ -64,93 +64,6 @@ body{
    padding:0px;
    padding-bottom:60px;   /* Height of the footer */
    /* background-color: white; */
-}
-
-/* Nested grid for content in about page */
-.nested-grid-content-about{
-   display: grid;
-   width: 100vw;
-   height: 100%;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: auto auto auto;
-   /* border: 2px solid grey; */
-   grid-template-areas: 
-   "hi-l hi-r"
-   "mid mid"
-   "low low";
- }
-
-.nested-grid-content-about > *{
-   /* border: 2px solid aquamarine; */
- }
-
- /* Top left part of content section, in the about page */
-.content-top-left{
-   display: flex;
-   grid-area: hi-l;
-   background:  black;
-   align-items: center;
-   justify-content: center;
-}
-
-/* Top right part of content section, in the about page */
-.content-top-right{
-   grid-area: hi-r;
-   background:  black;
-   height: 320px;
-}
-
-#about-img{
-   background-image: url("../images/meOxfordcopy2.jpg");
-   background-size: cover;
-}
-
-.content-mid{
-   grid-area: mid;
-   justify-content: center;
-   padding: 40px;
-   background: white;
-}
-
-.content-bottom{
-   grid-area: low;
-   margin: 0;
-}
-
-/* Nested grid in bottom part of the content section on the about page */
-.nested-content-bottom{
-   display: grid;
-   grid-template-columns: 50% 50%;
-   grid-template-rows: 50% 50%;
-   border: 5px solid black;
-}
-
-/* Making an image gallery */
-.photo-gallery{
-   width: 1fr;
-   height: 300px;
-   border: 5px solid black;
-}
-
-/* Designating images in the image gallery */
-#one{
-   background-image: url("../images/germanyMe.jpg");
-   background-size: cover;
-}
-
-#two{
-   background-image: url("../images/DSC_0304.JPG");
-   background-size: cover;
-}
-
-#three{
-   background-image: url("../images/205180_1041275348616_9913_n.jpg");
-   background-size: cover;
-}
-
-#four{
-   background-image: url("../images/DSC_0405copy.JPG");
-   background-size: cover;
 }
 
  /* Nested grid for content on the blog homepage */
