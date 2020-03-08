@@ -10,7 +10,7 @@
     width: 98%;
     color: #000000;
     justify-content: center;
-    text-decoration: none;
+    text-decoration: none; /* Removed underline hyperlinks */
     /* padding: 2px; */
  }
  
