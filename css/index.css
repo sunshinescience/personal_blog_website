@@ -58,6 +58,12 @@ body{
    grid-gap: 5px;
 }
 
+.menu{
+   justify-content: center; 
+   background-color: none;
+   margin: 0 auto;
+}
+
 /* Main area of page, in the middle section */
 .content{
    grid-area: main;
