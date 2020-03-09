@@ -39,8 +39,9 @@
  /* Heading font for blog */
  #typography-5{
     font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-size: 2.2em;
+    font-size: 0.8em;
     line-height: 1.05em;
+    colot: white;
  }
 
   /* About page large white font */
