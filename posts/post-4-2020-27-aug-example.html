@@ -24,18 +24,32 @@
                 </div>
                 <div class="content box">
                     <div class="nested-grid-content">
-                        <p class="blog-title" id="typography-5">Keep the footer at bottom of page</p>
+                        <h1 class="blog-title">Creating a diagonal two color background</h1>
                         <p id="typography-date" class="date">Feb 24, 2020</p>
-                        <p id="typography-4">This is an example post that will be completed in the near future...<br><br>
-                            In my previous <a href="post-1-2020-17-feb-intro-making-site.html" id="typography-links">post</a>, I highlighted just a few things that helped me make these web pages.
-                            <br><br>I wanted to set up a footer at the bottom of my pages on this site. 
-                            I found two helpful blogs (found at <a href="https://matthewjamestaylor.com/bottom-footer" id="typography-links">matthewjamestaylor.com</a>
-                            and <a href="https://dev.to/domysee/keeping-the-footer-at-the-bottom-with-css-flexbox-5h5f" id="typography-links">dev.to</a>) that I incorporated into my code in order to 
-                            make this happen.  
-                        <>
+                        <div class="blog-image">
+                            <img src="../images/post_4_diagonal_background.png" alt="Diagonal background" width="450px" height="350px">
+                        </div>
+                        <div class="blog-image-caption" id="typography-caption">Example black and grey diagonal background.
+                        </div>
+                        <p id="typography-4">This is a quick way to create a two-color diagonal background, with an optional (additional) line at the same angle in the background (see image above).<br><br>
+                            My previous <a href="post-3-2020-08-mar-example.html" id="typography-links">post</a> is still a work in progress to highlight similarities and differences between CSS Grid and CSS Flexbox.
+                            <br><br>
                         <p id="typography-4">
-                            In my next post, I'll compare <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout" id="typography-links">CSS Grid</a>
-                             and <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox" id="typography-links">CSS Flexbox</a>.
+                            I initially used a background image to make a two-color diagonal background. Then I decided it might work better to be able to change the angle and colors in the CSS itself. One can use 
+                            several different backgrounds together; just separate them with a comma. Here is an example of what the code for the above image is:
+                            <code><br><br>
+                                body { <br>
+                                    background: <br>
+                                    linear-gradient(-20deg, transparent calc(45% - 4px), rgba(0,0,0,1) calc(45% - 4px), rgba(0,0,0,1) calc(45% + 4px), transparent calc(45% + 4px)),<br>
+                                    linear-gradient(-20deg, grey 50%, black 50%); <br>
+                                }
+                                <br><br>
+                            </code>
+                            The first linear gradient makes a diagonal line. The rotation can be changed with degree angle. The vertical position can be changed with the calc (%).The second linear gradient makes 
+                            a diagonal two color background at various angles. If you want to set a certain height, use min-height. The colors can be changed as well.
+                        </p>
+                        <p id="typography-4">
+                            In my <a href="post-5-2020-03-sep-example.html">next</a> post, I'll explain how to calculate the opacity to fade in and/or out with a scroll event.
                         </p>
                     </div>
                 </div>
