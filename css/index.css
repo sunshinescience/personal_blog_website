@@ -2,6 +2,8 @@
 @import url("social-media-logos.css");
 @import url("bio.css");
 
+/* ARTICLES CSS file */
+
 html,
 body{
    margin:0;
@@ -31,13 +33,6 @@ body{
    /* margin: auto; */
    justify-content: center;
    /* border: 5px solid red; */
-}
-
-.box{
-   display: flex; 
-   align-items: center; 
-   justify-content: center; 
-   background-color: none;
 }
 
 .header{
@@ -70,6 +65,48 @@ body{
    padding:0px;
    padding-bottom:60px;   /* Height of the footer */
    /* background-color: white; */
+}
+
+.box{
+   display: flex; 
+   align-items: center; 
+   justify-content: center; 
+   background-color: none;
+}
+
+/* Portfolio page nested cards for content */
+.content-cards{
+   display: grid;
+   grid-template-columns:  280px 1fr;
+   grid-template-rows: 150px;
+   /* margin: 10px; */ /* Separates the cards */
+   padding-top: 0px;
+   grid-template-areas: 
+   "img-l txt-r";
+   /* justify-content: center; */
+   grid-gap: 1rem;
+   border: 2px solid red;
+}
+
+.content-card-left{
+   grid-area: img-l;
+   /* background: #4f5b62; */
+   background-size: cover;
+   height: 80%;
+   width: 80%;
+   padding-top: auto;
+   padding-bottom: auto;
+   align-items: center;
+}
+
+.content-card-right{
+   grid-area: txt-r;
+   text-align: left;
+   padding-left: 10px;
+   padding-right: 10px;
+   /* word-break: break-all; */
+   word-wrap: break-word; 
+   max-width: 100%;
 }
 
  /* Nested grid for content on the blog homepage */
@@ -227,9 +264,11 @@ body{
 /* Creating subscribe button for blogs, to be used in the future */
 /* The button does not subscribe, that is beyond the scope of this site, for now */
 .button{
-   display: block; /* display set to 'block' and setting the margin to '0 auto' centered the button */
+   display: none;
+   /* display: block; */ /* display set to 'block' and setting the margin to '0 auto' centered the button */
    margin: 0 auto;
-   background-color: #b4004e; 
+   /* background-color: #b4004e; */
+   background-color: #5378a3; 
    border: none;
    color: white;
    padding: 15px 32px;

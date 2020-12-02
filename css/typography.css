@@ -79,7 +79,10 @@
    font-family: CallunaLghtRegular, Georgia, Cambria, serif, "Times New Roman", Times;
    font-size: 0.95em;
    line-height: 1em;
-   color: #b4004e;
+   /* color: #b4004e; */
+   /* color: #3e6484; */
+   color: #2b8ee0;
+   /* color: #2b4e6b; */
    /* color: #ff77a9; */
 }
 
