@@ -29,8 +29,12 @@
 
 .content-card-right{
    grid-area: txt-r;
-   text-align: left;
+   display: flex;
+   /* text-align: left; */
    /* word-break: break-all; */
    word-wrap: break-word; 
    max-width: 100%;
+   border: 2px solid palevioletred;
+   /* justify-content: center; */ /* Align items horizontally */
+   align-items: center; /* Align items vertically */
 }
