@@ -2,7 +2,7 @@
 .content-cards{
    display: grid;
    grid-area: main;
-   grid-template-columns:  175px 1fr;
+   grid-template-columns:  auto 3.8fr;
    /* grid-template-rows: 200px 200px; */
    grid-auto-rows: 250px;
    margin: 10px; /* Separates the cards */
@@ -31,34 +31,45 @@
    /* text-align: left; */
    /* word-break: break-all; */
    word-wrap: break-word; 
-   max-width: 100%;
-   border: 2px solid palevioletred;
+   border: 2px solid red;
    /* display: flex; */
    /* justify-content: center; */ /* Align items horizontally */
    /* align-items: center; */ /* Align items vertically using flexbox */
 }
 
-/* Nested grid for the area on right side of blog post card */
+/* Nested grid for the area on right side of the card */
 .nested-content-card-right{
    display: grid;
    grid-template-columns: 100%;
-   grid-template-rows: auto auto;
+   grid-template-rows: 125px auto;
    grid-template-areas: 
    "c-intro"
    "c-read";
    border: 2px solid burlywood;
 }
 
+/*
 .nested-card-right > *{
    margin: 0;
    padding: 5px;
 }
+*/
 
-.card-into{
+.card-intro{
    grid-area: c-intro; 
-   padding-bottom: 15px;  
+   display: flex;
+   align-items: flex-end; /* Aligning text at the bottom of this section of the grid via flex*/
+   padding-bottom: 10px;
+   border: 2px solid purple;
+   height: 125px;
+   margin-top: 0;
+   margin-bottom: 10px;
 }
 
 .card-continueReading{
-   grid-area: c-read;    
+   grid-area: c-read; 
+   border: 2px solid gold; 
+   margin-top: 10px; 
+   padding-top: 10px; 
+   padding-bottom: 10px;
 }
