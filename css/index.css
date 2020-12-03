@@ -78,22 +78,22 @@ body{
 .content-cards{
    display: grid;
    grid-template-columns:  280px 1fr;
-   grid-template-rows: 150px;
+   grid-template-rows: 250px;
    /* margin: 10px; */ /* Separates the cards */
    padding-top: 0px;
    grid-template-areas: 
    "img-l txt-r";
    /* justify-content: center; */
-   grid-gap: 1rem;
-   border: 2px solid red;
+   /* grid-gap: 1rem; */
+   background-color: white;
 }
 
 .content-card-left{
    grid-area: img-l;
    /* background: #4f5b62; */
    background-size: cover;
-   height: 80%;
-   width: 80%;
+   height: 55%;
+   width: 55%;
    padding-top: auto;
    padding-bottom: auto;
    align-items: center;
@@ -102,8 +102,6 @@ body{
 .content-card-right{
    grid-area: txt-r;
    text-align: left;
-   padding-left: 10px;
-   padding-right: 10px;
    /* word-break: break-all; */
    word-wrap: break-word; 
    max-width: 100%;
@@ -292,8 +290,10 @@ body{
 
 /* Footer section for the pages */
 .footer{
+   grid-area: ft;
    position:absolute;
    bottom:0;
+   left: 0;
    width: 100%;
    height:60px;   /* Height of the footer */
    background:#9ea7aa;
@@ -308,7 +308,25 @@ body{
 }
 
 /* Tablet screen width size, note the width should be 480px */
-@media(min-width:700px){  
+@media(min-width:700px){ 
+   .container{
+      /* Set display to grid */
+      display: grid;
+      /* Set width and height of grid */
+      width: 100vw;
+      min-height:100%;
+      position:relative;
+      /* Initially each element has its own row for small screens (e.g., smartphones) */
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto;
+      grid-template-areas: 
+      "hd"
+      "main"
+      "ft";
+      justify-content: center;
+      border: 5px solid red; 
+   }
+
    .header{
       grid-area: hd;
       /* border: 2px solid #b4004e; */
@@ -336,12 +354,12 @@ body{
 
       .content{
       grid-area: main;
-      padding: 0; 
+      /* padding: 0; */
+      padding-left: 80px;
+      padding-right: 80px;
       padding-bottom: 60px;   /* Height of the footer */
-      background-color: #ffffff;
-      margin-right: 80px;
-      margin-left: 80px;
-      }
+      /* background-color: #ffffff; */
+      }  
     
     #header-logo{
         width: 45%;
@@ -381,39 +399,29 @@ body{
       max-width: 100%;
       height: 200px;
    }
+
+   .footer{
+      grid-area: ft;
+      position:absolute;
+      bottom:0;
+      width: 100%;
+      left: 0;
+      height:60px;   /* Height of the footer */
+      background:#9ea7aa;
+      /* border: 2px solid green; */
+   }
 }
 
 /* Desktop screen width size*/
 @media(min-width:1024px){  
-   .header{
-      grid-area: hd;
-      /* border: 2px solid #b4004e; */
-    }
-
       /* Adding nested grid for header to separate: logo, introduction, main menu */
-      .nested-grid{
-          display: grid;
-          width: 100vw;
-          height: 100%;
-          grid-template-columns: 1.4fr 3fr 2fr;
-          grid-template-rows: 1fr;
-          /* grid-gap: 15px; */
-          /* border: 2px solid white; */
-          align-items: center; 
-          justify-content: center; 
-      }
-
-      .nested-grid > *{
-          /* border: 2px solid yellow; */
-          /* padding-left: 1em; */
-          /* padding-right: 1.8em; */
-      } 
+      
 
       .content{
       grid-area: main;
       padding: 0;
       padding-bottom:60px;   /* Height of the footer */
-      background-color: #ffffff;
+      /* background-color: #ffffff; */
       margin-right: 80px;
       margin-left: 80px;
       }
@@ -423,8 +431,8 @@ body{
         padding: 30px; /* Adding padding to the logo image */
     }
 
-        /* Moving blog post cards to three columns */
-        .cards{
+      /* Moving blog post cards to three columns */
+      .cards{
          display: grid;
          grid-area: main;
          padding:0px;
@@ -456,4 +464,15 @@ body{
          max-width: 100%;
          height: 200px;
       }
+
+   /* Footer section for the pages */
+   .footer{
+      grid-area: ft;
+      position:absolute;
+      bottom:0;
+      left: 0;
+      width: 100%;
+      height:60px;   /* Height of the footer */
+      background:#9ea7aa;
+   }
 }
