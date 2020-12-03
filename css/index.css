@@ -1,6 +1,7 @@
 @import url("typography.css");
 @import url("social-media-logos.css");
 @import url("bio.css");
+@import url("portfolio.css");
 
 /* ARTICLES CSS file */
 
@@ -32,7 +33,7 @@ body{
    /* grid-gap: 10px; */ /* This grid gap caused a gap at the bottom of photo gallery in about page*/
    /* margin: auto; */
    justify-content: center;
-   /* border: 5px solid red; */
+   border: 5px solid red; 
 }
 
 .header{
@@ -62,8 +63,8 @@ body{
 /* Main area of page, in the middle section */
 .content{
    grid-area: main;
-   padding:0px;
-   padding-bottom:60px;   /* Height of the footer */
+   padding: 0px;
+   padding-bottom: 60px;   /* Height of the footer */
    /* background-color: white; */
 }
 
@@ -74,45 +75,12 @@ body{
    background-color: none;
 }
 
-/* Portfolio page nested cards for content */
-.content-cards{
-   display: grid;
-   grid-template-columns:  280px 1fr;
-   grid-template-rows: 250px;
-   /* margin: 10px; */ /* Separates the cards */
-   padding-top: 0px;
-   grid-template-areas: 
-   "img-l txt-r";
-   /* justify-content: center; */
-   /* grid-gap: 1rem; */
-   background-color: white;
-}
-
-.content-card-left{
-   grid-area: img-l;
-   /* background: #4f5b62; */
-   background-size: cover;
-   height: 55%;
-   width: 55%;
-   padding-top: auto;
-   padding-bottom: auto;
-   align-items: center;
-}
-
-.content-card-right{
-   grid-area: txt-r;
-   text-align: left;
-   /* word-break: break-all; */
-   word-wrap: break-word; 
-   max-width: 100%;
-}
-
  /* Nested grid for content on the blog homepage */
 .cards{
    display: grid;
    grid-area: main;
-   padding:0px;
-   padding-bottom:60px;   /* Height of the footer */
+   padding: 0px;
+   padding-bottom: 60px;   /* Height of the footer */
    grid-template-columns: 90%;
    grid-auto-rows: minmax(200px, auto);
    justify-content: center;
@@ -291,7 +259,7 @@ body{
 /* Footer section for the pages */
 .footer{
    grid-area: ft;
-   position:absolute;
+   position: fixed;
    bottom:0;
    left: 0;
    width: 100%;
@@ -310,13 +278,10 @@ body{
 /* Tablet screen width size, note the width should be 480px */
 @media(min-width:700px){ 
    .container{
-      /* Set display to grid */
       display: grid;
-      /* Set width and height of grid */
       width: 100vw;
       min-height:100%;
       position:relative;
-      /* Initially each element has its own row for small screens (e.g., smartphones) */
       grid-template-columns: 1fr;
       grid-template-rows: auto auto auto;
       grid-template-areas: 
@@ -366,13 +331,14 @@ body{
         padding: 30px; /* Adding padding to the logo image */
     }
 
+    /* TODO: make cards columns or width responsive and change text to wrap? */
     /* Moving blog post cards to two columns */
     .cards{
       display: grid;
       grid-area: main;
       padding:0px;
       padding-bottom: 60px; 
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: auto auto;
       grid-auto-rows: minmax(200px, auto);
       justify-content: center;
       margin: 0;
@@ -402,21 +368,18 @@ body{
 
    .footer{
       grid-area: ft;
-      position:absolute;
+      position: absolute;
       bottom:0;
-      width: 100%;
       left: 0;
+      width: 100%;
       height:60px;   /* Height of the footer */
       background:#9ea7aa;
-      /* border: 2px solid green; */
    }
 }
 
 /* Desktop screen width size*/
 @media(min-width:1024px){  
       /* Adding nested grid for header to separate: logo, introduction, main menu */
-      
-
       .content{
       grid-area: main;
       padding: 0;

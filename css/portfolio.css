@@ -1,0 +1,36 @@
+/* Portfolio page nested cards for content */
+.content-cards{
+   display: grid;
+   grid-area: main;
+   grid-template-columns:  200px 1fr;
+   /* grid-template-rows: 200px 200px; */
+   grid-auto-rows: 250px;
+   margin: 10px; /* Separates the cards */
+   padding-top: 0;
+   grid-template-areas: 
+   "img-l txt-r";
+   /* justify-content: center; */
+   /* grid-gap: 1rem; */
+   background-color: white;
+   border: 2px solid green;
+}
+
+.content-card-left{
+   grid-area: img-l;
+   /* background: #4f5b62; */
+   background-size: cover;
+   height: 150px;
+   width: 150px;
+   max-width: 100%;
+   align-self: center;
+   border: 2px solid orchid;
+   padding: 10px;
+}
+
+.content-card-right{
+   grid-area: txt-r;
+   text-align: left;
+   /* word-break: break-all; */
+   word-wrap: break-word; 
+   max-width: 100%;
+}
