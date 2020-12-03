@@ -28,14 +28,14 @@
 
 .content-card-right{
    grid-area: txt-r;
-   display: flex;
    /* text-align: left; */
    /* word-break: break-all; */
    word-wrap: break-word; 
    max-width: 100%;
    border: 2px solid palevioletred;
+   /* display: flex; */
    /* justify-content: center; */ /* Align items horizontally */
-   align-items: center; /* Align items vertically using flexbox */
+   /* align-items: center; */ /* Align items vertically using flexbox */
 }
 
 /* Nested grid for the area on right side of blog post card */
@@ -44,8 +44,9 @@
    grid-template-columns: 100%;
    grid-template-rows: auto auto;
    grid-template-areas: 
-   "c-sent"
+   "c-intro"
    "c-read";
+   border: 2px solid burlywood;
 }
 
 .nested-card-right > *{
@@ -53,11 +54,11 @@
    padding: 5px;
 }
 
-.card-sentence{
-   grid-area: c-sent; 
+.card-into{
+   grid-area: c-intro; 
    padding-bottom: 15px;  
 }
 
-.card-continue{
+.card-continueReading{
    grid-area: c-read;    
 }
