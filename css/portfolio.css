@@ -2,11 +2,10 @@
 .content-cards{
    display: grid;
    grid-area: main;
-   grid-template-columns:  200px 1fr;
+   grid-template-columns:  175px 1fr;
    /* grid-template-rows: 200px 200px; */
    grid-auto-rows: 250px;
    margin: 10px; /* Separates the cards */
-   padding-top: 0;
    grid-template-areas: 
    "img-l txt-r";
    /* justify-content: center; */
@@ -36,5 +35,29 @@
    max-width: 100%;
    border: 2px solid palevioletred;
    /* justify-content: center; */ /* Align items horizontally */
-   align-items: center; /* Align items vertically */
+   align-items: center; /* Align items vertically using flexbox */
+}
+
+/* Nested grid for the area on right side of blog post card */
+.nested-content-card-right{
+   display: grid;
+   grid-template-columns: 100%;
+   grid-template-rows: auto auto;
+   grid-template-areas: 
+   "c-sent"
+   "c-read";
+}
+
+.nested-card-right > *{
+   margin: 0;
+   padding: 5px;
+}
+
+.card-sentence{
+   grid-area: c-sent; 
+   padding-bottom: 15px;  
+}
+
+.card-continue{
+   grid-area: c-read;    
 }
