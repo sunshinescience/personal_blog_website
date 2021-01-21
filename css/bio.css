@@ -1,7 +1,7 @@
 /* Nested grid for content in about page */
 .nested-grid-content-about{
    display: grid;
-   width: 100vw;
+   /*width: 100vw; */ /* Having width here caused overlap of the About page, so removing it fixed the problem. */
    height: 100%;
    grid-template-columns: 1fr 1fr;
    grid-template-rows: auto auto auto;
