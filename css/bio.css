@@ -3,17 +3,29 @@
    display: grid;
    /*width: 100vw; */ /* Having width here caused overlap of the About page, so removing it fixed the problem. */
    height: 100%;
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 1fr;
    grid-template-rows: auto auto auto;
    /* border: 2px solid grey; */
    grid-template-areas: 
-   "hi-l hi-r"
-   "mid mid"
-   "low low";
+   "hi"
+   "mid"
+   "low";
  }
 
 .nested-grid-content-about > *{
    /* border: 2px solid aquamarine; */
+ }
+
+ .nested-content-top{
+   display: grid;
+   grid-area: hi;
+   /*width: 100vw; */ /* Having width here caused overlap of the About page, so removing it fixed the problem. */
+   height: 100%;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: auto;
+   /* border: 2px solid grey; */
+   grid-template-areas: 
+   "hi-l hi-r";
  }
 
  /* Top left part of content section, in the about page */
@@ -29,12 +41,16 @@
 .content-top-right{
    grid-area: hi-r;
    background:  black;
-   height: 320px;
+   /* height: 320px; */
 }
 
+/* TODO: make below image responsive. */
 #about-img{
    background-image: url("../images/meOxfordcopy2.jpg");
-   background-size: cover;
+   background-size: cover;  /* This needs to be responsive. */
+   /* background-size: 720px 960px; */
+   /*background-size: contain;
+   background-repeat: no-repeat; */
 }
 
 .content-mid{
