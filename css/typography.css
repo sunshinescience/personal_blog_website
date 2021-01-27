@@ -48,7 +48,8 @@
   #typography-6{
    font-family: Georgia, serif, Times;
    color: white;
-   font-size: 1.25em;
+   /* font-size: 1.25em; */ /* This font size was used with a quote */
+   font-size: 2.25em;
    line-height: 1.1em;
    padding-bottom: 15px; /* Used this to separate the sentence in the header from the main menu */
    text-align: center;

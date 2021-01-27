@@ -21,22 +21,21 @@
    grid-area: hi;
    /*width: 100vw; */ /* Having width here caused overlap of the About page, so removing it fixed the problem. */
    height: 100%;
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 0.5fr 1fr 0.5fr;
    grid-template-rows: auto;
    /* border: 2px solid grey; */
    grid-template-areas: 
-   "hi-l hi-r";
-   min-height: 960px;
-   max-height: 1920px;
+   "hi-l hi-m  hi-r";
  }
 
  /* Top left part of content section, in the about page */
 .content-top-left{
-   display: flex;
+   /* display: flex; */
    grid-area: hi-l;
    background:  black;
    align-items: center;
    justify-content: center;
+   border: 2px solid red;
 }
 
 /* Top right part of content section, in the about page */
@@ -44,6 +43,13 @@
    grid-area: hi-r;
    background:  black;
    /* height: 320px; */
+   border: 2px solid blue;
+}
+
+.content-top-mid{
+   grid-area: hi-m;
+   background:  black;
+   border: 2px solid blueviolet;
 }
 
 /* TODO: make below image responsive. */
