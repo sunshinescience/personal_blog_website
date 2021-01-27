@@ -26,6 +26,8 @@
    /* border: 2px solid grey; */
    grid-template-areas: 
    "hi-l hi-r";
+   min-height: 960px;
+   max-height: 1920px;
  }
 
  /* Top left part of content section, in the about page */
@@ -47,10 +49,12 @@
 /* TODO: make below image responsive. */
 #about-img{
    background-image: url("../images/meOxfordcopy2.jpg");
-   background-size: cover;  /* This needs to be responsive. */
+   /* background-size: cover; */ /* This needs to be responsive. */
+   min-height: 960px;
+   max-height: 1920px;
    /* background-size: 720px 960px; */
-   /*background-size: contain;
-   background-repeat: no-repeat; */
+   background-size: contain;
+   background-repeat: no-repeat; 
 }
 
 .content-mid{
