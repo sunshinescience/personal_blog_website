@@ -91,6 +91,7 @@
 }
 
 /* Designating images in the image gallery */
+/*
 #one{
    background-image: url("../images/germanyMe.jpg");
    background-size: cover;
@@ -109,4 +110,19 @@
 #four{
    background-image: url("../images/DSC_0405copy.JPG");
    background-size: cover;
+}
+*/
+
+/* TODO: Work on revising photo gallery */
+ul{ 
+   list-style-type: none; 
+}
+
+li{ 
+   display: inline-block;
+   width: 100%;
+   margin: 10px;
+   text-align: center;
+   font-style: italic;
+   font-family: Georgia, serif; 
 }
