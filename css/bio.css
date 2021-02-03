@@ -4,7 +4,7 @@
    /*width: 100vw; */ /* Having width here caused overlap of the About page, so removing it fixed the problem. */
    height: 100%;
    grid-template-columns: 1fr;
-   grid-template-rows: auto auto auto;
+   grid-template-rows: 90vh auto auto;
    /* border: 2px solid grey; */
    grid-template-areas: 
    "hi"
@@ -21,8 +21,8 @@
    grid-area: hi;
    /*width: 100vw; */ /* Having width here caused overlap of the About page, so removing it fixed the problem. */
    height: 100%;
-   grid-template-columns: 0.5fr 1fr 0.5fr;
-   grid-template-rows: auto;
+   grid-template-columns: 0.3fr 1.4fr 0.3fr;
+   grid-template-rows: 90vh;
    /* border: 2px solid grey; */
    grid-template-areas: 
    "hi-l hi-m  hi-r";
@@ -33,34 +33,28 @@
    /* display: flex; */
    grid-area: hi-l;
    background:  black;
-   align-items: center;
-   justify-content: center;
-   border: 2px solid red;
+   /* align-items: center; */ /* Set this if inserting text here. */
+   /* justify-content: center; */ /* Set this if inserting text here. */
 }
 
 /* Top right part of content section, in the about page */
 .content-top-right{
    grid-area: hi-r;
    background:  black;
-   /* height: 320px; */
-   border: 2px solid blue;
 }
 
 .content-top-mid{
    grid-area: hi-m;
    background:  black;
-   border: 2px solid blueviolet;
 }
 
 /* TODO: make below image responsive. */
 #about-img{
    background-image: url("../images/meOxfordcopy2.jpg");
-   /* background-size: cover; */ /* This needs to be responsive. */
-   min-height: 960px;
-   max-height: 1920px;
-   /* background-size: 720px 960px; */
+   height: 90vh;
    background-size: contain;
    background-repeat: no-repeat; 
+   background-position: center; /* Centered background image. */
 }
 
 .content-mid{
