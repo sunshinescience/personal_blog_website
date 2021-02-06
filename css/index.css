@@ -274,6 +274,15 @@ body{
    padding-bottom: 15px;
 }
 
+code {
+   background-color: #eee;
+}
+
+#codeBlock {
+   background-color: #eee;
+   font-family: 'Consolas'; 'Monaco'; 'Lucida Console'; 'Liberation Mono'; 'DejaVu Sans Mono';
+}
+
 /* Tablet screen width size, note the width should be 480px */
 @media(min-width:700px){ 
    .container{
