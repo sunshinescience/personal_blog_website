@@ -25,7 +25,8 @@
    grid-template-rows: 90vh;
    /* border: 2px solid grey; */
    grid-template-areas: 
-   "hi-l hi-m  hi-r";
+   "hi-l hi-m hi-r";
+   background:  black;
  }
 
  /* Top left part of content section, in the about page */
@@ -46,16 +47,32 @@
 .content-top-mid{
    grid-area: hi-m;
    background:  black;
+   height: 90vh;
 }
 
-/* TODO: make below image responsive. */
+
 #about-img{
    background-image: url("../images/meOxfordcopy2.jpg");
-   height: 90vh;
+   height: 70vh;
    background-size: contain;
    background-repeat: no-repeat; 
-   background-position: center; /* Centered background image. */
+   /* background-position: center; */ /* Centered background image. */
+   background-position: 100% 50%; 
 }
+
+/* Top left text for first name */
+.top-left-first {
+   position: absolute;
+   top: 300px;
+   left: 630px;
+ }
+
+ /* Top left text for last name */
+.top-left-last {
+   position: absolute;
+   top: 360px;
+   left: 630px;
+ }
 
 .content-mid{
    grid-area: mid;
