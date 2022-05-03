@@ -3,3 +3,12 @@
 
 <img src="/images/blog_homepage.png" width="500" height="400">
 
+TODO:
+create a nested grid for treasure map project that includes:
+ROLE            RESPONSIBILITIES       URL
+
+role: Generated the idea, design & front-end development
+
+responsibilities: 
+Created wireframes, web app design, component-based front-end development, JS, React, HTML/CSS
+

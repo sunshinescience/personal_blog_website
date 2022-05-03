@@ -1,10 +1,14 @@
-/* Portfolio page nested cards for content */
+.highlight {
+   color: #6c41ec;
+ }
+
+/* Portfolio page cards for content (nested) */
 .content-cards{
    display: grid;
    grid-area: main;
    grid-template-columns:  auto 3.8fr;
    /* grid-template-rows: 200px 200px; */
-   grid-auto-rows: 250px;
+   grid-auto-rows: 300px;
    margin: 20px; /* Separates the cards */
    grid-template-areas: 
    "img-l txt-r";
@@ -23,9 +27,9 @@
    max-width: 150px;
    max-height: 150px;
    align-self: center;
-   /* border: 2px solid orchid; */
-   padding: 10px;
-   padding-left: 20px;
+   border: 2px solid orchid; 
+   padding-left: 40px;
+   padding-right: 40px;
 }
 
 .content-card-right{
@@ -34,10 +38,11 @@
    /* word-break: break-all; */
    word-wrap: break-word; 
    /* border: 2px solid red; */
-   padding-left: 10px;
+   padding-top: 20px;
    /* display: flex; */
    /* justify-content: center; */ /* Align items horizontally */
-   /* align-items: center; */ /* Align items vertically using flexbox */
+   align-items: center;  /* Align items vertically using flexbox */
+   border: 2px solid red;
 }
 
 /* Nested grid for the area on right side of the card */
@@ -72,6 +77,95 @@
    grid-area: c-read; 
    /* border: 2px solid gold; */
    margin-top: 10px; 
-   padding-top: 10px; 
+   padding-top: 30px; 
    padding-bottom: 10px;
+}
+
+/* Styles for an individual project page */
+
+/* Container for portfolio project text */
+.nested-grid-portfolio{
+   display: grid;
+   width: 90vw;
+   height: 100%;
+   margin-top: 50px;
+   grid-template-columns: 1fr;
+   grid-template-rows: auto auto;
+    /* Name rows and columns */
+   grid-template-areas: 
+   "title"
+   "projct";
+}
+
+.portfolio-mid-text{
+   grid-area: projct;
+   color: black;
+   width: 90vw;
+   padding-bottom: 0;
+   padding-top: 0;
+}
+
+/* Container for portfolio project title */
+.portfolio-mid-title{
+   grid-area: title;
+   background: black;
+   color: white;
+   width: 90vw;
+   height: 40vh;
+   margin-bottom: 0;
+   padding-bottom: 0;
+}
+
+/* Portfolio project title */
+#portfolio-title {
+   display: flex;
+   align-items: center;
+   justify-content: center;          
+}
+
+.sectionTitle {
+   display: flex;
+   align-items: center;
+   justify-content: center; 
+   padding-top: 30px; 
+   padding-bottom: 30px; 
+   font-size: 1.3rem;
+}
+
+.nested-vid-txt {
+   display: grid;
+   grid-template-columns: auto 1fr;
+   grid-auto-rows: 300px;
+   /* margin: 20px; */
+   grid-template-areas: 
+   "vid-l text-r";
+   border: 2px solid black;
+   padding-bottom: 60px;
+}
+
+.project-text-right {
+   grid-area: text-r;
+   /* text-align: left; */
+   /* word-break: break-all; */
+   word-wrap: break-word; 
+   /* border: 2px solid red; */
+   /* padding-top: 20px; */
+   /* display: flex; */
+   /* justify-content: center; */ /* Align items horizontally */
+   align-items: center;  /* Align items vertically using flexbox */
+   border: 2px solid red;
+}
+
+.video-left {
+   grid-area: vid-l;
+   width: 500px;
+   /* video dimensions: 1434 x 754 */
+   /* text-align: left; */
+   /* word-break: break-all; */
+   /* border: 2px solid red; */
+   /* padding-top: 20px; */
+   /* display: flex; */
+   /* justify-content: center; */ /* Align items horizontally */
+   align-items: center;  /* Align items vertically using flexbox */
+   border: 60px solid #9ea7aa;
 }
