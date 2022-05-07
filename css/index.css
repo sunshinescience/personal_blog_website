@@ -258,11 +258,10 @@ body{
 /* Footer section for the pages */
 .footer{
    grid-area: ft;
-   position: fixed;
+   position:absolute;
    bottom:0;
-   left: 0;
    width: 100%;
-   height:60px;   /* Height of the footer */
+   height:100px; /* Height of the footer */
    background:#9ea7aa;
 }
 
@@ -377,11 +376,10 @@ code {
 
    .footer{
       grid-area: ft;
-      position: absolute;
+      position:absolute;
       bottom:0;
-      left: 0;
-      width: 100vw;
-      height:60px;   /* Height of the footer */
+      width: 100%;
+      height:100px; /* Height of the footer */
       background:#9ea7aa;
    }
 }
@@ -440,11 +438,11 @@ code {
    /* Footer section for the pages */
    .footer{
       grid-area: ft;
-      position:absolute;
-      bottom:0;
-      /* left: 0; */
+      position: absolute;
+      bottom: 0;
       width: 100%;
-      height:60px;   /* Height of the footer */
-      background:#9ea7aa;
+      height: 60px; /* Height of the footer */
+      background: #9ea7aa;
+      /* background: #3da1c3; */
    }
 }

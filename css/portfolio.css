@@ -8,7 +8,7 @@
    grid-area: main;
    grid-template-columns:  auto 3.8fr;
    /* grid-template-rows: 200px 200px; */
-   grid-auto-rows: 300px;
+   grid-auto-rows: auto;
    margin: 20px; /* Separates the cards */
    grid-template-areas: 
    "img-l txt-r";
@@ -134,13 +134,14 @@
 
 .nested-vid-txt {
    display: grid;
-   grid-template-columns: auto 1fr;
+   grid-template-columns: 700px 1fr;
    grid-auto-rows: auto;
    /* margin: 20px; */
    grid-template-areas: 
    "vid-l text-r";
    border: 2px solid black;
-   padding-bottom: 60px;
+   /* padding-bottom: 60px; */
+   margin-bottom: 120px;
 }
 
 .project-text-right {
@@ -154,17 +155,26 @@
    /* justify-content: center; */ /* Align items horizontally */
    align-items: center;  /* Align items vertically using flexbox */
    border: 2px solid red;
+   padding-left: 30px;
+   padding-right: 30px;
 }
 
 .video-left {
+   display: flex;
    grid-area: vid-l;
-   /* video dimensions: 1434 x 754 */
-   /* text-align: left; */
-   /* word-break: break-all; */
-   /* border: 2px solid red; */
-   /* padding-top: 20px; */
-   /* display: flex; */
-   /* justify-content: center; */ /* Align items horizontally */
-   align-items: center;  /* Align items vertically using flexbox */
-   border: 60px solid #9ea7aa;
+   justify-content: center;  /* Align items horizontally */
+   border: 60px solid #9ea7aa; /* I want buttons on the border. So I'll try a work around by adding a background color in the container and padding. */
+   /* border: 60px solid black; */
+   /* width: 600px; */
+   /* height: 100%; */ /* The video was pushing the footer up because the height was 100%, it was too large. */
+   /* min-height: 200px; */ /* When making the page small, the video zooms in */
 }
+
+.video {
+   width: 100%;
+   height: auto;
+   object-fit: cover;
+}
+
+
+
