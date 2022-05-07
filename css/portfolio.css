@@ -134,7 +134,7 @@
 
 .nested-vid-txt {
    display: grid;
-   grid-template-columns: 700px 1fr;
+   grid-template-columns: 600px 1fr;
    grid-auto-rows: auto;
    /* margin: 20px; */
    grid-template-areas: 
@@ -159,14 +159,20 @@
    padding-right: 30px;
 }
 
+.video-left-background {
+   background-color: #9ea7aa;
+   padding: 60px;
+   position: relative; /* Needed this parent container for the button to be positioned relative, and the button positioned absolute. This helped to center the button. */
+}
+
 .video-left {
    display: flex;
    grid-area: vid-l;
    justify-content: center;  /* Align items horizontally */
-   border: 60px solid #9ea7aa; /* I want buttons on the border. So I'll try a work around by adding a background color in the container and padding. */
+   /* border: 60px solid #9ea7aa; */ /* I want buttons on the border. So I'll try a work around by adding a background color in the container and padding. */
    /* border: 60px solid black; */
    /* width: 600px; */
-   /* height: 100%; */ /* The video was pushing the footer up because the height was 100%, it was too large. */
+   height: 100%;  /* The video was pushing the footer up because the height was 100%, it was too large. */
    /* min-height: 200px; */ /* When making the page small, the video zooms in */
 }
 
@@ -176,5 +182,67 @@
    object-fit: cover;
 }
 
+.button-1 {
+   background-color: black;
+   border: none;
+   color: white;
+   padding: 5px 5px;
+   opacity: 1;
+   transition: 0.3s;
+   cursor: pointer;
+   border-radius: 50%;
+   margin: 0;
+   position: absolute;
+   bottom: 20px;
+   left: 46%;
+   -ms-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+  }
+ 
+  .button-1:hover {
+     opacity: 0.6;
+ }
+
+.button-2 {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  opacity: 1;
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 0;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+ }
+
+ .button-2:hover {
+    opacity: 0.6;
+}
+
+.button-3 {
+   background-color: black;
+   border: none;
+   color: white;
+   padding: 5px 5px;
+   opacity: 1;
+   transition: 0.3s;
+   cursor: pointer;
+   border-radius: 50%;
+   margin: 0;
+   position: absolute;
+   bottom: 20px;
+   left: 54%;
+   -ms-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+  }
+ 
+  .button-3:hover {
+     opacity: 0.6;
+ }
 
 
