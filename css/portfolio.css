@@ -139,7 +139,7 @@
    /* margin: 20px; */
    grid-template-areas: 
    "vid-l text-r";
-   border: 2px solid black;
+   
    /* padding-bottom: 60px; */
    margin-bottom: 120px;
 }
@@ -154,18 +154,19 @@
    /* display: flex; */
    /* justify-content: center; */ /* Align items horizontally */
    align-items: center;  /* Align items vertically using flexbox */
-   border: 2px solid red;
    padding-left: 30px;
    padding-right: 30px;
 }
 
-.video-left-background {
+.video-left-container {
    background-color: #9ea7aa;
    padding: 60px;
    position: relative; /* Needed this parent container for the button to be positioned relative, and the button positioned absolute. This helped to center the button. */
+   /* border: 2px solid black; */
+   /* box-shadow: 10px 10px 8px #6a7274; */
 }
 
-.video-left {
+#video-left {
    display: flex;
    grid-area: vid-l;
    justify-content: center;  /* Align items horizontally */
@@ -176,7 +177,7 @@
    /* min-height: 200px; */ /* When making the page small, the video zooms in */
 }
 
-.video {
+#video {
    width: 100%;
    height: auto;
    object-fit: cover;
@@ -192,16 +193,16 @@
    cursor: pointer;
    border-radius: 50%;
    margin: 0;
-   position: absolute;
+   position: absolute; /* The container needs to be position relative and then things inside can be position absolute */
    bottom: 20px;
    left: 46%;
    -ms-transform: translate(-50%, -50%);
    transform: translate(-50%, -50%);
   }
  
-  .button-1:hover {
-     opacity: 0.6;
- }
+.button-1:hover {
+   opacity: 0.6;
+}
 
 .button-2 {
   background-color: black;

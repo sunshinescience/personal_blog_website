@@ -1,10 +1,14 @@
 /* Main menu font */
 #typography-1{
-    font-family: Helvetica, arial, sans-serif;
-    font-weight: bold; 
+    /* font-family: Helvetica, arial, sans-serif; */
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    /* font-weight: bold; */
     text-align: center; 
     font-size: 1.05em;
-    line-height: 1.2em;
+    /* line-height: 1.2em; */
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0.022em;
     margin: auto;
     text-transform: uppercase;
     width: 98%;

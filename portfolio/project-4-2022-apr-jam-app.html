@@ -31,23 +31,32 @@
                             <p id="typography-portfolio-title1">Users can create a custom playlist and save it to their Spotify account.</p>
                         </div> 
                         <div class="nested-vid-txt">
-                            <div class="video-left-background" > 
-                                <div class="video-left">
+                            <div class="video-left-container" > 
+                                
+                                 <div id="video-left"> 
+                                    <!-- 
                                     <video class="video" controls> 
-                                        
-                                        
                                         <source src="../images/Jamming_1_4.m4v" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                        
+                                        Your browser does not support the video tag.  
                                     </video>
+                                    -->
                                     <!-- Use autoplay muted in the video tag to have the video play automatically, but use JS to get it to play once it becomes visible in the window. -->
-                                    
-                                </div>
+                                    <video id="video" controls> 
+                                        <source src="../images/Jamming_1_4.m4v" type="video/mp4">
+                                        Your browser does not support the video tag.  
+                                    </video>
+                                    <button class="button-1" onclick="playVid()" type="button">1</button>
+                                </div> 
+                                <!-- 
+                                <iframe id="video-left" src="" frameborder="0"></iframe>
+                                -->
+
                                 <!-- 
                                 <div class="button-1" onclick="location.href='../images/Jamming_1_4.m4v'"></div>
                                 <div class="button-2"></div>
                                 <div class="button-3"></div>
                                 -->
+                                
                                 <div class="button-1"></div>
                                 <div class="button-2"></div>
                                 <div class="button-3"></div>
@@ -80,7 +89,8 @@
                         <img class="social-media-logo" alt="Social media logo" src="../images/f_logo_RGB-White_512.png"/>
                     </a>
                 </div>
-            </div>      
+            </div>  
+        <script src="../index.js"></script>     
     </body>
 </html>
 
