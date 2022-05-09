@@ -273,6 +273,12 @@ body{
    padding-bottom: 15px;
 }
 
+.header-name {
+   margin: auto;
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+
 code {
    background-color: #eee;
 }
@@ -339,6 +345,12 @@ code {
         padding: 30px; /* Adding padding to the logo image */
     }
 
+    .header-name {
+      margin: auto;
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+
     /* TODO: make cards columns or width responsive and change text to wrap? */
     /* Moving blog post cards to two columns */
     .cards{
@@ -400,6 +412,12 @@ code {
         width: 45%;
         padding: 30px; /* Adding padding to the logo image */
     }
+
+    .header-name {
+      margin: auto;
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
 
       /* Moving blog post cards to three columns */
       .cards{

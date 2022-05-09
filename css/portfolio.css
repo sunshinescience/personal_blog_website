@@ -127,8 +127,7 @@
    display: flex;
    align-items: center;
    justify-content: center; 
-   padding-top: 30px; 
-   padding-bottom: 30px; 
+   padding-bottom: 10px; 
    font-size: 1.3rem;
 }
 
@@ -154,9 +153,12 @@
    /* display: flex; */
    /* justify-content: center; */ /* Align items horizontally */
    align-items: center;  /* Align items vertically using flexbox */
-   padding-left: 30px;
-   padding-right: 30px;
+   padding-left: 50px;
+   padding-right: 50px;
+   margin: auto; /* Centering text vertically */
 }
+
+
 
 .video-left-container {
    background-color: #9ea7aa;
