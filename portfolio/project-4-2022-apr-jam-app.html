@@ -34,32 +34,14 @@
                             <div class="video-left-container" > 
                                 
                                  <div id="video-left"> 
-                                    <!-- 
-                                    <video class="video" controls> 
-                                        <source src="../images/Jamming_1_4.m4v" type="video/mp4">
-                                        Your browser does not support the video tag.  
-                                    </video>
-                                    -->
-                                    <!-- Use autoplay muted in the video tag to have the video play automatically, but use JS to get it to play once it becomes visible in the window. -->
                                     <video id="video" controls> 
                                         <source src="../images/Jamming_1_4.m4v" type="video/mp4">
                                         Your browser does not support the video tag.  
                                     </video>
-                                    <button class="button-1" onclick="playVid()" type="button">1</button>
                                 </div> 
-                                <!-- 
-                                <iframe id="video-left" src="" frameborder="0"></iframe>
-                                -->
-
-                                <!-- 
-                                <div class="button-1" onclick="location.href='../images/Jamming_1_4.m4v'"></div>
-                                <div class="button-2"></div>
-                                <div class="button-3"></div>
-                                -->
-                                
-                                <div class="button-1"></div>
-                                <div class="button-2"></div>
-                                <div class="button-3"></div>
+                                <div class="button-1" onclick="setvideo('../images/Jamming_1_4.m4v')"></div>
+                                <div class="button-2" onclick="setvideo('../images/Jamming_2_1.m4v')"></div>
+                                <div class="button-3" onclick="setvideo('../images/Jamming_1_4.m4v')"></div>
                             </div>
                             <div class="project-text-right">
                                 <p id="secTitle1" class="sectionTitle">Creating the React App</p>
