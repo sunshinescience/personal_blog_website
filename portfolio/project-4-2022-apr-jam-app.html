@@ -12,7 +12,7 @@
             <div class="container">
                 <div class="header box">
                     <div class="nested-grid">
-                        <img id="header-logo" alt="Sunshine symbol" src="../images/sa_logo1-01.png"> 
+                        <p class="header-name" id="typography-1-name">Sunshine Abbott</p>
                         <div id="typography-2"> </div> <!-- Sunshine Abbott is a web developer based in the UK. -->
                         <div class="menu">
                             <a href="../index.html" id="typography-1">Portfolio</a>
@@ -35,17 +35,23 @@
                                 
                                  <div id="video-left"> 
                                     <video id="video" controls> 
-                                        <source src="../images/Jamming_1_4.m4v" type="video/mp4">
+                                        <source id="source_video" src="../images/Jamming_1_4.m4v" type="video/mp4">
                                         Your browser does not support the video tag.  
                                     </video>
                                 </div> 
-                                <div class="button-1" onclick="setvideo('../images/Jamming_1_4.m4v')"></div>
-                                <div class="button-2" onclick="setvideo('../images/Jamming_2_1.m4v')"></div>
-                                <div class="button-3" onclick="setvideo('../images/Jamming_3_1.m4v')"></div>
+                                <div></div>
+                                <p><i class="arrow right" onclick="showVideoRight()"></i></p> 
+                                <p><i class="arrow left" onclick="showVideoLeft()"></i></p>
+                                
+                                
+                                <div id="button-1" onclick="setvideo('../images/Jamming_1_4.m4v')"></div>
+                                <div id="button-2" onclick="setvideo('../images/Jamming_2_1.m4v')"></div>
+                                <div id="button-3" onclick="setvideo('../images/Jamming_3_1.m4v')"></div>
+                                
                             </div>
                             <div class="project-text-right">
                                 <p id="secTitle1" class="sectionTitle">Ja<span class="highlight">mmm</span>ing</p>
-                                <p id="typography-4">As a Codecademy project, I created a React app, which can be found at <a href="http://jamjammm.surge.sh" id="typography-links">http://jamjammm.surge.sh</a>. 
+                                <p id="typography-portfolio-txt">As a Codecademy project, I created a React app, which can be found at <a href="http://jamjammm.surge.sh" id="typography-links">http://jamjammm.surge.sh</a>. 
                                 This involved using React components, passing state and requests with the Spotify API. The app will initially prompt the user to login to 
                                 their Spotify account. Users can search the Spotify library by entering a song, album or artist. They can then create a custom playlist and save it to their Spotify account.</p>
                             </div>  

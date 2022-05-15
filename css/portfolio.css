@@ -1,5 +1,5 @@
 .highlight {
-   color: #6c41ec;
+   color: #9ea7aa;
  }
 
 /* Portfolio page cards for content (nested) */
@@ -185,7 +185,7 @@
    object-fit: cover;
 }
 
-.button-1 {
+#button-1 {
    background-color: black;
    border: none;
    padding: 5px 5px;
@@ -201,11 +201,11 @@
    transform: translate(-50%, -50%);
   }
  
-.button-1:hover {
+#button-1:hover {
    opacity: 0.6;
 }
 
-.button-2 {
+#button-2 {
   background-color: black;
   border: none;
   color: white;
@@ -222,11 +222,11 @@
   transform: translate(-50%, -50%);
  }
 
- .button-2:hover {
+#button-2:hover {
     opacity: 0.6;
 }
 
-.button-3 {
+#button-3 {
    background-color: black;
    border: none;
    color: white;
@@ -243,8 +243,37 @@
    transform: translate(-50%, -50%);
   }
  
-  .button-3:hover {
+#button-3:hover {
      opacity: 0.6;
- }
+}
 
+.arrow {
+   cursor: pointer;
+   border: solid #edf0f1;;
+   border-width: 0 3px 3px 0;
+   display: inline-block;
+   padding: 8px;
+   /* transition: border 2s ease-out; */
+}
+
+/*
+.arrow:hover {
+   border-color: black;
+}
+*/
+.right {
+   transform: rotate(-45deg);
+   -webkit-transform: rotate(-45deg);
+   position: absolute;
+   top: 50%;
+   left: 93%;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  position: absolute;
+  top: 50%;
+  left: 4%;
+}
 

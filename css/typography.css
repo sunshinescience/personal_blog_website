@@ -130,6 +130,13 @@
    font-weight: 200;
 }
 
+#typography-portfolio-txt{
+   font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+   font-size: 1.15em;
+     line-height: 1.2em;
+   font-weight: 200;
+}
+
 #typography-name{
    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
    color: white;
@@ -165,11 +172,11 @@
    font-family: CallunaLghtRegular, Georgia, Cambria, serif, "Times New Roman", Times;
    font-size: 0.95em;
    line-height: 1em;
-   /* color: #b4004e; */
-   /* color: #3e6484; */
-   color: #2b8ee0;
-   /* color: #2b4e6b; */
-   /* color: #ff77a9; */
+   /* color: #2b8ee0; */
+   /* color: #0d83e3; */
+   color: rgb(3, 110, 216);
+   /* color: #06c; */
+   /* color: #3568b0; */
 }
 
 #typography-caption{
@@ -182,8 +189,8 @@
 
 /* */
 #secTitle1{
-   font-family: Helvetica, arial, sans-serif;
-   font-weight: 520;
+   font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+   font-weight: 420;
    text-align: center; 
    font-size: 1.35em;
    line-height: 1.2em;
@@ -195,3 +202,5 @@
    text-decoration: none; /* Removed underline hyperlinks */
    /* padding: 2px; */
 }
+
+   
