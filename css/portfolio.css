@@ -158,8 +158,6 @@
    margin: auto; /* Centering text vertically */
 }
 
-
-
 .video-left-container {
    background-color: #9ea7aa;
    padding: 60px;
@@ -168,7 +166,7 @@
    /* box-shadow: 10px 10px 8px #6a7274; */
 }
 
-#video-left {
+#video-player {
    display: flex;
    grid-area: vid-l;
    justify-content: center;  /* Align items horizontally */
@@ -181,9 +179,39 @@
 
 #video {
    width: 100%;
-   height: auto;
+   /* height: auto; */ /* It was set like this initially, to get it to stay the size inside of the container */
+   height: 100%;
    object-fit: cover;
 }
+
+/*
+.controls {
+   display: flex;
+   position: absolute;
+}
+*/
+
+/* When you make an element position: relative, all the child elements which are position: absolute will be positioned inside the parent element. */
+
+.video-view {
+   position: relative;
+   width: 500px;
+   height: 300px;
+ }
+ 
+ .video-view .video {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   background-color: #ccc;
+ }
+ 
+ .video-view .video-content {
+   position: absolute;
+   bottom: 0px;
+ }
+
 
 #button-1 {
    background-color: black;
@@ -256,11 +284,11 @@
    /* transition: border 2s ease-out; */
 }
 
-/*
+
 .arrow:hover {
    border-color: black;
 }
-*/
+
 .right {
    transform: rotate(-45deg);
    -webkit-transform: rotate(-45deg);

@@ -30,25 +30,51 @@
                         <div class="portfolio-mid-text">
                             <p id="typography-portfolio-title1">Users can create a custom playlist and save it to their Spotify account.</p>
                         </div> 
-                        <div class="nested-vid-txt">
+
+                        <div class="nested-vid-txt" onclick="getId(event)">
                             <div class="video-left-container" > 
+                               
                                 
-                                 <div id="video-left"> 
+                                <div id="video-player"> 
+                                    <!-- Add in autoplay loop next to controls below, if I can get loop working -->
                                     <video id="video" controls> 
-                                        <source id="source_video" src="../images/Jamming_1_4.m4v" type="video/mp4">
+                                        <source src="../images/Jamming_1_4.m4v" type="video/mp4">
                                         Your browser does not support the video tag.  
                                     </video>
-                                </div> 
-                                <div></div>
-                                <p><i class="arrow right" onclick="showVideoRight()"></i></p> 
-                                <p><i class="arrow left" onclick="showVideoLeft()"></i></p>
+                                </div>                             
                                 
-                                
-                                <div id="button-1" onclick="setvideo('../images/Jamming_1_4.m4v')"></div>
-                                <div id="button-2" onclick="setvideo('../images/Jamming_2_1.m4v')"></div>
-                                <div id="button-3" onclick="setvideo('../images/Jamming_3_1.m4v')"></div>
+                                <div class="controls"> 
+                                    <!-- 
+                                    <p><i class="arrow right" onclick="showVideoRight()"></i></p> 
+                                    <p><i class="arrow left" onclick="showVideoLeft()"></i></p>
+                                    -->
+                                    <!-- 
+                                    <div id="button-1" onclick="setVideo('../images/Jamming_1_4.m4v')"></div>
+                                    <div id="button-2" onclick="setVideo('../images/Jamming_2_1.m4v')"></div>
+                                    <div id="button-3" onclick="setVideo('../images/Jamming_3_1.m4v')"></div>
+                                    -->
+                                    <p><i id="arrow-right" class="arrow right"></i></p> 
+                                    <p><i id="arrow-left" class="arrow left"></i></p>
+                                    <div id="button-1"></div>
+                                    <div id="button-2"></div>
+                                    <div id="button-3"></div>
+                                </div>
                                 
                             </div>
+
+                            <!-- Attempt 1 below, to get button and video working -->
+                            <!-- 
+                            <div class="video-view">
+                                <video class="video">
+                                    <source id="clickedVideo" src="../images/Jamming_1_4.m4v" type="video/mp4">
+                                    Your browser does not support the video tag.  
+                                </video>
+                                <div class="video-content">
+                                  <button id="button-1" onclick="playVideo()"></button>
+                                </div>
+                              </div>
+                            -->
+
                             <div class="project-text-right">
                                 <p id="secTitle1" class="sectionTitle">Ja<span class="highlight">mmm</span>ing</p>
                                 <p id="typography-portfolio-txt">As a Codecademy project, I created a React app, which can be found at <a href="http://jamjammm.surge.sh" id="typography-links">http://jamjammm.surge.sh</a>. 
