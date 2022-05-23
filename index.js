@@ -23,20 +23,22 @@ srcList = [src1, src2, src3];
 let activeIndex = 0;
 
 // We use only one event listener, and listen for any click in the area of the video player container
-function getId(event) { 
-    // alert(event.target.id);
-
-    // note that I need to have a loop in case someone clicks through the videos
+function getVideo(event) { 
     if (event.target.id == 'arrow-right') {
         activeIndex += 1;
         if (activeIndex == srcList.length) {
             activeIndex = 0;
         }
       }
-      setVideo(srcList[activeIndex]);
 
-      // Do the same for the left button, but use -1
-      // also, the amount of circle buttons underneath should be the same as the list, change circle buttons so that it works like this too
+    else if (event.target.id == 'arrow-left') {
+        activeIndex -= 1;
+        if (activeIndex < 0 ) {
+           activeIndex = srcList.length - 1;
+       }
+       alert(activeIndex);
+      }  
+      setVideo(srcList[activeIndex]);
   }
 
 

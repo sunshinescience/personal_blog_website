@@ -190,7 +190,7 @@
 /* */
 #secTitle1{
    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
-   font-weight: 420;
+   font-weight: 410;
    text-align: center; 
    font-size: 1.35em;
    line-height: 1.2em;
@@ -202,5 +202,7 @@
    text-decoration: none; /* Removed underline hyperlinks */
    /* padding: 2px; */
 }
+
+
 
    

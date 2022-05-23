@@ -1,6 +1,3 @@
-.highlight {
-   color: #9ea7aa;
- }
 
 /* Portfolio page cards for content (nested) */
 .content-cards{
@@ -111,10 +108,19 @@
    background: black;
    color: white;
    width: 90vw;
-   height: 40vh;
+   height: 20vh;
    margin-bottom: 0;
    padding-bottom: 0;
 }
+
+.highlight {
+   color: #9ea7aa;
+ }
+
+ .highlight-2 {
+    color: black;
+    font-weight: 750;
+ }
 
 /* Portfolio project title */
 #portfolio-title {

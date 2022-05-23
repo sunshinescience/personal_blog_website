@@ -16,4 +16,9 @@ Created wireframes, web app design, component-based front-end development, JS, R
 
 For blog page, see: https://codepen.io/shawnlooi/pen/eeXmrQ
 
+If the page doesn't open, go to the site:
+http://127.0.0.1:5502/index.html
+
+Also, try:
+http://127.0.0.1:5502/portfolio/project-4-2022-apr-jam-app.html
 
