@@ -221,8 +221,8 @@
 
 #button-1 {
    background-color: black;
-   border: none;
-   padding: 5px 5px;
+   border: 1px solid black;
+   padding: 4.5px 4.5px;
    opacity: 1;
    transition: 0.3s;
    cursor: pointer;
@@ -241,9 +241,8 @@
 
 #button-2 {
   background-color: black;
-  border: none;
-  color: white;
-  padding: 5px 5px;
+  border: 1px solid black;
+  padding: 4.5px 4.5px;
   opacity: 1;
   transition: 0.3s;
   cursor: pointer;
@@ -262,9 +261,8 @@
 
 #button-3 {
    background-color: black;
-   border: none;
-   color: white;
-   padding: 5px 5px;
+   border: 1px solid black;
+   padding: 4.5px 4.5px;
    opacity: 1;
    transition: 0.3s;
    cursor: pointer;
@@ -283,13 +281,12 @@
 
 .arrow {
    cursor: pointer;
-   border: solid #edf0f1;;
+   border: solid #edf0f1;
    border-width: 0 3px 3px 0;
    display: inline-block;
    padding: 8px;
    /* transition: border 2s ease-out; */
 }
-
 
 .arrow:hover {
    border-color: black;

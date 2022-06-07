@@ -33,48 +33,21 @@
 
                         <div class="nested-vid-txt" onclick="getVideo(event)">
                             <div class="video-left-container" > 
-                               
-                                
                                 <div id="video-player"> 
                                     <!-- Add in autoplay loop next to controls below, if I can get loop working -->
                                     <video id="video" controls> 
                                         <source src="../images/Jamming_1_4.m4v" type="video/mp4">
                                         Your browser does not support the video tag.  
                                     </video>
-                                </div>                             
-                                
+                                </div>                                                            
                                 <div class="controls"> 
-                                    <!-- 
-                                    <p><i class="arrow right" onclick="showVideoRight()"></i></p> 
-                                    <p><i class="arrow left" onclick="showVideoLeft()"></i></p>
-                                    -->
-                                    <!-- 
-                                    <div id="button-1" onclick="setVideo('../images/Jamming_1_4.m4v')"></div>
-                                    <div id="button-2" onclick="setVideo('../images/Jamming_2_1.m4v')"></div>
-                                    <div id="button-3" onclick="setVideo('../images/Jamming_3_1.m4v')"></div>
-                                    -->
                                     <p><i id="arrow-right" class="arrow right"></i></p> 
                                     <p><i id="arrow-left" class="arrow left"></i></p>
                                     <div id="button-1"></div>
                                     <div id="button-2"></div>
                                     <div id="button-3"></div>
-                                </div>
-                                
+                                </div>                               
                             </div>
-
-                            <!-- Attempt 1 below, to get button and video working -->
-                            <!-- 
-                            <div class="video-view">
-                                <video class="video">
-                                    <source id="clickedVideo" src="../images/Jamming_1_4.m4v" type="video/mp4">
-                                    Your browser does not support the video tag.  
-                                </video>
-                                <div class="video-content">
-                                  <button id="button-1" onclick="playVideo()"></button>
-                                </div>
-                              </div>
-                            -->
-
                             <div class="project-text-right">
                                 <p id="secTitle1" class="sectionTitle">Ja<span class="highlight-2">mmm</span>ing</p>
                                 <p id="typography-portfolio-txt">I created a React app, which can be found <a href="http://jamjammm.surge.sh" id="typography-links">here</a>.</p>
@@ -85,18 +58,8 @@
                     </div>      
                 </div>
                 <div class="footer box">
-                    <a href="https://github.com/sunshinescience">
-                        <img class="social-media-logo" alt="Social media logo" src="../images/GitHub-Mark-Light-120px-plus.png"/>
-                    </a>
-                    <a href="https://https://www.linkedin.com/in/sunshine-abbott-3998777/">
-                        <img class="social-media-logo" alt="Social media logo" src="../images/linkedin-4-64.png"/>
-                    </a>
-                    <a href="https://twitter.com/SunshineAbbott1">
-                        <img class="social-media-logo" alt="Social media logo" src="../images/Twitter_Social_Icon_Circle_White.png"/>
-                    </a>
-                    <a href="https://www.facebook.com/sunshine.abbott">
-                        <img class="social-media-logo" alt="Social media logo" src="../images/f_logo_RGB-White_512.png"/>
-                    </a>
+                    <a href="https://github.com/sunshinescience" id="typography-footer">Github</a>
+                    <a href="https://www.linkedin.com/in/sunshine-abbott/" id="typography-footer">LinkedIn</a>
                 </div>
             </div>  
         <script src="../index.js"></script>     

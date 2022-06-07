@@ -42,5 +42,25 @@ function getVideo(event) {
     }
   
     setVideo(srcList[activeIndex]); // calling a function with the active video source in order to play the video
+    activeButton(activeIndex);
+}
+
+// This function highlights what active video you're on based on the three circle buttons below the video
+function activeButton(videoIndex) {
+    if (videoIndex == 0) {
+        document.getElementById('button-1').style.background = "#edf0f1";
+        document.getElementById('button-2').style.background = "black";
+        document.getElementById('button-3').style.background = "black";
+    }
+    else if (videoIndex == 1) {
+        document.getElementById('button-1').style.background = "black";
+        document.getElementById('button-2').style.background = "#edf0f1";
+        document.getElementById('button-3').style.background = "black";
+    }
+    else if (videoIndex == 2) {
+        document.getElementById('button-1').style.background = "black";
+        document.getElementById('button-2').style.background = "black";
+        document.getElementById('button-3').style.background = "#edf0f1";
+    }
 }
 
