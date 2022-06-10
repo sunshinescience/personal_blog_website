@@ -46,21 +46,28 @@ function getVideo(event) {
 }
 
 // This function highlights what active video you're on based on the three circle buttons below the video
+// Find a way to remove elements if button is non active - this will fix the problem of hovering when another button is clicked
 function activeButton(videoIndex) {
     if (videoIndex == 0) {
         document.getElementById('button-1').style.background = "#edf0f1";
         document.getElementById('button-2').style.background = "black";
-        document.getElementById('button-3').style.background = "black";
+        document.getElementById('button-3').style.background = "black"; 
+        document.getElementById('button-2').classList.add('hoverClass'); /* Adding in a hover to the button */
+        document.getElementById('button-3').classList.add('hoverClass'); /* Adding in a hover to the button */
     }
     else if (videoIndex == 1) {
         document.getElementById('button-1').style.background = "black";
         document.getElementById('button-2').style.background = "#edf0f1";
         document.getElementById('button-3').style.background = "black";
+        document.getElementById('button-1').classList.add('hoverClass'); /* Adding in a hover to the button */
+        document.getElementById('button-3').classList.add('hoverClass'); /* Adding in a hover to the button */
     }
     else if (videoIndex == 2) {
         document.getElementById('button-1').style.background = "black";
         document.getElementById('button-2').style.background = "black";
         document.getElementById('button-3').style.background = "#edf0f1";
+        document.getElementById('button-1').classList.add('hoverClass'); /* Adding in a hover to the button */
+        document.getElementById('button-2').classList.add('hoverClass'); /* Adding in a hover to the button */
     }
 }
 

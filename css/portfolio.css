@@ -222,7 +222,7 @@
 #button-1 {
    background-color: black;
    border: 1px solid black;
-   padding: 4.5px 4.5px;
+   padding: 3.5px 3.5px;
    opacity: 1;
    transition: 0.3s;
    cursor: pointer;
@@ -236,13 +236,20 @@
   }
  
 #button-1:hover {
-   opacity: 0.6;
+   /* opacity: 0.6; */
+   background-color: #edf0f1;
+   border: 1px solid #edf0f1; 
+}
+
+.hoverClass:hover {
+   background-color: #edf0f1 !important;
+   border: 1px solid #edf0f1 !important; 
 }
 
 #button-2 {
   background-color: black;
   border: 1px solid black;
-  padding: 4.5px 4.5px;
+  padding: 3.5px 3.5px;
   opacity: 1;
   transition: 0.3s;
   cursor: pointer;
@@ -256,13 +263,14 @@
  }
 
 #button-2:hover {
-    opacity: 0.6;
+   background-color: #edf0f1;
+   border: 1px solid #edf0f1; 
 }
 
 #button-3 {
    background-color: black;
    border: 1px solid black;
-   padding: 4.5px 4.5px;
+   padding: 3.5px 3.5px;
    opacity: 1;
    transition: 0.3s;
    cursor: pointer;
@@ -276,12 +284,14 @@
   }
  
 #button-3:hover {
-     opacity: 0.6;
+   background-color: #edf0f1;
+   border: 1px solid #edf0f1; 
 }
 
 .arrow {
    cursor: pointer;
-   border: solid #edf0f1;
+   /* border: solid #edf0f1; */
+   border: solid black;
    border-width: 0 3px 3px 0;
    display: inline-block;
    padding: 8px;
@@ -289,7 +299,7 @@
 }
 
 .arrow:hover {
-   border-color: black;
+   border-color: #edf0f1;
 }
 
 .right {
