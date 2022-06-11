@@ -215,7 +215,8 @@
    letter-spacing: 0.022em;
    /* margin: auto; */
    text-transform: uppercase;
-   color: #edf0f1;
+   /* color: #edf0f1; */
+   color: white;
    /* justify-content: center; */
    text-decoration: none; /* Removed underline hyperlinks */
    /* padding: 2px; */
@@ -232,7 +233,7 @@
   letter-spacing: 0.022em;
   /* margin: auto; */
   text-transform: uppercase;
-  color: #edf0f1;
+  color: white;
   /* justify-content: center; */
   text-decoration: none; /* Removed underline hyperlinks */
   padding: 5px;

@@ -114,12 +114,14 @@
 }
 
 .highlight {
-   color: #9ea7aa;
+   /* color: #9ea7aa; */
+   color: #cfe1e5;
  }
 
  .highlight-2 {
-    color: black;
-    font-weight: 750;
+    /* color: black; */
+    color: #9ea7aa;
+    font-weight: 450;
  }
 
 /* Portfolio project title */
@@ -222,7 +224,7 @@
 #button-1 {
    background-color: black;
    border: 1px solid black;
-   padding: 3.5px 3.5px;
+   padding: 3px 3px;
    opacity: 1;
    transition: 0.3s;
    cursor: pointer;
@@ -249,7 +251,7 @@
 #button-2 {
   background-color: black;
   border: 1px solid black;
-  padding: 3.5px 3.5px;
+  padding: 3px 3px;
   opacity: 1;
   transition: 0.3s;
   cursor: pointer;
@@ -270,7 +272,7 @@
 #button-3 {
    background-color: black;
    border: 1px solid black;
-   padding: 3.5px 3.5px;
+   padding: 3px 3px;
    opacity: 1;
    transition: 0.3s;
    cursor: pointer;
