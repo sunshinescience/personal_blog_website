@@ -2,17 +2,44 @@
 /* Portfolio page cards for content (nested) */
 .content-cards{
    display: grid;
-   grid-area: main;
-   grid-template-columns:  auto 3.8fr;
+   grid-template-columns:  620px;
    /* grid-template-rows: 200px 200px; */
-   grid-auto-rows: auto;
-   margin: 20px; /* Separates the cards */
+   grid-template-rows: 370px 250px;
+   margin: 15px; /* Separates the cards */
    grid-template-areas: 
-   "img-l txt-r";
+   "txt"
+   "img-l ";
    /* justify-content: center; */
    /* grid-gap: 1rem; */
    background-color: white;
    /* border: 2px solid black; */
+   /* position: relative; */
+}
+
+.card-layout{
+   display: grid;
+   grid-template-columns:  minmax(150px, 650px) minmax(150px, 650px) ;
+   grid-auto-rows: 620px;
+   margin: 20px; /* Separates the cards */
+   grid-template-areas: 
+   "card1 card2"
+   "card3 card4";
+}
+
+.card1{
+   grid-area: card1;
+}
+
+.card2{
+   grid-area: card2;
+}
+
+.card3{
+   grid-area: card3;
+}
+
+.card4{
+   grid-area: card4;
 }
 
 .content-card-left{
@@ -21,36 +48,43 @@
    background-size: cover;
    /* height: 150px; */
    /* width: 150px; */
-   max-width: 150px;
-   max-height: 150px;
+   max-width: 200px;
+   max-height: 200px;
    align-self: center;
    border: 2px solid orchid; 
-   padding-left: 40px;
-   padding-right: 40px;
+   
 }
 
 .content-card-right{
-   grid-area: txt-r;
+   grid-area: txt;
    /* text-align: left; */
    /* word-break: break-all; */
    word-wrap: break-word; 
-   /* border: 2px solid red; */
-   padding-top: 20px;
    /* display: flex; */
    /* justify-content: center; */ /* Align items horizontally */
    align-items: center;  /* Align items vertically using flexbox */
+   text-align: center;
    border: 2px solid red;
+
+   /*
+   margin: 0;
+   position: absolute;
+   top: 50%;
+   -ms-transform: translateY(-50%);
+   transform: translateY(-50%);
+   */ /* This, along with position: relative in content-cards, will position text vertically centered */
 }
 
 /* Nested grid for the area on right side of the card */
 .nested-content-card-right{
    display: grid;
    grid-template-columns: 100%;
-   grid-template-rows: 125px auto;
+   grid-template-rows: auto auto;
    grid-template-areas: 
    "c-intro"
    "c-read";
    /* border: 2px solid burlywood; */
+   text-align: center;
 }
 
 /*
@@ -62,19 +96,30 @@
 
 .card-intro{
    grid-area: c-intro; 
-   display: flex;
-   align-items: flex-end; /* Aligning text at the bottom of this section of the grid via flex*/
-   padding-bottom: 10px;
-   height: 125px;
+   padding-top: 120px;
+   padding-left: 40px;
+   padding-right: 40px;
+   margin-top: 0;
+   text-align: center;
+}
+
+.card-intro-title {
+   grid-area: c-intro; 
+   padding-top: 80px;
+   padding-left: 40px;
+   padding-right: 40px;
    margin-top: 0;
    margin-bottom: 10px;
+   text-align: center;
 }
 
 .card-continueReading{
    grid-area: c-read; 
+   /* display: flex; */
+   /* align-items: flex-end; */ /* Aligning text at the bottom of this section of the grid via flex*/
+   text-align: center;
    /* border: 2px solid gold; */
-   margin-top: 10px; 
-   padding-top: 30px; 
+   padding-top: 0px; 
    padding-bottom: 10px;
 }
 

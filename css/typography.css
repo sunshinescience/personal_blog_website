@@ -50,27 +50,20 @@
 }
 
  /* Main menu font */
-#typography-1-title{
-   font-family: Helvetica, arial, sans-serif;
-   font-weight: bold; 
-   text-align: left; 
-   font-size: 2.25em;
-   line-height: 2.2em;
-   text-transform: uppercase;
-   width: 98%;
+#typography-1-title{ 
    color: #000000;
-   text-decoration: none; /* Removed underline hyperlinks */
-   /* padding: 2px; */
+   font-size: 48px;
+   line-height: 1.05;
+   font-weight: 500;
+   letter-spacing: -.003em;
+   font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
 /* Text font for portfolio card */
 #typography-portfolio{
    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-   font-size: 1.5em;
-   line-height: .5em;
-   text-align: left;
-   padding-top: 15px; 
-   padding-bottom: 15px; 
+   font-size: 1.3em;
+   /* line-height: .5em; */
 }
  
  /* Main heading font (at the top of the pages) */
