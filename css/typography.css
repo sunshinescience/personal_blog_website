@@ -53,7 +53,6 @@
 #typography-1-title{ 
    color: #000000;
    font-size: 48px;
-   line-height: 1.05;
    font-weight: 500;
    letter-spacing: -.003em;
    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
@@ -63,7 +62,6 @@
 #typography-portfolio{
    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
    font-size: 1.3em;
-   /* line-height: .5em; */
 }
  
  /* Main heading font (at the top of the pages) */
@@ -164,7 +162,6 @@
 #typography-links{
    font-family: CallunaLghtRegular, Georgia, Cambria, serif, "Times New Roman", Times;
    font-size: 0.95em;
-   line-height: 1em;
    /* color: #2b8ee0; */
    /* color: #0d83e3; */
    color: rgb(3, 110, 216);

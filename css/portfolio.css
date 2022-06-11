@@ -4,7 +4,7 @@
    display: grid;
    grid-template-columns:  620px;
    /* grid-template-rows: 200px 200px; */
-   grid-template-rows: 370px 250px;
+   grid-template-rows: 330px 290px;
    margin: 15px; /* Separates the cards */
    grid-template-areas: 
    "txt"
@@ -48,11 +48,11 @@
    background-size: cover;
    /* height: 150px; */
    /* width: 150px; */
-   max-width: 200px;
-   max-height: 200px;
-   align-self: center;
-   border: 2px solid orchid; 
-   
+   max-width: 250px;
+   max-height: 250px;
+   /* border: 2px solid orchid; */
+   margin-left: auto;
+   margin-right: auto;
 }
 
 .content-card-right{
@@ -64,7 +64,7 @@
    /* justify-content: center; */ /* Align items horizontally */
    align-items: center;  /* Align items vertically using flexbox */
    text-align: center;
-   border: 2px solid red;
+   /* border: 2px solid red; */
 
    /*
    margin: 0;
@@ -79,8 +79,9 @@
 .nested-content-card-right{
    display: grid;
    grid-template-columns: 100%;
-   grid-template-rows: auto auto;
+   grid-template-rows: auto auto auto;
    grid-template-areas: 
+   "c-title"
    "c-intro"
    "c-read";
    /* border: 2px solid burlywood; */
@@ -96,7 +97,6 @@
 
 .card-intro{
    grid-area: c-intro; 
-   padding-top: 120px;
    padding-left: 40px;
    padding-right: 40px;
    margin-top: 0;
@@ -104,23 +104,22 @@
 }
 
 .card-intro-title {
-   grid-area: c-intro; 
+   grid-area: c-title; 
    padding-top: 80px;
    padding-left: 40px;
    padding-right: 40px;
    margin-top: 0;
-   margin-bottom: 10px;
    text-align: center;
 }
 
 .card-continueReading{
    grid-area: c-read; 
+   margin-top: 0;
    /* display: flex; */
    /* align-items: flex-end; */ /* Aligning text at the bottom of this section of the grid via flex*/
    text-align: center;
    /* border: 2px solid gold; */
    padding-top: 0px; 
-   padding-bottom: 10px;
 }
 
 /* Styles for an individual project page */
