@@ -10,12 +10,17 @@ body{
    margin:0;
    padding:0;
    height:100%;
+   /* background-color: #eef5f7; */
+   /* background-color: #eaeaea; */
    /* background-color: #cfd8dc; */
+   /* background-color: #e4eef4; */
+   /* background-color: #e8f1f7; */
+   /* background-color: #d0d8dd; */
+   /* background-color: #d3dbe0; */
+   background-color: #e2e8ed;;
    /* background-color: #dde4e6; */
-   background-color: #eef5f7; 
    /* background-color: #f6f6f8; */
-   /* background-color: #f0fafc; */
-   /* background-color: #f8feff; */
+   /* background-color: #f3f3f4; */
    font-size: 16px;
 }
 

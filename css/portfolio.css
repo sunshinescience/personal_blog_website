@@ -4,7 +4,7 @@
    display: grid;
    grid-template-columns:  620px;
    /* grid-template-rows: 200px 200px; */
-   grid-template-rows: 330px 290px;
+   grid-template-rows: 310px 310px;
    margin: 15px; /* Separates the cards */
    grid-template-areas: 
    "txt"
@@ -42,7 +42,7 @@
    grid-area: card4;
 }
 
-.content-card-left{
+.content-card-lower{
    grid-area: img-l;
    /* background: #4f5b62; */
    background-size: cover;
@@ -50,12 +50,13 @@
    /* width: 150px; */
    max-width: 250px;
    max-height: 250px;
-   /* border: 2px solid orchid; */
+   border: 2px solid orchid; 
    margin-left: auto;
    margin-right: auto;
+   height: 220px;
 }
 
-.content-card-right{
+.content-card-upper{
    grid-area: txt;
    /* text-align: left; */
    /* word-break: break-all; */
@@ -64,7 +65,7 @@
    /* justify-content: center; */ /* Align items horizontally */
    align-items: center;  /* Align items vertically using flexbox */
    text-align: center;
-   /* border: 2px solid red; */
+   border: 2px solid red; 
 
    /*
    margin: 0;
@@ -100,6 +101,7 @@
    padding-left: 40px;
    padding-right: 40px;
    margin-top: 0;
+   margin-bottom: 20px; /* Adjusts the last text, the continue reading text, below the grid intro text */
    text-align: center;
 }
 
