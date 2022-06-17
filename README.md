@@ -5,6 +5,8 @@
 
 TODO:
 About page: move menu to the right
+Portfolio page: Make responsive with various media sizes (things don't move properly when shrinking to smaller size)
+About page: Fix footer on smaller screen size (its moved up to below image)
 
 create a nested grid for treasure map project that includes:
 ROLE            RESPONSIBILITIES       URL

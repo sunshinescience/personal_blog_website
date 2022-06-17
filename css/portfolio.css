@@ -4,7 +4,7 @@
    display: grid;
    grid-template-columns:  620px;
    /* grid-template-rows: 200px 200px; */
-   grid-template-rows: 310px 310px;
+   grid-template-rows: 290px 330px;
    margin: 15px; /* Separates the cards */
    grid-template-areas: 
    "txt"
@@ -20,7 +20,6 @@
    display: grid;
    grid-template-columns:  minmax(150px, 650px) minmax(150px, 650px) ;
    grid-auto-rows: 620px;
-   margin: 20px; /* Separates the cards */
    grid-template-areas: 
    "card1 card2"
    "card3 card4";
@@ -50,7 +49,7 @@
    /* width: 150px; */
    max-width: 250px;
    max-height: 250px;
-   border: 2px solid orchid; 
+   /* border: 2px solid orchid; */
    margin-left: auto;
    margin-right: auto;
    height: 220px;
@@ -65,7 +64,7 @@
    /* justify-content: center; */ /* Align items horizontally */
    align-items: center;  /* Align items vertically using flexbox */
    text-align: center;
-   border: 2px solid red; 
+   /* border: 2px solid red; */
 
    /*
    margin: 0;
@@ -107,7 +106,7 @@
 
 .card-intro-title {
    grid-area: c-title; 
-   padding-top: 80px;
+   padding-top: 60px;
    padding-left: 40px;
    padding-right: 40px;
    margin-top: 0;
@@ -121,7 +120,7 @@
    /* align-items: flex-end; */ /* Aligning text at the bottom of this section of the grid via flex*/
    text-align: center;
    /* border: 2px solid gold; */
-   padding-top: 0px; 
+   padding-top: 0px;  /* Note that to move this relative to text above, go to typography.css and change the id portfolio-links margin-top */
 }
 
 /* Styles for an individual project page */

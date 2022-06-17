@@ -3,8 +3,9 @@
    display: grid;
    /*width: 100vw; */ /* Having width here caused overlap of the About page, so removing it fixed the problem. */
    height: 100%;
+   width: 100%;
    grid-template-columns: 1fr;
-   grid-template-rows: 90vh auto auto;
+   grid-template-rows: auto auto auto;
    /* border: 2px solid grey; */
    grid-template-areas: 
    "hi"
@@ -19,10 +20,11 @@
  .nested-content-top{
    display: grid;
    grid-area: hi;
-   /*width: 100vw; */ /* Having width here caused overlap of the About page, so removing it fixed the problem. */
+   /* width: 100vw; */ /* Having width here caused overlap of the About page, so removing it fixed the problem. */
    height: 100%;
-   grid-template-columns: 0.3fr 1.4fr 0.3fr;
-   grid-template-rows: 90vh;
+   width: 100%;
+   grid-template-columns: 1fr auto 1fr;
+   grid-template-rows: 70vh;
    /* border: 2px solid grey; */
    grid-template-areas: 
    "hi-l hi-m hi-r";
@@ -34,8 +36,6 @@
    /* display: flex; */
    grid-area: hi-l;
    background:  black;
-   /* align-items: center; */ /* Set this if inserting text here. */
-   /* justify-content: center; */ /* Set this if inserting text here. */
 }
 
 /* Top right part of content section, in the about page */
@@ -47,17 +47,29 @@
 .content-top-mid{
    grid-area: hi-m;
    background:  black;
-   height: 90vh;
+   /* display: block; */
+   margin-left: auto;
+   margin-right: auto;
 }
 
+.nameBio{
+   display: flex;
+   align-items: center;
+   justify-content: center; 
+   padding-bottom: 10px; 
+   font-size: 1.3rem;
+}
 
 #about-img{
-   background-image: url("../images/meOxfordcopy2.jpg");
-   height: 70vh;
+   /* 
+   background-image: url("../images/meOxfordcopy2.jpg"); 
    background-size: contain;
    background-repeat: no-repeat; 
-   /* background-position: center; */ /* Centered background image. */
+   background-position: center;  
    background-position: 100% 50%; 
+   */
+   height: 70vh;
+   background-color: black;
 }
 
 /* Top left text for first name */
@@ -77,7 +89,7 @@
 .content-mid{
    grid-area: mid;
    justify-content: center;
-   padding: 40px;
+   padding: 40px 400px;
    background: white;
 }
 

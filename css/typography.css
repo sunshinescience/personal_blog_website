@@ -74,10 +74,16 @@
  }
  
  /* Blog font*/
- #typography-4{
-     font-family: Georgia, Cambria, serif, "Times New Roman", Times;
-     font-size: 1.15em;
-     line-height: 1.2em;
+#typography-4{
+   /*font-family: Georgia, Cambria, serif, "Times New Roman", Times;
+   font-size: 1.15em;
+   line-height: 1.2em;
+   font-size: 21px; */
+   font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
+   font-size: 21px;
+   line-height: 1.38;
+   font-weight: 400;
+   letter-spacing: .011em;
  }
  
  /* Heading font for blog */
@@ -107,7 +113,7 @@
 
 #portfolio-links{
    margin-top: 0px;
-   font-size: 17px;
+   font-size: 18px;
    line-height: 1.47059;
    font-weight: 350;
    letter-spacing: .04em;
@@ -158,8 +164,9 @@
 #typography-name{
    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
    color: white;
+   font-weight: 350;
    /* font-size: 1.25em; */ /* This font size was used with a quote */
-   font-size: 3.25em;
+   font-size: 3em;
    line-height: 1.1em;
    padding-bottom: 15px; /* Used this to separate the sentence in the header from the main menu */
    text-align: center;
