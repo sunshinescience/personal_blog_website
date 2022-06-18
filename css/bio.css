@@ -23,7 +23,7 @@
    /* width: 100vw; */ /* Having width here caused overlap of the About page, so removing it fixed the problem. */
    max-height: 600px;
    width: 100%;
-   grid-template-columns: 1fr auto;
+   grid-template-columns: auto 1fr;
    grid-template-rows: auto;
    /* border: 2px solid grey; */
    grid-template-areas: 
@@ -36,14 +36,12 @@
    /* display: flex; */
    grid-area: hi-l;
    background:  black;
-   border: 2px solid blue;
 }
 
 /* Top right part of content section, in the about page */
 .content-top-right{
    grid-area: hi-r;
    background:  black;
-   border: 2px solid white;
 }
 
 .content-top-mid{
@@ -73,22 +71,80 @@
    */
    min-height: 400px;
    max-height: 600px;
-   float: right;
+   float: left;
 }
 
-/* Top left text for first name */
+/* Top left text for names */
+/*
 .top-left-first {
    position: absolute;
    top: 200px;
    left: 230px;
  }
 
- /* Top left text for last name */
 .top-left-last {
    position: absolute;
    top: 260px;
    left: 230px;
  }
+ */
+
+ .about-highlight {
+   /* color: #9ea7aa; */
+   color: #afbec2;
+ }
+
+.top-about-name{
+   position: absolute;
+   top: 200px;
+   left: 580px;
+}
+
+.top-about-role{
+   position: absolute;
+   top: 325px;
+   left: 580px;
+}
+
+/* Thick red border */
+hr.contact1 {
+   /* border: .5px solid white; */
+   width: 250px;
+   position: absolute;
+   top: 450px;
+   left: 580px;
+ }
+
+ hr.contact2 {
+   width: 250px;
+   position: absolute;
+   top: 450px;
+   left: 860px;
+ }
+
+.top-about-contact{
+   position: absolute;
+   top: 470px;
+   left: 580px;
+}
+
+.top-about-location{
+   position: absolute;
+   top: 470px;
+   left: 860px;
+}
+
+.top-about-contact1{
+   position: absolute;
+   top: 500px;
+   left: 580px;
+}
+
+.top-about-location1{
+   position: absolute;
+   top: 500px;
+   left: 860px;
+}
 
 .content-mid{
    grid-area: mid;
