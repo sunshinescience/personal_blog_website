@@ -100,6 +100,12 @@
    left: 580px;
 }
 
+.top-about-name1{
+   position: absolute;
+   top: 240px;
+   left: 580px;
+}
+
 .top-about-role{
    position: absolute;
    top: 325px;

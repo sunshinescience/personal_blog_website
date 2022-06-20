@@ -174,15 +174,14 @@ body{
    width: 100%; /* This fits the width of the image inside the thumbnail */
 }
 
- /* Nested grid for content on the blog post page */
+ /* Nested grid for content on the blog post pages */
 .nested-grid-content{
    display: grid;
-   background: white;
+   background: #f2f7fc;
    grid-template-columns: 1fr;
+   width: 100vw;
    grid-template-rows: auto auto auto auto auto;
    /* grid-gap: 15px; */
-   padding-left: 15px; 
-   padding-right: 15px; 
    grid-template-areas: 
    "title"
    "date"
@@ -194,6 +193,23 @@ body{
 .nested-grid-content > *{
    margin: 0;
    padding: 5px;
+}
+
+.title-area-background{
+   /* background-color: #f2f7fc; */
+   background-color: #fafcff;
+   padding-left: 300px; 
+   padding-right: 300px; 
+   padding-bottom: 60px;
+   padding-top: 30px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.blog-post-background{
+   background-color: white;
+   padding-left: 300px; 
+   padding-right: 300px; 
 }
 
 .date{
