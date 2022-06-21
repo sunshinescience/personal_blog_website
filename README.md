@@ -4,11 +4,11 @@
 <img src="/images/blog_homepage.png" width="500" height="400">
 
 TODO:
-Post page: get text to not move with resize. 
-    Fix date and title
+Post page: get text to not move with resize
         Fix footer
 About page: move menu to the right
 Portfolio page: Make responsive with various media sizes (things don't move properly when shrinking to smaller size)
+    see https://www.w3schools.com/css/css_align.asp
 About page: Fix footer on smaller screen size (its moved up to below image)
 
 create a nested grid for treasure map project that includes:

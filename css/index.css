@@ -177,16 +177,12 @@ body{
  /* Nested grid for content on the blog post pages */
 .nested-grid-content{
    display: grid;
-   background: #f2f7fc;
+   /* background: #f2f7fc; */
    grid-template-columns: 1fr;
    width: 100vw;
-   grid-template-rows: auto auto auto auto auto;
+   grid-template-rows: auto;
    /* grid-gap: 15px; */
    grid-template-areas: 
-   "title"
-   "date"
-   "img"
-   "cap"
    "post";
    }
    
@@ -195,37 +191,66 @@ body{
    padding: 5px;
 }
 
+.nested-title{
+   display: grid;
+   background-color: #fafcff;
+   grid-template-columns: 1fr;
+   width: 100%;
+   margin-left: 0;
+   margin-right: 0;
+   width: 100vw;
+   grid-template-rows: auto auto auto auto;
+   grid-template-areas: 
+   "title"
+   "date"
+   "img"
+   "cap";
+}
+
 .title-area-background{
-   /* background-color: #f2f7fc; */
    background-color: #fafcff;
    padding-left: 300px; 
    padding-right: 300px; 
    padding-bottom: 60px;
    padding-top: 30px;
-   margin-left: auto;
-   margin-right: auto;
+   border: 2px solid #5378a3;
+}
+
+.title-area-centered{
+   border: 2px solid pink;
+   
+   /*
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   */
+   
 }
 
 .blog-post-background{
    background-color: white;
    padding-left: 300px; 
    padding-right: 300px; 
+   border: 2px solid #9ea7aa;
 }
 
 .date{
    grid-area: date;
    padding-top: 5px;
-   padding-bottom: 15px;
+   padding-bottom: 5px;
+   margin-bottom: 15px;
    text-align: left;
 }
 
 .blog-title{
    grid-area: title;
+   margin-top: 0;
 }
 
 .blog-image{
    grid-area: img;
-   justify-self: center; /* centering the image */
+   /* justify-self: center; */ /* centering the image */
+   
 }
 
 .blog-image-caption{
@@ -236,6 +261,16 @@ body{
 
 .blog-post{
    grid-area: post;
+}
+
+#post-txt{
+   display: inline-block;
+   text-align: left;
+   min-width: 400px;
+   /* white-space:nowrap;
+   overflow:hidden;
+   text-overflow:ellipsis;
+   */
 }
 
 /* Setting the style for a figure(s) in a blog */

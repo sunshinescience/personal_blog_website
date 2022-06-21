@@ -58,6 +58,14 @@
    letter-spacing: -.003em;
 }
  
+#typography-1-subtitle{ 
+   font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+   color: #000000;
+   font-size: 30px;
+   font-weight: 500;
+   letter-spacing: -.003em;
+}
+
  /* Main heading font (at the top of the pages) */
  #typography-2{
     font-family: Georgia, serif, Times;
@@ -217,8 +225,9 @@
 #typography-date{
    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
    color: #9ea7aa;
-   font-size: 0.8em;
+   font-size: 0.9em;
    line-height: 1em;
+   letter-spacing: 0.022em;
 }
 
 #typography-links{
