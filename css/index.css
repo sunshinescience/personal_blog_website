@@ -213,25 +213,18 @@ body{
    padding-right: 300px; 
    padding-bottom: 60px;
    padding-top: 30px;
-   border: 2px solid #5378a3;
+   /* border: 2px solid #5378a3; */
 }
 
 .title-area-centered{
-   border: 2px solid pink;
-   
-   /*
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   */
-   
+   background-color: #fafcff;
+   /* border: 2px solid pink; */
 }
 
 .blog-post-background{
    background-color: white;
    padding-left: 300px; 
    padding-right: 300px; 
-   border: 2px solid #9ea7aa;
 }
 
 .date{
@@ -250,7 +243,6 @@ body{
 .blog-image{
    grid-area: img;
    /* justify-self: center; */ /* centering the image */
-   
 }
 
 .blog-image-caption{
@@ -283,6 +275,34 @@ body{
 /* Setting the style for a figure caption in a blog */
 .blog-figure-caption{
    text-align: center;
+}
+
+.code {
+   font-family: Consolas,"courier new";
+   color: black;
+   background-color: #f1f1f1;
+   font-size: 1em;
+   line-height: 0.85;
+   width: 100%;
+   height: auto;  
+   padding: 20px; 
+   box-sizing: border-box;
+}
+
+.code-inline {
+   font-family: Consolas,"courier new";
+   color: black;
+   background-color: #f1f1f1;
+   font-size: 1em; 
+   width: 100%;
+   height: auto;  
+   padding: 2px 10px; 
+   box-sizing: border-box;
+}
+
+.indent{
+   display:inline-block; /* Need display set to inline-block to get text-indent to work */
+   text-indent: 50px;
 }
 
 /* Creating subscribe button for blogs, to be used in the future */
@@ -344,7 +364,68 @@ code {
 
 #codeBlock {
    background-color: #eee;
-   font-family: 'Consolas'; 'Monaco'; 'Lucida Console'; 'Liberation Mono'; 'DejaVu Sans Mono';
+   font-family: 'Consolas', 'Monaco', 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono';
+}
+
+ul.list-circle {
+   list-style-type: circle;
+}
+
+.circle {
+   list-style-type: circle;
+}
+
+li.circle { 
+   display: inline-block;
+   width: 100%;
+   margin: 10px;   
+}
+
+ul li {
+   margin: 0 1.5rem 0 0;
+ }
+
+.photo-gallery{
+   width: 1fr;
+   height: 200px;
+   /* border: 5px solid black; */
+   padding-bottom: 0;
+}
+
+/* Designating images in the image gallery */
+#one{
+   background-image: url("../images/germanyMe.jpg");
+   background-size: cover;
+   border: 5px solid black; 
+}
+
+#two{
+   background-image: url("../images/DSC_0462copy.jpg");
+   background-size: cover;
+   border-top: 5px solid black; 
+   border-bottom: 5px solid black; 
+}
+
+#three{
+   background-image: url("../images/DSC_0565.JPG");
+   background-size: cover;
+   border: 5px solid black; 
+}
+
+#four{
+   background-image: url("../images/DSC_0405copy.JPG");
+   background-size: cover;
+}
+
+ .img-example{
+   padding-left: auto;
+   padding-right: auto;
+}
+
+.nested-img-example{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr;
 }
 
 /* Tablet screen width size, note the width should be 480px */

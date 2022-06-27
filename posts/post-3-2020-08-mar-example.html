@@ -34,13 +34,83 @@
                         </div>
                         <div id="typography-4" class="blog-post-background">
                             <div id="post-txt">
+                                <p id="typography-1-subtitle">Image gallery</p>
+                                <p>I made an image gallery and tried a few things to get items to lign up horizontally. I also wanted them in a specific order. 
+                                    It seems that there are a few ways to get images to line up side by side: 
+                                </p>
+                                <ul class="list-circle">
+                                    <li class="circle">1.) Use <span class="code-inline">float:left</span> but note that you have to clear the float using <span class="code-inline">overflow:hidden</span> on parent element.</li>
+                                    <li class="circle">2.) Use <span class="code-inline">white-space: nowrap</span> on the parent 
+                                        element and use <span class="code-inline">display: inline</span>on the child element.</li>
+                                    <li class="circle">3.) Set a background-image for the element.</li>
+                                </ul>
+                                <p>The first two didn't work in this instance. An example of the third is as follows: 
+                                </p>
+                                <div class="code">
+                                    CSS<br><br><br><br>
+                                    /* Designating images in the image gallery */<br><br>
+                                    #one{<br><br>
+                                    <span class="indent">background-image: url("../images/image1.jpg");</span><br><br>
+                                    <span class="indent">background-size: cover;</span><br><br>
+                                    <span class="indent">border: 5px solid black;</span><br><br>
+                                    }<br><br>
+
+                                    #two{<br><br>
+                                        <span class="indent">background-image: url("../images/image2.jpg");</span><br><br>
+                                        <span class="indent">background-size: cover;</span><br><br>
+                                        <span class="indent">border: 5px solid black;</span><br><br>
+                                        }<br><br>
+                                    
+                                    #three{<br><br>
+                                        <span class="indent">background-image: url("../images/image3.jpg");</span><br><br>
+                                        <span class="indent">background-size: cover;</span><br><br>
+                                        <span class="indent">border: 5px solid black;</span><br><br>
+                                        }    
+                                    <br><br><br><br>
+                                    HTML<br><br><br><br>
+                                    <span class="code-inline"><</span>div>
+                                    <!-- *******Fix HTML here and below -->
+                                </div>
+                                <br>
+                                <div>
+                                    <div class="img-example">
+                                        <div class="nested-img-example">
+                                            <div id="one" class="photo-gallery"></div>
+                                            <div id="two" class="photo-gallery"></div>
+                                            <div id="three" class="photo-gallery"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p> The third worked, but I still wanted to be more flexible.</p>
+                                <p>Enter Flexbox.</p>
                                 <p class="blog-title" id="typography-1-subtitle">Flexbox</p>
-                                <p>Flexbox is a CSS Layout Module that makes it easy to design a flexible responsive layout structure.</p>
+                                <p>Flexbox is a CSS Layout Module that makes it easy to design a flexible responsive layout structure, without using float or positioning.</p>
                                 <p>To get started, define a flex container.</p>  
+                                <div class="code">
+                                    .container {<br><br>
+                                        <span class="indent">display: flex; /* or inline-flex */</span><br><br>
+                                      }
+                                </div>
                                 <p>A Flexible Layout needs to have a parent element with the <em>display</em> property set to <em>flex</em>.</p>
-                                <p>Direct child elements of the flexible container automatically become flexible items.</p>  
+                                <p>Direct child elements of the flexible container automatically become flexible items. If images need to be side by side, 
+                                    here is an example below:</p>  
+                                <div class="code">
+                                    Flexbox<br><br><br><br>
+                                    /* flex container */<br><br>
+                                    .image-container {<br><br>
+                                    display: flex;<br><br>
+                                    flex-wrap: no-wrap;<br><br>
+                                    margin: 20px;<br><br>
+                                    }<br><br><br><br>
+
+                                    .image-container > div {<br><br>
+                                    width: 100%;<br><br>
+                                    margin: 5px;<br><br>
+                                    }<br><br>
+                                </div>div>
                                 <p>See https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container</p>
                             </div>
+                            <p>And using CSS Grid and Flex together - now that's a beautiful thing.</p>
                             <p>
                                 In my previous <a href="post-2-2020-24-feb-intro-making-site.html" id="typography-links">post</a>, 
                                 I discussed two brief examples of how to keep the footer at the bottom of the page.  
@@ -52,18 +122,8 @@
                     </div>
                 </div>
                 <div class="footer box">
-                    <a href="https://github.com/sunshinescience">
-                        <img class="social-media-logo" alt="Social media logo" src="../images/GitHub-Mark-Light-120px-plus.png"/>
-                    </a>
-                    <a href="https://https://www.linkedin.com/in/sunshine-abbott-3998777/">
-                        <img class="social-media-logo" alt="Social media logo" src="../images/linkedin-4-64.png"/>
-                    </a>
-                    <a href="https://twitter.com/SunshineAbbott1">
-                        <img class="social-media-logo" alt="Social media logo" src="../images/Twitter_Social_Icon_Circle_White.png"/>
-                    </a>
-                    <a href="https://www.facebook.com/sunshine.abbott">
-                        <img class="social-media-logo" alt="Social media logo" src="../images/f_logo_RGB-White_512.png"/>
-                    </a>
+                    <a href="https://github.com/sunshinescience" id="typography-footer">Github</a>
+                    <a href="https://www.linkedin.com/in/sunshine-abbott/" id="typography-footer">LinkedIn</a>
                 </div>
             </div>      
     </body>

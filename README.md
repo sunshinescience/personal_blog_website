@@ -4,12 +4,22 @@
 <img src="/images/blog_homepage.png" width="500" height="400">
 
 TODO:
-Post page: get text to not move with resize
-        Fix footer
-About page: move menu to the right
+All pages: 
+    make respponsive
+    Fix bottom part, use arrows and text to scroll through pages in blogs and portfolio and have black background
+Post pages: get text to not move with resize
+        Change previous post and next post to their title with an arrow, in a black background
+        Fix all post pages to have same styles as post-3
+About page: 
+    Make photo gallery
+    move menu to the right
+    Fix footer on smaller screen size (its moved up to below image)
 Portfolio page: Make responsive with various media sizes (things don't move properly when shrinking to smaller size)
     see https://www.w3schools.com/css/css_align.asp
-About page: Fix footer on smaller screen size (its moved up to below image)
+    Fix all portfolio pages to have same styles as project-4
+Footer: add Python blog?
+Post page number 3: make list have bullets
+
 
 create a nested grid for treasure map project that includes:
 ROLE            RESPONSIBILITIES       URL
