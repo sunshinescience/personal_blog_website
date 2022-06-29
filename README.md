@@ -19,6 +19,8 @@ Portfolio page: Make responsive with various media sizes (things don't move prop
     Fix all portfolio pages to have same styles as project-4
 Footer: add Python blog?
 Post page number 3: make list have bullets
+In my posts page, use a photo gallery, and on hover, make transparency less using opaque, and bring the title of the article down
+First blog post - fix image with date
 
 
 create a nested grid for treasure map project that includes:
