@@ -305,6 +305,11 @@ body{
    text-indent: 50px;
 }
 
+.indent-twice{
+   display:inline-block; /* Need display set to inline-block to get text-indent to work */
+   text-indent: 100px;
+}
+
 /* Creating subscribe button for blogs, to be used in the future */
 /* The button does not subscribe, that is beyond the scope of this site, for now */
 .button{

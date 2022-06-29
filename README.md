@@ -20,7 +20,8 @@ Portfolio page: Make responsive with various media sizes (things don't move prop
 Footer: add Python blog?
 Post page number 3: make list have bullets
 In my posts page, use a photo gallery, and on hover, make transparency less using opaque, and bring the title of the article down
-First blog post - fix image with date
+
+HTML entities can be found here: https://devpractical.com/display-html-tags-as-plain-text/
 
 
 create a nested grid for treasure map project that includes:
