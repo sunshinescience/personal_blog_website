@@ -159,7 +159,6 @@ hr.contact1 {
    background-color: black;
 }
 
-
 .nested-content-bottom{
    display: grid;
    overflow: hidden;
@@ -168,6 +167,8 @@ hr.contact1 {
    grid-template-areas: 
    "gallery-up-l gallery-up-m gallery-up-r";
 }
+
+
 
 .gallery-up-l {
    display: grid;
@@ -279,6 +280,13 @@ hr.contact1 {
 .image-container > div {
    width: 100%;
    margin: 5px;
+}
+
+.img-example-container1{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr;
+   background-color: #afbec2;
 }
 
 .column {

@@ -80,6 +80,13 @@
  #typography-3{
     font-family: Menlo, Monaco, "Courier New", Courier, monospace, Andale Mono, Verdana;
  }
+
+ /* Comment font */
+#typography-font{
+   font-family: Menlo, Monaco, "Courier New", Courier, monospace, Andale Mono, Verdana;
+   font-size: 0.85em;
+   color: green;
+}
  
  /* Blog font*/
 #typography-4{
@@ -300,4 +307,6 @@
   padding: 5px;
 }
 
-   
+#comment-text{
+
+}  

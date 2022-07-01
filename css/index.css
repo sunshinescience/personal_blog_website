@@ -399,9 +399,10 @@ ul li {
 
 /* Designating images in the image gallery */
 #one{
-   background-image: url("../images/germanyMe.jpg");
+   background-image: url("../images/Zion2009.jpg");
    background-size: cover;
    border: 5px solid black; 
+   background-repeat: no-repeat;
 }
 
 #two{
@@ -409,12 +410,14 @@ ul li {
    background-size: cover;
    border-top: 5px solid black; 
    border-bottom: 5px solid black; 
+   background-repeat: no-repeat;
 }
 
 #three{
    background-image: url("../images/DSC_0565.JPG");
    background-size: cover;
    border: 5px solid black; 
+   background-repeat: no-repeat;
 }
 
 #four{
@@ -422,7 +425,7 @@ ul li {
    background-size: cover;
 }
 
- .img-example{
+.img-example{
    padding-left: auto;
    padding-right: auto;
 }
