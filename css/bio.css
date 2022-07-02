@@ -308,10 +308,14 @@ hr.contact1 {
    flex-wrap: nowrap;
 }
  
-.flex-container > div {
-   min-width: 180px; 
-   object-fit: contain;
+.flex-container-nested2 {
+   display: flex;
+   background-color: black;
+   justify-content: center;
+   flex-wrap: wrap;
+   flex-direction: column;
 }
+ 
 
 .column {
    float: left;
