@@ -289,6 +289,19 @@ hr.contact1 {
    background-color: #afbec2;
 }
 
+.flex-container {
+   display: flex;
+   flex-wrap: nowrap;
+   background-color: DodgerBlue;
+   padding: 10px;
+ }
+ 
+ .flex-container > div {
+   min-width: 180px;
+   margin: 5px;
+   object-fit: contain;
+ }
+
 .column {
    float: left;
    width: 33.33%;

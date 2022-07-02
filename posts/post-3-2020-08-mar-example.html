@@ -45,7 +45,7 @@
                                 </ul>
                                 <p>The first two didn't work in this instance. An example of the third is as follows: 
                                 </p>
-                                <div class="code-inline">
+                                <div class="code">
                                     <b>CSS</b><br><br>
                                     /* Designating images in the image gallery */<br>
                                     #one{<br>
@@ -117,6 +117,7 @@
                                 <p>...enter Flexbox.</p>
                                 <p class="blog-title" id="typography-1-subtitle">Flexbox</p>
                                 <p>Flexbox is a CSS Layout Module that makes it easy to design a flexible responsive layout structure, without using float or positioning.</p>
+                                <h4>Flex Container</h4>
                                 <p>To get started, define a flex container.</p>  
                                 <div class="code">
                                     .container {<br><br>
@@ -124,9 +125,12 @@
                                       }
                                 </div>
                                 <p>A Flexible Layout needs to have a parent element with the <em>display</em> property set to <em>flex</em>.</p>
-                                <p>Then, direct child elements of the flexible container are flexible items. If images need to be side by side, 
-                                    here is an example below:</p>  
-                                <div class="code-inline">
+                                <p>Then, direct child elements of the flexible container are flexible items. Here is an example below:</p>  
+                                
+
+
+                                <!-- Beginning of using CSS grid with Flexbox-->
+                                <div class="code">
                                     CSS<br><br>
                                     /* flex container */<br>
                                     .image-container {<br>
@@ -168,7 +172,53 @@
                                             <div class="gallery-up-r"><img src="../images/Zion2021_1.JPG" alt="Baby in hat" width="240" height="180"></div> 
                                         </div>
                                     </div>
-                                <p>Note that in the above photo gallery, the flex container is shown in gray, whereas the flex items are the images.</p>
+                                    <!-- End using CSS grid -->
+
+
+
+                                    <p>Note that in the below image gallery, the flex container is shown in blue, whereas the flex items are the images.
+                                        A container with <span class="code-inline">flex-wrap: nowrap;</span> will never wrap its items. 
+                                        In the image gallery below, the following code is used:
+                                    </p> 
+                                    <div class="code">
+                                        <b>CSS</b><br><br>
+                                        .flex-container {<br>
+                                            <span class="indent">display: flex;</span><br>
+                                            <span class="indent">flex-wrap: nowrap;</span><br>
+                                            <span class="indent">background-color: DodgerBlue;</span><br>
+                                            <span class="indent">padding: 10px;</span><br>
+                                        }<br><br>
+                                          
+                                        .flex-container > div {<br>
+                                            <span class="indent">min-width: 180px;</span><br>
+                                            <span class="indent">margin: 5px;</span><br>
+                                            <span class="indent">object-fit: contain;</span><br>
+                                        }<br><br>
+                                        <b>HTML</b><br><br>
+                                        <span>&lt;div class="flex-container"&gt;</span><br>
+                                        <span class="indent">&lt;div&gt; &lt;img src="../images/HydePark1.jpg" width="240" height="180"&gt; &lt;/div&gt;</span><br>
+                                        <span class="indent">&lt;div&gt; &lt;img src="../images/ZenRocks1.jpg" width="240" height="180"&gt; &lt;/div&gt;</span><br>
+                                        <span class="indent">&lt;div&gt; &lt;img src="../images/Zion1.jpg" width="240" height="180"&gt; &lt;/div&gt;</span><br>
+                                        <span>&lt;/div&gt;</span> 
+                                    </div>
+                                    <br>                            
+                                    <div class="flex-container">
+                                        <div><img src="../images/HydePark2012.jpg" alt="Death Valley" width="240" height="180"></div>
+                                        <div><img src="../images/Zen.jpg" alt="Family at the ocean" width="240" height="180"></div>
+                                        <div><img src="../images/Zion2021_1.JPG" alt="Baby in hat" width="240" height="180"></div> 
+                                    </div>
+                                <p>
+                                    The flex container properties are:
+                                    <ul>
+                                        <li>flex-direction</li>
+                                        <li>flex-wrap</li>
+                                        <li>flex-flow</li>
+                                        <li>justify-content</li>
+                                        <li>align-items</li>
+                                        <li>align-content</li>
+                                    </ul>   
+
+                                </p>
                                 <p>For more information, see the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container" id="typography-links">documentation</a>.</p>
                                 <p>And using CSS Grid and Flex together - now that's a beautiful thing.</p>
                                 <p>
