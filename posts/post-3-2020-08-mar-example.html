@@ -125,101 +125,54 @@
                                       }
                                 </div>
                                 <p>A Flexible Layout needs to have a parent element with the <em>display</em> property set to <em>flex</em>.</p>
-                                <p>Then, direct child elements of the flexible container are flexible items. Here is an example below:</p>  
+                                <p>Then, direct child elements of the flexible container are flexible items.</p>  
+                                <p>Note that in the below image gallery, the flex container is shown in blue, whereas the flex items are the images.
+                                    A container with <span class="code-inline">flex-wrap: nowrap;</span> will never wrap its items. 
+                                    In the image gallery below, the following code is used:
+                                </p> 
                                 
-
-
-                                <!-- Beginning of using CSS grid with Flexbox-->
                                 <div class="code">
-                                    CSS<br><br>
-                                    /* flex container */<br>
-                                    .image-container {<br>
-                                    display: flex;<br>
-                                    flex-wrap: no-wrap;<br>
-                                    margin: 20px;<br>
+                                    <b>CSS</b><br><br>
+                                    .flex-container {<br>
+                                        <span class="indent">display: flex;</span><br>
+                                        <span class="indent">flex-wrap: nowrap;</span><br>
+                                        <span class="indent">background-color: DodgerBlue;</span><br>
+                                        <span class="indent">padding: 10px;</span><br>
                                     }<br><br>
-
-                                    .image-container > div {<br>
-                                    width: 100%;<br>
-                                    margin: 5px;<br>
+                                      
+                                    .flex-container > div {<br>
+                                        <span class="indent">min-width: 180px;</span><br>
+                                        <span class="indent">margin: 5px;</span><br>
+                                        <span class="indent">object-fit: contain;</span><br>
                                     }<br><br>
-
-                                    .img-example-container1{<br>
-                                        display: grid;<br>
-                                        grid-template-columns: 1fr 1fr 1fr;<br>
-                                        grid-template-rows: 1fr;<br>
-                                    }<br><br>
-
-                                    HTML<br>  
-                                    <p>
-                                        <span> &lt;div class="img-example-container1"&gt; </span><br>
-                                        <span id="typography-font">&lt;!-- Note that grid here keeps the photos from moving away from each other when the page is widened --&gt;</span>
-                                        <br>
-                                        
-                                        <span class="indent">&lt;div class="image-container"&gt;</span><br>
-                                            <span class="indent-twice">&lt;div class="gallery-up-l"&gt;&lt;img src="../images/HydePark1.jpg" width="240" height="180"&gt;&lt;/div&gt;</span><br>
-                                            <span class="indent-twice">&lt;div class="gallery-up-m"&gt;&lt;img src="../images/ZenRocks1.jpg" width="240" height="180"&gt;&lt;/div&gt;</span><br>
-                                            <span class="indent-twice">&lt;div class="gallery-up-r"&gt;&lt;img src="../images/Zion1.jpg" width="240" height="180"&gt;&lt;/div&gt;</span><br>
-                                        <span class="indent">&lt;/div&gt;</span><br>
-                                        <span>&lt;/div&gt;</span>
-                                    </p> 
-                                </div>                                                      
-                                <br>
-                                    <div class="img-example-container1"> <!-- Note that grid here keeps the photos from moving away from each other when the page is widened -->
-                                        <div class="image-container">
-                                            <div class="gallery-up-l"><img src="../images/HydePark2012.jpg" alt="Death Valley" width="240" height="180"></div>
-                                            <div class="gallery-up-m"><img src="../images/Zen.jpg" alt="Family at the ocean" width="240" height="180"></div>
-                                            <div class="gallery-up-r"><img src="../images/Zion2021_1.JPG" alt="Baby in hat" width="240" height="180"></div> 
-                                        </div>
-                                    </div>
-                                    <!-- End using CSS grid -->
-
-
-
-                                    <p>Note that in the below image gallery, the flex container is shown in blue, whereas the flex items are the images.
-                                        A container with <span class="code-inline">flex-wrap: nowrap;</span> will never wrap its items. 
-                                        In the image gallery below, the following code is used:
-                                    </p> 
-                                    <div class="code">
-                                        <b>CSS</b><br><br>
-                                        .flex-container {<br>
-                                            <span class="indent">display: flex;</span><br>
-                                            <span class="indent">flex-wrap: nowrap;</span><br>
-                                            <span class="indent">background-color: DodgerBlue;</span><br>
-                                            <span class="indent">padding: 10px;</span><br>
-                                        }<br><br>
-                                          
-                                        .flex-container > div {<br>
-                                            <span class="indent">min-width: 180px;</span><br>
-                                            <span class="indent">margin: 5px;</span><br>
-                                            <span class="indent">object-fit: contain;</span><br>
-                                        }<br><br>
-                                        <b>HTML</b><br><br>
-                                        <span>&lt;div class="flex-container"&gt;</span><br>
-                                        <span class="indent">&lt;div&gt; &lt;img src="../images/HydePark1.jpg" width="240" height="180"&gt; &lt;/div&gt;</span><br>
-                                        <span class="indent">&lt;div&gt; &lt;img src="../images/ZenRocks1.jpg" width="240" height="180"&gt; &lt;/div&gt;</span><br>
-                                        <span class="indent">&lt;div&gt; &lt;img src="../images/Zion1.jpg" width="240" height="180"&gt; &lt;/div&gt;</span><br>
-                                        <span>&lt;/div&gt;</span> 
-                                    </div>
-                                    <br>                            
-                                    <div class="flex-container">
-                                        <div><img src="../images/HydePark2012.jpg" alt="Death Valley" width="240" height="180"></div>
-                                        <div><img src="../images/Zen.jpg" alt="Family at the ocean" width="240" height="180"></div>
-                                        <div><img src="../images/Zion2021_1.JPG" alt="Baby in hat" width="240" height="180"></div> 
-                                    </div>
+                                    <b>HTML</b><br><br>
+                                    <span>&lt;div class="flex-container"&gt;</span><br>
+                                    <span class="indent">&lt;div&gt; &lt;img src="../images/HydePark1.jpg" width="240" height="180"&gt; &lt;/div&gt;</span><br>
+                                    <span class="indent">&lt;div&gt; &lt;img src="../images/ZenRocks1.jpg" width="240" height="180"&gt; &lt;/div&gt;</span><br>
+                                    <span class="indent">&lt;div&gt; &lt;img src="../images/Zion1.jpg" width="240" height="180"&gt; &lt;/div&gt;</span><br>
+                                    <span>&lt;/div&gt;</span> 
+                                </div>
+                                <br>  
+                                <div class="img-example-container1">
+                                    <div class="gallery-up-l"><img src="../images/HydePark2012.jpg" alt="Death Valley" width="240" height="180"></div>
+                                    <div class="gallery-up-m"><img src="../images/Zen.jpg" alt="Family at the ocean" width="240" height="180"></div>
+                                    <div class="gallery-up-r"><img src="../images/Zion2021_1.JPG" alt="Baby in hat" width="240" height="180"></div> 
+                                </div> 
+                                       
                                 <p>
                                     The flex container properties are:
                                     <ul>
-                                        <li>flex-direction</li>
-                                        <li>flex-wrap</li>
-                                        <li>flex-flow</li>
-                                        <li>justify-content</li>
-                                        <li>align-items</li>
-                                        <li>align-content</li>
+                                        <li><b>flex-direction</b> - The direction of the flexible items inside a flex container</li>
+                                        <li><b>flex-wrap</b> - Whether or not flex items should wrap</li>
+                                        <li><b>flex-flow</b> - Shorthand property for flex-direction and flex-wrap</li>
+                                        <li><b>justify-content</b> - Horizontally aligns the flex items</li>
+                                        <li><b>align-items</b> - Vertically aligns the flex items</li>
+                                        <li><b>align-content</b> - Modifies the behavior of the flex-wrap property. It is similar to align-items, but it aligns flex lines</li>
                                     </ul>   
 
                                 </p>
-                                <p>For more information, see the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container" id="typography-links">documentation</a>.</p>
+                                <p>For more information see the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container" id="typography-links">documentation</a>.
+                                Additionally, for more information about Flex Container, see <a href="https://www.w3schools.com/css/css3_flexbox_container.asp" id="typography-links">here</a> </p>
                                 <p>And using CSS Grid and Flex together - now that's a beautiful thing.</p>
                                 <p>
                                     In my previous <a href="post-2-2020-24-feb-intro-making-site.html" id="typography-links">post</a>, 
