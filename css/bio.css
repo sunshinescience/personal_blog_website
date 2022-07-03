@@ -154,9 +154,9 @@ hr.contact1 {
 
 .content-bottom{
    grid-area: low;
-   padding-left: auto;
-   padding-right: auto;
+   width: 100%;
    background-color: black;
+   margin-bottom: 60px;
 }
 
 .nested-content-bottom{
@@ -284,7 +284,7 @@ hr.contact1 {
 
 .img-example-container1{
    display: flex;
-   flex-wrap: nowrap;
+   flex-wrap: wrap;
    background-color: DodgerBlue;
    padding: 0;
 }
@@ -294,41 +294,40 @@ hr.contact1 {
    background-color: black;
    justify-content: center;
    flex-wrap: wrap;
+   margin: 0;
+   padding: 0;
 }
  
 .flex-container > div {
-   min-width: 180px; 
-   object-fit: contain;
+   /* object-fit: contain; */
 }
 
 .flex-container-nested1 {
    display: flex;
-   background-color: black;
    justify-content: center;
    flex-wrap: nowrap;
 }
  
 .flex-container-nested2 {
    display: flex;
-   background-color: black;
    justify-content: center;
    flex-wrap: wrap;
    flex-direction: column;
 }
- 
 
-.column {
-   float: left;
-   width: 33.33%;
-   padding: 5px;
- }
- 
- /* Clearfix (clear floats) */
- .row::after {
-   content: "";
-   clear: both;
-   display: table;
- }
+.flex-container-nested3 {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   flex-direction: row;
+}
+
+.flex-container-grid3 {
+   display: grid;
+   justify-content: center;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+}
 
 div.image-gray {
    filter: grayscale(100%);
@@ -339,14 +338,6 @@ div.image-gray {
 
 div.image-gray:hover {
    filter: grayscale(0);
-}
-
-.image-container::before {
-   box-sizing: border-box;
-}
-
-.image-container::after {
-   box-sizing: border-box;
 }
 
 ul{ 

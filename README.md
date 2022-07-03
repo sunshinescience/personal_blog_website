@@ -4,23 +4,24 @@
 <img src="/images/blog_homepage.png" width="500" height="400">
 
 TODO:
-All pages: 
+- All pages: 
     make respponsive
     Fix bottom part, use arrows and text to scroll through pages in blogs and portfolio and have black background
-Post pages: get text to not move with resize
+- Post pages: get text to not move with resize
         Change previous post and next post to their title with an arrow, in a black background
         Fix all post pages to have same styles as post-3
-About page: 
+- About page: 
     Make photo gallery
     move menu to the right
     Fix footer on smaller screen size (its moved up to below image)
-Portfolio page: Make responsive with various media sizes (things don't move properly when shrinking to smaller size)
+- Portfolio page: Make responsive with various media sizes (things don't move properly when shrinking to smaller size)
     see https://www.w3schools.com/css/css_align.asp
     Fix all portfolio pages to have same styles as project-4
-Footer: add Python blog?
-Post page number 3: make list have bullets
-In my posts page, use a photo gallery, and on hover, make transparency less using opaque, and bring the title of the article down
+- Footer: add Python blog?
+- Post page number 3: make list have bullets
+- In my posts page, use a photo gallery, and on hover, make transparency less using opaque, and bring the title of the article down
 - (jQuery ?) function to write HTML style code on a page, could be useful for blogs
+- Note: Internet Explorer 10 and earlier versions do not support the flex-wrap property. Fix photo gallery accordingly on those sites (?)
 
 HTML entities can be found here: https://devpractical.com/display-html-tags-as-plain-text/
 
