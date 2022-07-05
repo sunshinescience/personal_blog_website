@@ -159,114 +159,6 @@ hr.contact1 {
    margin-bottom: 60px;
 }
 
-.nested-content-bottom{
-   display: grid;
-   overflow: hidden;
-   grid-template-columns: 1fr 1fr 1fr;
-   grid-template-rows: 1fr;
-   grid-template-areas: 
-   "gallery-up-l gallery-up-m gallery-up-r";
-}
-
-
-
-.gallery-up-l {
-   display: grid;
-   grid-area: gallery-up-l;
-   float: left;
-}
-
-.gallery-up-m {
-   display: grid;
-   grid-area: gallery-up-m;
-   float: left;
-}
-
-.gallery-up-r {
-   display: grid;
-   grid-area: gallery-up-r;
-   float: left;
-}
-
-
-/* Nested grid in bottom part of the content section on the about page */
-
-.nested-content-bottom{
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   grid-template-rows: 1fr 1fr;
-   grid-template-areas: 
-   "gallery-up-l gallery-up-m gallery-up-r"
-   "gallery-lo-l gallery-lo-m gallery-lo-r";
-
-}
-
-.gallery-up-l {
-   grid-area: gallery-up-l;
-   display: block;
-   float: left;
-}
-
-.gallery-up-m {
-   grid-area: gallery-up-m;
-   display: block;
-   float: left;
-}
-
-.gallery-up-r {
-   grid-area: gallery-up-r;
-   display: block;
-}
-/*
-.nested-low {
-   display: grid;
-   grid-area: gallery-lo-m;
-}
-
-.nested-low-right {
-   display: grid;
-   grid-area: gallery-lo-r;
-   grid-template-columns: 1fr;
-   grid-template-rows: 1fr 1fr;
-   grid-template-areas: 
-   "pic1-up"
-   "pic2-lo";
-}
-
-.nested-low-left {
-   grid-area: gallery-lo-l;
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   grid-template-rows: 1fr;
-   grid-template-areas: 
-   "left-pic mid-pic right-pic";
-}
-
-.gallery-low-right1 {
-   display: grid;
-   grid-area: pic1-up;
-}
-
-.nested-gallery-low-right1 {
-   display: grid;
-   grid-area: pic2-lo;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: 1fr;
-   grid-template-areas: 
-   "left-picture middle-picture";
-}
-
-.gallery-low-right2 {
-   display: grid;
-   grid-area: left-picture;
-}
-
-.gallery-low-right3 {
-   display: grid;
-   grid-area: middle-picture;
-}
-*/
-
 
 /* Image gallery */
 
@@ -286,7 +178,7 @@ hr.contact1 {
    display: flex;
    flex-wrap: wrap;
    background-color: DodgerBlue;
-   padding: 0;
+   height: 180px;
 }
 
 .flex-container {
@@ -306,6 +198,7 @@ hr.contact1 {
    display: flex;
    justify-content: center;
    flex-wrap: nowrap;
+   border: 5px solid blue;
 }
  
 .flex-container-nested2 {
@@ -329,14 +222,14 @@ hr.contact1 {
    grid-template-rows: 1fr 1fr;
 }
 
-div.image-gray {
+div > img {
    filter: grayscale(100%);
    transition-delay: .25s; 
    /* transition: all .25s ease-in-out;  */ /*Why is transition not working? */
    transition-timing-function: ease-in-out;
 }
 
-div.image-gray:hover {
+div > img:hover {
    filter: grayscale(0);
 }
 

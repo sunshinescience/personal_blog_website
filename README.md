@@ -22,6 +22,7 @@ TODO:
 - In my posts page, use a photo gallery, and on hover, make transparency less using opaque, and bring the title of the article down
 - (jQuery ?) function to write HTML style code on a page, could be useful for blogs
 - Note: Internet Explorer 10 and earlier versions do not support the flex-wrap property. Fix photo gallery accordingly on those sites (?)
+- TODO: find why there is a gap below images in blog 3 and bio photo gallery
 
 HTML entities can be found here: https://devpractical.com/display-html-tags-as-plain-text/
 
