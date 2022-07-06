@@ -198,7 +198,6 @@ hr.contact1 {
    display: flex;
    justify-content: center;
    flex-wrap: nowrap;
-   border: 5px solid blue;
 }
  
 .flex-container-nested2 {
@@ -222,14 +221,14 @@ hr.contact1 {
    grid-template-rows: 1fr 1fr;
 }
 
-div > img {
+img > .image-gray{
    filter: grayscale(100%);
    transition-delay: .25s; 
    /* transition: all .25s ease-in-out;  */ /*Why is transition not working? */
    transition-timing-function: ease-in-out;
 }
 
-div > img:hover {
+img:hover > .image-gray {
    filter: grayscale(0);
 }
 
