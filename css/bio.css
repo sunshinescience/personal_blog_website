@@ -221,14 +221,14 @@ hr.contact1 {
    grid-template-rows: 1fr 1fr;
 }
 
-img > .image-gray{
+img.image-gray{
    filter: grayscale(100%);
    transition-delay: .25s; 
    /* transition: all .25s ease-in-out;  */ /*Why is transition not working? */
    transition-timing-function: ease-in-out;
 }
 
-img:hover > .image-gray {
+img.image-gray:hover {
    filter: grayscale(0);
 }
 
@@ -245,3 +245,55 @@ li{
 ul li {
    margin: 0 1.5rem 0 0;
  }
+
+ @media only screen and (max-width: 768px){
+   .content-mid {
+      grid-area: mid;
+      justify-content: center;
+      padding: 40px 20px;
+      background: white;
+   }
+ }
+
+ /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+   .content-mid {
+      grid-area: mid;
+      justify-content: center;
+      padding: 40px 200px;
+      background: white;
+   }
+}
+
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 992px) and (max-width: 1200px) {
+   .content-mid {
+      grid-area: mid;
+      justify-content: center;
+      padding: 40px 300px;
+      background: white;
+   }
+}
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+}
+
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {} 
