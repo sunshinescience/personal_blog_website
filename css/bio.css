@@ -36,6 +36,7 @@
    /* display: flex; */
    grid-area: hi-l;
    background:  black;
+   height: 800px;
 }
 
 /* Top right part of content section, in the about page */
@@ -187,7 +188,7 @@ hr.contact1 {
    justify-content: center;
    flex-wrap: wrap;
    margin: 0;
-   padding: 0;
+   padding-top: 60px;
 }
  
 .flex-container > div {
