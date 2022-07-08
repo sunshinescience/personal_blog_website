@@ -28,7 +28,6 @@
    /* border: 2px solid grey; */
    grid-template-areas: 
    "hi-l hi-r";
-   background:  black;
  }
 
  /* Top left part of content section, in the about page */
@@ -68,21 +67,6 @@
    float: left;
 }
 
-/* Top left text for names */
-/*
-.top-left-first {
-   position: absolute;
-   top: 200px;
-   left: 230px;
- }
-
-.top-left-last {
-   position: absolute;
-   top: 260px;
-   left: 230px;
- }
- */
-
  .about-highlight {
    /* color: #9ea7aa; */
    color: #afbec2;
@@ -106,7 +90,6 @@
    left: 580px;
 }
 
-/* Thick red border */
 hr.contact1 {
    /* border: .5px solid white; */
    width: 250px;
@@ -248,22 +231,182 @@ ul li {
  }
 
  @media only screen and (max-width: 768px){
+   .nested-content-top{
+      display: grid;
+      grid-area: hi;
+      /* width: 100vw; */ /* Having width here caused overlap of the About page, so removing it fixed the problem. */
+      max-height: 600px;
+      width: 100%;
+      grid-template-columns: 100%;
+      grid-template-rows: auto;
+      /* border: 2px solid grey; */
+      grid-template-areas: 
+      "upper";
+      background:  black;
+    }
+   
+   .content-top-left{
+      display: none;
+   }
+  
+   .content-top-right{
+      display: none;
+   }
+
+   .content-top{
+      background:  black;
+      height: 700px;
+   }
+
    .content-mid {
       grid-area: mid;
       justify-content: center;
       padding: 40px 20px;
       background: white;
    }
+
+   #typography-name{
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: white;
+      font-weight: 350;
+      /* font-size: 1.25em; */ /* This font size was used with a quote */
+      font-size: 2em;
+      line-height: 2em;
+   }
+
+   .top-about-name1{
+      text-align: center;
+   }
+
+   .nameBio{
+      display: flex;
+      align-items: left;
+      justify-content: center; 
+      padding-bottom: 10px; 
+      font-size: 1.3rem;
+   }
+
+   hr.contact1 {
+      /* border: .5px solid white; */
+      width: 50%;
+      position: absolute;
+      top: 350px;
+      left: 25%;
+   }
+   
+    hr.contact2 {
+      width: 250px;
+      position: absolute;
+      top: 420px;
+      left: 25%;
+      width: 50%;
+   }
+
+    .top-about-contact{
+      position: absolute;
+      top: 370px;
+      left: 25%;
+   }
+   
+   .top-about-location{
+      position: absolute;
+      top: 470px;
+      left: 60px;
+   }
+   
+   .top-about-contact1{
+      position: absolute;
+      top: 500px;
+      left: 40px;
+   }
+   
+   .top-about-location1{
+      position: absolute;
+      top: 500px;
+      left: 60px;
+   }
+
+   .content-bottom{
+      grid-area: low;
+      width: 100%;
+      margin-bottom: 60px;
+   }
+
+   .flex-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 0;
+      padding-top: 60px;
+   }
  }
 
  /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
+   .content-top{
+      display: none;
+   }
+   
    .content-mid {
       grid-area: mid;
       justify-content: center;
       padding: 40px 200px;
       background: white;
    }
+
+   .top-about-name1{
+      position: absolute;
+      top: 240px;
+      left: 580px;
+   }
+
+   .nameBio{
+      display: flex;
+      align-items: left;
+      justify-content: center; 
+      padding-bottom: 10px; 
+      font-size: 1.3rem;
+   }
+
+   hr.contact1 {
+      /* border: .5px solid white; */
+      width: 250px;
+      position: absolute;
+      top: 250px;
+      left: 580px;
+   }
+   
+    hr.contact2 {
+      width: 250px;
+      position: absolute;
+      top: 450px;
+      left: 860px;
+   }
+
+    .top-about-contact{
+      position: absolute;
+      top: 470px;
+      left: 580px;
+   }
+   
+   .top-about-location{
+      position: absolute;
+      top: 470px;
+      left: 860px;
+   }
+   
+   .top-about-contact1{
+      position: absolute;
+      top: 500px;
+      left: 580px;
+   }
+   
+   .top-about-location1{
+      position: absolute;
+      top: 500px;
+      left: 860px;
+   }
+   
 }
 
  /* Medium devices (landscape tablets, 768px and up) */
@@ -274,15 +417,19 @@ ul li {
       padding: 40px 300px;
       background: white;
    }
+
+   .content-top{
+      display: none;
+   }
 }
 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+   .content-top{
+      display: none;
+   }
+} 
 
-
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-
-}
 
   /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {}
