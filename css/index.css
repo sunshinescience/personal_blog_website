@@ -50,8 +50,8 @@ body{
    display: grid;
    width: 100vw;
    height: 100%;
-   grid-template-columns: 1fr;
-   grid-template-rows: 100px 40px 40px;
+   grid-template-columns: 1.4fr 2.5fr 2.5fr;  
+   grid-template-rows: 1fr;
    align-items: center; 
    justify-content: center; 
    grid-gap: 5px;
@@ -436,13 +436,23 @@ ul li {
    grid-template-rows: 1fr;
 }
 
+.img-example-container1{
+   display: flex;
+   flex-wrap: wrap;
+   background-color: DodgerBlue;
+   height: auto;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 10px;
+}
+
 /* Tablet screen width size, note the width should be 480px */
 @media(min-width:700px){ 
    .container{
       display: grid;
       width: 100vw;
-      min-height:100%;
-      position:relative;
+      min-height: 100%;
+      position: relative;
       grid-template-columns: 1fr;
       grid-template-rows: auto auto auto;
       grid-template-areas: 
@@ -462,7 +472,7 @@ ul li {
           display: grid;
           width: 100vw;
           height: 100%;
-          grid-template-columns: 1.4fr 3fr 2fr;
+          grid-template-columns: 1.4fr 2.5fr 2.5fr;  
           grid-template-rows: 1fr;
           /* grid-gap: 15px; */
           /* border: 2px solid white; */
@@ -541,10 +551,30 @@ ul li {
 /* Desktop screen width size*/
 @media(min-width:1024px){  
       /* Adding nested grid for header to separate: logo, introduction, main menu */
+      .nested-grid{
+         display: grid;
+         width: 100vw;
+         height: 100%;
+         grid-template-columns: 1.4fr 2.5fr 2.5fr;  
+          grid-template-rows: 1fr;
+         /* grid-gap: 15px; */
+         /* border: 2px solid white; */
+         align-items: center; 
+         justify-content: center; 
+         /* border: 2px solid black; */
+         float: right;
+     }
+
+     .nested-grid > *{
+         /* border: 2px solid yellow; */
+         /* padding-left: 1em; */
+         /* padding-right: 1.8em; */
+     } 
+
       .content{
       grid-area: main;
       padding: 0;
-      padding-bottom:60px;   /* Height of the footer */
+      padding-bottom: 60px;   /* Height of the footer */
       /* background-color: #ffffff; */
       }
     

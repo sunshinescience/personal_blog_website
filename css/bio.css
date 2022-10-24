@@ -132,17 +132,16 @@ hr.contact1 {
 .content-mid{
    grid-area: mid;
    justify-content: center;
-   padding: 40px 400px;
+   padding: 40px 200px 60px 200px;
    background: white;
 }
 
 .content-bottom{
    grid-area: low;
    width: 100%;
-   background-color: black;
-   margin-bottom: 60px;
+   background-color: black; /* If this black background is removed here, then the black background on the bottom in mobile screen size is gone. But there is still the space there */
+   margin-bottom: 0;
 }
-
 
 /* Image gallery */
 
@@ -158,16 +157,9 @@ hr.contact1 {
    margin: 5px;
 }
 
-.img-example-container1{
-   display: flex;
-   flex-wrap: wrap;
-   background-color: DodgerBlue;
-   height: 180px;
-}
-
 .flex-container {
    display: flex;
-   background-color: black;
+   /* background-color: black; */
    justify-content: center;
    flex-wrap: wrap;
    margin: 0;
@@ -228,14 +220,22 @@ li{
 
 ul li {
    margin: 0 1.5rem 0 0;
- }
+}
+
+.box-about{
+   display: flex; 
+   align-items: center; 
+   justify-content: center; 
+   background-color: none;
+   margin-bottom: 0px;
+}
 
  @media only screen and (max-width: 768px){
    .nested-content-top{
       display: grid;
       grid-area: hi;
       /* width: 100vw; */ /* Having width here caused overlap of the About page, so removing it fixed the problem. */
-      max-height: 600px;
+      max-height: 700px;
       width: 100%;
       grid-template-columns: 100%;
       grid-template-rows: auto;
@@ -243,6 +243,7 @@ ul li {
       grid-template-areas: 
       "upper";
       background:  black;
+      padding-bottom: 40px;
     }
    
    .content-top-left{
@@ -255,14 +256,21 @@ ul li {
 
    .content-top{
       background:  black;
-      height: 700px;
+      height: 400px;
    }
 
    .content-mid {
       grid-area: mid;
       justify-content: center;
-      padding: 40px 20px;
+      padding: 40px 40px;
       background: white;
+   }
+
+   .content-bottom{
+      grid-area: low;
+      width: 100%;
+      /* background-color: black; */ /* If this black background is removed, then the black background on the bottom in mobile screen size is gone. But there is still the space there */
+      margin-bottom: 0;
    }
 
    #typography-name{
@@ -291,58 +299,82 @@ ul li {
       width: 50%;
       position: absolute;
       top: 350px;
-      left: 25%;
+      left: 20%;
    }
    
     hr.contact2 {
       width: 250px;
       position: absolute;
-      top: 420px;
-      left: 25%;
+      top: 455px;
+      left: 20%;
       width: 50%;
    }
 
     .top-about-contact{
       position: absolute;
-      top: 370px;
-      left: 25%;
+      top: 365px;
+      left: 20%;
    }
    
    .top-about-location{
       position: absolute;
       top: 470px;
-      left: 60px;
+      left: 20%;
    }
    
    .top-about-contact1{
       position: absolute;
-      top: 500px;
-      left: 40px;
+      top: 390px;
+      left: 20%;
    }
    
    .top-about-location1{
       position: absolute;
-      top: 500px;
-      left: 60px;
+      top: 495px;
+      left: 20%;
    }
 
    .content-bottom{
       grid-area: low;
       width: 100%;
-      margin-bottom: 60px;
+      padding-bottom: 60px;
    }
 
    .flex-container {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      margin: 0;
-      padding-top: 60px;
+      margin-bottom: 0;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      background-color: none;
    }
- }
+
+   .box-about{
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      background-color: none;
+      margin-bottom: 0px;
+   }
+
 
  /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
+   .nested-content-top{
+      display: grid;
+      grid-area: hi;
+      /* width: 100vw; */ /* Having width here caused overlap of the About page, so removing it fixed the problem. */
+      max-height: 700px;
+      width: 100%;
+      grid-template-columns: 100%;
+      grid-template-rows: auto;
+      /* border: 2px solid grey; */
+      grid-template-areas: 
+      "upper";
+      background:  black;
+   }
+    
    .content-top{
       display: none;
    }
@@ -350,8 +382,15 @@ ul li {
    .content-mid {
       grid-area: mid;
       justify-content: center;
-      padding: 40px 200px;
+      padding: padding: 40px 40px 60px 40px;
       background: white;
+   }
+
+   .content-bottom{
+      grid-area: low;
+      width: 100%;
+      /* background-color: black; */  
+      margin-bottom: 0;
    }
 
    .top-about-name1{
@@ -372,7 +411,7 @@ ul li {
       /* border: .5px solid white; */
       width: 250px;
       position: absolute;
-      top: 250px;
+      top: 450px;
       left: 580px;
    }
    
@@ -406,20 +445,93 @@ ul li {
       top: 500px;
       left: 860px;
    }
-   
 }
 
  /* Medium devices (landscape tablets, 768px and up) */
  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+   .nested-content-top{
+      display: grid;
+      grid-area: hi;
+      /* width: 100vw; */ /* Having width here caused overlap of the About page, so removing it fixed the problem. */
+      max-height: 700px;
+      width: 100%;
+      grid-template-columns: 100%;
+      grid-template-rows: auto;
+      /* border: 2px solid grey; */
+      grid-template-areas: 
+      "upper";
+      background:  black;
+   }
+    
+   .content-top{
+      display: none;
+   }
+   
    .content-mid {
       grid-area: mid;
       justify-content: center;
-      padding: 40px 300px;
+      padding: padding: 40px 40px 60px 40px;
       background: white;
    }
 
-   .content-top{
-      display: none;
+   .content-bottom{
+      grid-area: low;
+      width: 100%;
+      /* background-color: black; */  
+      margin-bottom: 0;
+   }
+
+   .top-about-name1{
+      position: absolute;
+      top: 240px;
+      left: 580px;
+   }
+
+   .nameBio{
+      display: flex;
+      align-items: left;
+      justify-content: center; 
+      padding-bottom: 10px; 
+      font-size: 1.3rem;
+   }
+
+   hr.contact1 {
+      /* border: .5px solid white; */
+      width: 250px;
+      position: absolute;
+      top: 450px;
+      left: 580px;
+   }
+   
+    hr.contact2 {
+      width: 250px;
+      position: absolute;
+      top: 450px;
+      left: 860px;
+   }
+
+    .top-about-contact{
+      position: absolute;
+      top: 470px;
+      left: 580px;
+   }
+   
+   .top-about-location{
+      position: absolute;
+      top: 470px;
+      left: 860px;
+   }
+   
+   .top-about-contact1{
+      position: absolute;
+      top: 500px;
+      left: 580px;
+   }
+   
+   .top-about-location1{
+      position: absolute;
+      top: 500px;
+      left: 860px;
    }
 }
 
@@ -427,6 +539,20 @@ ul li {
 @media only screen and (min-width: 1200px) {
    .content-top{
       display: none;
+   }
+
+   .content-mid{
+      grid-area: mid;
+      justify-content: center;
+      padding: 40px 200px 60px 200px;
+      background: white;
+   }
+
+   .content-bottom{
+      grid-area: low;
+      width: 100%;
+      background-color: black;  /* If this black background is removed, then the black background on the bottom in mobile screen size is gone. But there is still the space there */
+      margin-bottom: 0;
    }
 } 
 

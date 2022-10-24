@@ -272,37 +272,51 @@
 }
 
 #typography-footer{
-   /* font-family: Helvetica, arial, sans-serif; */
    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
-   /* font-weight: bold; */
-   /* text-align: center; */
    font-size: 1.05em;
-   /* line-height: 1.2em; */
    line-height: 1.5;
    font-weight: 400;
    letter-spacing: 0.022em;
-   /* margin: auto; */
    text-transform: uppercase;
-   /* color: #edf0f1; */
    color: white;
-   /* justify-content: center; */
    text-decoration: none; /* Removed underline hyperlinks */
-   /* padding: 2px; */
    padding: 5px;
 }
 
 #typography-footer:hover{ 
   font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif; 
   font-weight: bold; 
-  /* text-align: center; */
   font-size: 1.05em;
   line-height: 1.5;
   font-weight: 700;
   letter-spacing: 0.022em;
-  /* margin: auto; */
   text-transform: uppercase;
   color: white;
-  /* justify-content: center; */
+  text-decoration: none; /* Removed underline hyperlinks */
+  padding: 5px;
+}
+
+#typography-footer-about{
+   font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+   font-size: 1.05em;
+   line-height: 1.5;
+   font-weight: 400;
+   letter-spacing: 0.022em;
+   text-transform: uppercase;
+   color: black;
+   text-decoration: none; /* Removed underline hyperlinks */
+   padding: 5px;
+}
+
+#typography-footer-about:hover{ 
+  font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif; 
+  font-weight: bold; 
+  font-size: 1.05em;
+  line-height: 1.5;
+  font-weight: 700;
+  letter-spacing: 0.022em;
+  text-transform: uppercase;
+  color: black;
   text-decoration: none; /* Removed underline hyperlinks */
   padding: 5px;
 }

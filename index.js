@@ -5,6 +5,12 @@ function setVideo(src) {
     document.getElementById('video').play(); 
 }
 
+// Find a way to set the src's to then reuse the functions easier. Do the switch case maybe?
+// to populate the different videos
+// if this Id exists, src1 = ____
+// if this Id exists, src2 = ____
+// if this Id exists, src3 = ____
+
 let src1 = '../images/Jamming_1_4.m4v';
 let src2 = '../images/Jamming_2_1.m4v';
 let src3 = '../images/Jamming_3_1.m4v';

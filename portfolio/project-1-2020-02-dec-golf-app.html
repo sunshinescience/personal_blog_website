@@ -22,23 +22,46 @@
                     </div>
                 </div>
                 <div class="content box">
-                    <p id="typography-4">Landing page for a golf app.
-                    </p>
+                    <div class="nested-grid-portfolio">
+                        <div class="portfolio-mid-title" id="portfolio-title">
+                            <p id="typography-portfolio-title">kAIboom
+                            </p>
+                        </div>
+                        <div class="portfolio-mid-text">
+                            <p id="typography-portfolio-title1">This is a landing page for a sports app.</p>
+                        </div> 
+
+                        <div class="nested-vid-txt" onclick="getVideo(event)">
+                            <div class="video-left-container" > 
+                                <div id="video-player"> 
+                                    <!-- Add in autoplay loop next to controls below, if I can get loop working -->
+                                    <video id="video" controls> 
+                                        <source src="../images/kAIboom_vid1.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.  
+                                    </video>
+                                </div>                                                            
+                                <div class="controls"> 
+                                    <p><i id="arrow-right" class="arrow right"></i></p> 
+                                    <p><i id="arrow-left" class="arrow left"></i></p>
+                                    <div id="button-1"></div>
+                                    <div id="button-2"></div>
+                                    <div id="button-3"></div>
+                                </div>                               
+                            </div>
+                            <div class="project-text-right">
+                                <p id="secTitle1" class="sectionTitle">kAIboom</p>
+                                <p id="typography-portfolio-txt">I created a landing page for a sports app, which can be found <a href="https://kaiboom.app/" id="typography-links">here</a>.</p>
+                                <p id="typography-portfolio-txt">This project is in development. When more information is given, the landing page will be completed, but for now it is a template. ...</p>
+                                <p id="typography-portfolio-txt">Users can ....</p>
+                            </div>  
+                        </div>   
+                    </div>      
                 </div>
                 <div class="footer box">
-                    <a href="https://github.com/sunshinescience">
-                        <img class="social-media-logo" alt="Social media logo" src="../images/GitHub-Mark-Light-120px-plus.png"/>
-                    </a>
-                    <a href="https://https://www.linkedin.com/in/sunshine-abbott-3998777/">
-                        <img class="social-media-logo" alt="Social media logo" src="../images/linkedin-4-64.png"/>
-                    </a>
-                    <a href="https://twitter.com/SunshineAbbott1">
-                        <img class="social-media-logo" alt="Social media logo" src="../images/Twitter_Social_Icon_Circle_White.png"/>
-                    </a>
-                    <a href="https://www.facebook.com/sunshine.abbott">
-                        <img class="social-media-logo" alt="Social media logo" src="../images/f_logo_RGB-White_512.png"/>
-                    </a>
+                    <a href="https://github.com/sunshinescience" id="typography-footer">Github</a>
+                    <a href="https://www.linkedin.com/in/sunshine-abbott/" id="typography-footer">LinkedIn</a>
                 </div>
-            </div>      
+            </div>  
+        <script src="../index.js"></script>     
     </body>
 </html>
