@@ -4,6 +4,9 @@
 <img src="/images/blog_homepage.png" width="500" height="400">
 
 TODO:
+- Is there a way to get image widths to change with mobile screen size? So they don't overlap with the smallest screen with their widths?
+    And, can I make the smaller width images vary by 1/3 and 1/4 compared to the whole image, via JS?
+- fix videos in portfolio pages here
 - deploy travel app to heroku
 - All pages (except about page): 
     make respponsive

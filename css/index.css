@@ -41,26 +41,22 @@ body{
 
 .header{
    grid-area: hd;
-   /* padding:0px; */
-   /* width: 100%; */
 }
 
 /* Nested grid for top part (header section) of page */
 .nested-grid{
    display: grid;
    width: 100vw;
-   height: 100%;
-   grid-template-columns: 1.4fr 2.5fr 2.5fr;  
+   margin-bottom: 0;
+   grid-template-columns: 2.5fr 2.5fr; 
    grid-template-rows: 1fr;
-   align-items: center; 
-   justify-content: center; 
-   grid-gap: 5px;
 }
 
 .menu{
-   justify-content: center; 
    background-color: none;
-   margin: 0 auto;
+   margin-top: 0;
+   margin-bottom: 0;
+   margin-right: 0;
    padding-top: 50px;
    padding-bottom: 50px;
 }
@@ -358,7 +354,6 @@ body{
 }
 
 .header-name {
-   margin: auto;
    padding-top: 50px;
    padding-bottom: 50px;
 }
@@ -446,8 +441,40 @@ ul li {
    padding-left: 10px;
 }
 
+@media(max-width:600px){
+   .header-name {
+      display: none;
+   }
+
+   .nested-grid{
+      display: grid;
+      width: 100vw;
+      height: 90px;
+      margin-top: 0;
+      grid-template-columns: 1fr; 
+      grid-template-rows: 1fr;
+   }
+
+   .menu{
+   background-color: none;
+   margin-top: 0;
+   margin-bottom: 0;
+   margin-right: 0;
+   padding-top: 10px;
+   padding-bottom: 30px;
+   }
+
+   .content{
+      grid-area: main;
+      padding: 0px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 0;   
+   }
+}
+
 /* Tablet screen width size, note the width should be 480px */
-@media(min-width:700px){ 
+@media(min-width:600px){ 
    .container{
       display: grid;
       width: 100vw;
@@ -464,7 +491,6 @@ ul li {
 
    .header{
       grid-area: hd;
-      /* border: 2px solid #b4004e; */
     }
 
       /* Adding nested grid for header to separate: logo, introduction, main menu */
