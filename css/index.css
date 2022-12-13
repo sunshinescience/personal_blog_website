@@ -59,6 +59,18 @@ body{
    margin-right: 0;
    padding-top: 50px;
    padding-bottom: 50px;
+   padding-right: 50px;
+   text-align: right;
+}
+
+.header-name{
+   background-color: none;
+   margin-top: 0;
+   margin-bottom: 0;
+   margin-right: 0;
+   padding-left: 50px;
+   text-align: left;
+   margin-left: 0;
 }
 
 /* Main area of page, in the middle section */
@@ -94,7 +106,6 @@ body{
    display: grid;
    grid-template-columns: 180px 280px;
    grid-template-rows: 100%;
-   /* margin: 10px; */ /* Separates the blog post cards */
    padding-top: 0px;
    grid-template-areas: 
    "card-l card-r";
@@ -442,26 +453,24 @@ ul li {
 }
 
 @media(max-width:600px){
-   .header-name {
-      display: none;
-   }
-
    .nested-grid{
       display: grid;
       width: 100vw;
       height: 90px;
-      margin-top: 0;
-      grid-template-columns: 1fr; 
+      margin-bottom: 0;
+      grid-template-columns: 2.5fr 2.5fr; 
       grid-template-rows: 1fr;
    }
 
-   .menu{
-   background-color: none;
-   margin-top: 0;
-   margin-bottom: 0;
-   margin-right: 0;
-   padding-top: 10px;
-   padding-bottom: 30px;
+   .header-name {
+      display: none;
+   }
+
+   .menu {
+      width: 100vw;
+      text-align: center;
+      padding-top: 25px;
+      padding-bottom: 25px;
    }
 
    .content{
@@ -493,41 +502,37 @@ ul li {
       grid-area: hd;
     }
 
-      /* Adding nested grid for header to separate: logo, introduction, main menu */
-      .nested-grid{
-          display: grid;
-          width: 100vw;
-          height: 100%;
-          grid-template-columns: 1.4fr 2.5fr 2.5fr;  
-          grid-template-rows: 1fr;
-          /* grid-gap: 15px; */
-          /* border: 2px solid white; */
-          align-items: center; 
-          justify-content: center; 
-          /* border: 2px solid black; */
-      }
+   .nested-grid{
+      display: grid;
+      width: 100vw;
+      height: 130px;
+      margin-bottom: 0;
+      grid-template-columns: 200px 0.5fr 2.5fr; 
+      grid-template-rows: 1fr;
+      margin-bottom: 0;
+   }
+   
+   .menu{
+      background-color: none;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-right: 0;
+   }
 
-      .nested-grid > *{
-          /* border: 2px solid yellow; */
-          /* padding-left: 1em; */
-          /* padding-right: 1.8em; */
-      } 
+   .header-name {
+      width: 200px;
+      text-align: left;
+   }
 
-      .content{
+   .content{
       grid-area: main;
       padding-bottom: 60px;   /* Height of the footer */
-      }  
+   }  
     
     #header-logo{
         width: 45%;
         padding: 30px; /* Adding padding to the logo image */
     }
-
-    .header-name {
-      margin: auto;
-      padding-top: 50px;
-      padding-bottom: 50px;
-   }
 
     /* TODO: make cards columns or width responsive and change text to wrap? */
     /* Moving blog post cards to two columns */
@@ -576,27 +581,6 @@ ul li {
 
 /* Desktop screen width size*/
 @media(min-width:1024px){  
-      /* Adding nested grid for header to separate: logo, introduction, main menu */
-      .nested-grid{
-         display: grid;
-         width: 100vw;
-         height: 100%;
-         grid-template-columns: 1.4fr 2.5fr 2.5fr;  
-          grid-template-rows: 1fr;
-         /* grid-gap: 15px; */
-         /* border: 2px solid white; */
-         align-items: center; 
-         justify-content: center; 
-         /* border: 2px solid black; */
-         float: right;
-     }
-
-     .nested-grid > *{
-         /* border: 2px solid yellow; */
-         /* padding-left: 1em; */
-         /* padding-right: 1.8em; */
-     } 
-
       .content{
       grid-area: main;
       padding: 0;
