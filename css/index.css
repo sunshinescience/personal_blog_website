@@ -469,7 +469,7 @@ ul li {
    .menu {
       width: 100vw;
       text-align: center;
-      padding-top: 25px;
+      padding-top: 32px;
       padding-bottom: 25px;
    }
 
@@ -483,21 +483,7 @@ ul li {
 }
 
 /* Tablet screen width size, note the width should be 480px */
-@media(min-width:600px){ 
-   .container{
-      display: grid;
-      width: 100vw;
-      min-height: 100%;
-      position: relative;
-      grid-template-columns: 1fr;
-      grid-template-rows: auto auto auto;
-      grid-template-areas: 
-      "hd"
-      "main"
-      "ft";
-      justify-content: center;
-   }
-
+@media(min-width:600px) { 
    .header{
       grid-area: hd;
     }
@@ -517,11 +503,13 @@ ul li {
       margin-top: 0;
       margin-bottom: 0;
       margin-right: 0;
+      padding-top: 50px;
    }
 
    .header-name {
       width: 200px;
       text-align: left;
+      padding-top: 50px;
    }
 
    .content{
