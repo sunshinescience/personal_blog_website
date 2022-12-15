@@ -80,8 +80,8 @@
    */ /* This, along with position: relative in content-cards, will position text vertically centered */
 }
 
-/* Nested grid for the area on right side of the card */
-.nested-content-card-right{
+/* Nested grid for the area on the card */
+.nested-content-card{
    display: grid;
    grid-template-columns: 100%;
    grid-template-rows: auto auto auto;
