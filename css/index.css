@@ -79,7 +79,6 @@ body{
    padding: 0px;
    margin-left: auto;
    margin-right: auto;
-   border: 5px solid green; 
 }
 
 .box{
@@ -126,7 +125,6 @@ body{
       padding: 0px;
       margin-left: auto;
       margin-right: auto; 
-      border: 5px solid purple;
    }
 }
 
