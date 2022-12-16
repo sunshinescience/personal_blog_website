@@ -38,12 +38,10 @@
 .card3{
    grid-area: card3;
    margin-right: 15px;
-   margin-bottom: 15px;
 }
 
 .card4{
    grid-area: card4;
-   margin-bottom: 15px;
 }
 
 .content-card-lower{

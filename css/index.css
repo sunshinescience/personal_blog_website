@@ -79,7 +79,7 @@ body{
    padding: 0px;
    margin-left: auto;
    margin-right: auto;
-   padding-bottom: 60px;   /* Height of the footer */
+   border: 5px solid green; 
 }
 
 .box{
@@ -95,7 +95,6 @@ body{
    align-items: center; 
    justify-content: center; 
    background-color: none;
-   margin-top: -60px;
    padding-bottom: 30px;
    padding-top: 30px;
    color: black;
@@ -126,8 +125,8 @@ body{
       grid-area: main;
       padding: 0px;
       margin-left: auto;
-      margin-right: auto;
-      padding-bottom: 0;   
+      margin-right: auto; 
+      border: 5px solid purple;
    }
 }
 
@@ -163,7 +162,6 @@ body{
 
    .content{
       grid-area: main;
-      padding-bottom: 60px;   /* Height of the footer */
    }  
     
     #header-logo{
@@ -176,7 +174,6 @@ body{
       align-items: center; 
       justify-content: center; 
       background-color: none;
-      margin-top: -60px;
       padding-bottom: 30px;
       padding-top: 30px;
       color: black;
@@ -214,7 +211,6 @@ body{
 
    .content{
       grid-area: main;
-      padding-bottom: 60px;   /* Height of the footer */
    }  
     
     #header-logo{
@@ -227,7 +223,6 @@ body{
       align-items: center; 
       justify-content: center; 
       background-color: none;
-      margin-top: -60px;
       padding-bottom: 30px;
       padding-top: 30px;
       color: black;
@@ -265,7 +260,6 @@ body{
 
    .content{
       grid-area: main;
-      padding-bottom: 60px;   /* Height of the footer */
    }  
     
     #header-logo{
@@ -278,7 +272,6 @@ body{
       align-items: center; 
       justify-content: center; 
       background-color: none;
-      margin-top: -60px;
       padding-bottom: 30px;
       padding-top: 30px;
       color: black;
@@ -290,8 +283,6 @@ body{
       .content{
       grid-area: main;
       padding: 0;
-      padding-bottom: 60px;   /* Height of the footer */
-      /* background-color: #ffffff; */
       }
     
     #header-logo{
@@ -311,7 +302,6 @@ body{
       align-items: center; 
       justify-content: center; 
       background-color: none;
-      margin-top: -60px;
       padding-bottom: 30px;
       padding-top: 30px;
       color: black;
