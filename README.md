@@ -18,3 +18,5 @@ role: Generated the idea, design & front-end development
 
 responsibilities: 
 Created wireframes, web app design, component-based front-end development, JS, React, HTML/CSS
+# portfolio
+# portfolio
