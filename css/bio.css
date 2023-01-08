@@ -123,7 +123,7 @@ hr.contact1 {
 .content-mid{
    grid-area: mid;
    justify-content: center;
-   padding: 40px 200px 60px 200px;
+   padding: 40px 200px 50px 200px;
    background: white;
 }
 
@@ -523,7 +523,7 @@ ul li {
    .content-mid {
       grid-area: mid;
       justify-content: center;
-      padding: 40px 40px 0px 40px;
+      padding: 40px 40px 40px 40px;
       background: white;
    }
 
@@ -647,7 +647,7 @@ ul li {
    .content-mid {
       grid-area: mid;
       justify-content: center;
-      padding: padding: 40px 40px 0px 40px;
+      padding: 40px 40px 40px 40px;
       background: white;
    }
 
@@ -757,7 +757,7 @@ ul li {
    .content-mid {
       grid-area: mid;
       justify-content: center;
-      padding: 40px 200px 0px 200px;
+      padding: 40px 200px 40px 200px;
       background: white;
    }
 

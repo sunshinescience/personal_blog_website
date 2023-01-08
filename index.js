@@ -5,20 +5,50 @@ function setVideo(src) {
     document.getElementById('video').play(); 
 }
 
-// Find a way to set the src's to then reuse the functions easier. Do the switch case maybe?
-// to populate the different videos
-// if this Id exists, src1 = ____
-// if this Id exists, src2 = ____
-// if this Id exists, src3 = ____
+// Function returns the src list with the videos on the selected page
+function getSRC() {
+    let vidSrc = document.getElementById('video').getAttribute('src');
+    // console.log("SRC attribute: ", vidSrc);
+    let srcList = [];
+    if (vidSrc == '../images/kaiboom_v1.mp4') {
+        let src1 = '../images/kaiboom_v1.mp4';
+        let src2 = '../images/kaiboom_v2.mp4';
+        let src3 = '../images/kaiboom_v3.mp4';
+        srcList.push(src1);
+        srcList.push(src2);
+        srcList.push(src3);
+    }
+    if (vidSrc == '../images/Jamming_1_4.m4v') {
+        let src1 = '../images/Jamming_1_4.m4v';
+        let src2 = '../images/Jamming_2_1.m4v';
+        let src3 = '../images/Jamming_3_1.m4v';
+        srcList.push(src1);
+        srcList.push(src2);
+        srcList.push(src3);
+    }
+    if (vidSrc == '../images/travel_app_v0.mp4') {
+        let src1 = '../images/travel_app_v0.mp4';
+        let src2 = '../images/travel_app_v1.mp4';
+        let src3 = '../images/travel_app_v2.mp4';
+        srcList.push(src1);
+        srcList.push(src2);
+        srcList.push(src3);
+        console.log('weathertrip')
+    }
+    if (vidSrc == '../images/TreasureMap1.mp4') {
+        let src1 = '../images/TreasureMap1.mp4';
+        let src2 = '../images/TreasureMap2.mp4';
+        let src3 = '../images/TreasureMap3.mp4';
+        srcList.push(src1);
+        srcList.push(src2);
+        srcList.push(src3);
+    }
+   return srcList;
+}
 
-let src1 = '../images/Jamming_1_4.m4v';
-let src2 = '../images/Jamming_2_1.m4v';
-let src3 = '../images/Jamming_3_1.m4v';
-
-srcList = [src1, src2, src3];
+srcList = getSRC(); // Getting the SRC's of the current page
 let activeIndex = 0;
 
-// We use only one event listener, and listen for any click in the area of the video player container
 // This function sets the active index of the video source list (srcList) and then it calls the setVideo function above with the active video source to play
 function getVideo(event) { 
     if (event.target.id == 'arrow-right') {
@@ -52,28 +82,27 @@ function getVideo(event) {
 }
 
 // This function highlights what active video you're on based on the three circle buttons below the video
-// Find a way to remove elements if button is non active - this will fix the problem of hovering when another button is clicked
 function activeButton(videoIndex) {
     if (videoIndex == 0) {
         document.getElementById('button-1').style.background = "#edf0f1";
         document.getElementById('button-2').style.background = "black";
         document.getElementById('button-3').style.background = "black"; 
-        document.getElementById('button-2').classList.add('hoverClass'); /* Adding in a hover to the button */
-        document.getElementById('button-3').classList.add('hoverClass'); /* Adding in a hover to the button */
+        document.getElementById('button-2').classList.add('hoverClass');  
+        document.getElementById('button-3').classList.add('hoverClass');  
     }
     else if (videoIndex == 1) {
         document.getElementById('button-1').style.background = "black";
         document.getElementById('button-2').style.background = "#edf0f1";
         document.getElementById('button-3').style.background = "black";
-        document.getElementById('button-1').classList.add('hoverClass'); /* Adding in a hover to the button */
-        document.getElementById('button-3').classList.add('hoverClass'); /* Adding in a hover to the button */
+        document.getElementById('button-1').classList.add('hoverClass');  
+        document.getElementById('button-3').classList.add('hoverClass');  
     }
     else if (videoIndex == 2) {
         document.getElementById('button-1').style.background = "black";
         document.getElementById('button-2').style.background = "black";
         document.getElementById('button-3').style.background = "#edf0f1";
-        document.getElementById('button-1').classList.add('hoverClass'); /* Adding in a hover to the button */
-        document.getElementById('button-2').classList.add('hoverClass'); /* Adding in a hover to the button */
+        document.getElementById('button-1').classList.add('hoverClass');  
+        document.getElementById('button-2').classList.add('hoverClass');  
     }
 }
 

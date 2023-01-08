@@ -16,7 +16,6 @@
                         <div id="typography-2"> </div> <!-- Sunshine Abbott is a web developer based in the UK. -->
                         <div class="menu">
                             <a href="../index.html" id="typography-1">Portfolio</a>
-                            <a href="../posts/blog-homepage.html" id="typography-1">Articles</a>
                             <a href="../about/bio.html" id="typography-1">About</a>
                         </div>
                     </div>
@@ -28,15 +27,20 @@
                             </p>
                         </div>
                         <div class="portfolio-mid-text">
-                            <p id="typography-portfolio-title1">See the predicted weather where you're traveling to soon.</p>
+                            <p id="typography-portfolio-title1">See the weather and an image of where you're traveling.</p>
                         </div> 
 
                         <div class="nested-vid-txt" onclick="getVideo(event)">
                             <div class="video-left-container" > 
                                 <div id="video-player"> 
                                     <!-- Add in autoplay loop next to controls below, if I can get loop working -->
+                                    <!-- 
                                     <video id="video" controls> 
-                                        <source src="../images/Jamming_1_4.m4v" type="video/mp4">
+                                        <source src="../images/Travel_app_v0.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.  
+                                    </video>
+                                    -->
+                                    <video id="video" controls src="../images/travel_app_v0.mp4" type="video/mp4"> 
                                         Your browser does not support the video tag.  
                                     </video>
                                 </div>                                                            
@@ -50,9 +54,8 @@
                             </div>
                             <div class="project-text-right">
                                 <p id="secTitle1" class="sectionTitle">Weathertrip</p>
-                                <p id="typography-portfolio-txt">Udacity capstone travel app project, which can be found <a href="#" id="typography-links">here</a>.</p>
-                                <p id="typography-portfolio-txt">This project involved _____</p>
-                                <p id="typography-portfolio-txt">_____________</p>
+                                <p id="typography-portfolio-txt">Udacity capstone travel app project, which can be found <a href="https://github.com/sunshinescience/travel_app" id="portfolio-links">here</a>.</p>
+                                <p id="typography-portfolio-txt">Weather, location, and images are pulled via multiple APIs, based on user input.</p>
                             </div>  
                         </div>   
                     </div>      

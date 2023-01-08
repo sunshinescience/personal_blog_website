@@ -39,15 +39,6 @@
    justify-content: center;
    text-decoration: none; /* Removed underline hyperlinks */
 }
-
- /* Main menu font */
-#typography-1-title{ 
-   font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-   color: #000000;
-   font-size: 38px;
-   font-weight: 500;
-   letter-spacing: -.003em;
-}
  
 #typography-1-subtitle{ 
    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
@@ -111,43 +102,17 @@
    text-align: center;
 }
 
-/* Text font for portfolio card */
-#typography-portfolio{
-   font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-   font-size: 1.5em;
-}
-
-#portfolio-links{
-   margin-top: 0px;
-   font-size: 18px;
-   line-height: 1.47059;
-   font-weight: 350;
-   letter-spacing: .04em;
-   font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-   color: rgb(55, 134, 212);
-   text-decoration: none; 
-}
-
-#portfolio-links:hover{
-   text-decoration: underline; 
-}
-
-#portfolio-links-arrow{
-   margin-bottom: 1px;
-   display: inline-block;
-   padding: 2.8px;
-   margin-left: 3px;
-   border: solid rgb(55, 134, 212);
-   border-width: 0 1px 1px 0;
-   text-decoration: none;
-   transform: rotate(-45deg);
-   -webkit-transform: rotate(-45deg);
-}
-
  /* Portfolio title font*/
  #typography-portfolio-title{
    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
    font-size: 4.15em;
+   line-height: 1.2em;
+   font-weight: 200;
+}
+
+#typography-portfolio-title-map {
+   font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+   font-size: 2.15em;
    line-height: 1.2em;
    font-weight: 200;
 }

@@ -1,6 +1,451 @@
+#portfolio-links{
+   margin-top: 0px;
+   font-size: 18px;
+   line-height: 1.47059;
+   font-weight: 350;
+   letter-spacing: .04em;
+   font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+   color: rgb(55, 134, 212);
+   text-decoration: none; 
+}
+
+#portfolio-links:hover{
+   text-decoration: underline; 
+}
+
+#portfolio-links-arrow{
+   margin-bottom: 1px;
+   display: inline-block;
+   padding: 2.8px;
+   margin-left: 3px;
+   border: solid rgb(55, 134, 212);
+   border-width: 0 1px 1px 0;
+   text-decoration: none;
+   transform: rotate(-45deg);
+   -webkit-transform: rotate(-45deg);
+}
 
 /* Portfolio page cards for content (nested) */
 @media(max-width: 600px) { 
+   .content-cards {
+      display: grid;
+      grid-template-columns:  350px;
+      grid-template-rows: 195px 175px;
+      grid-template-areas: 
+      "txt"
+      "img-l ";
+      background-color: white;
+   }
+
+   .card-layout {
+      display: grid;
+      grid-template-columns:  minmax(150px, 350px);
+      grid-auto-rows: 350px 350px 350px 350px;
+      grid-template-areas: 
+      "card1"
+      "card2"
+      "card3"
+      "card4";
+   }
+
+   .card1 {
+      grid-area: card1;
+      margin-bottom: 15px;
+   }
+
+   .card2 {
+      grid-area: card2;
+      margin-bottom: 15px;
+   }
+
+   .card3 {
+      grid-area: card3;
+      margin-bottom: 15px;
+   }
+
+   .card4 {
+      grid-area: card4;
+   }
+
+   .content-card-lower { 
+      grid-area: img-l;
+      background-size: cover;
+      margin-left: auto;
+      margin-right: auto;
+      z-index: +1;
+   }
+
+   .ccl-img1 {
+      max-width: 80px;
+      max-height: 85px;
+      margin-top: 15px;
+   }
+
+   .ccl-img2 {
+      max-width: 90px;
+      max-height: 85px;
+      margin-top: 15px;
+   }
+
+   .ccl-img3 {
+      max-width: 90px;
+      max-height: 105px;
+      margin-top: 15px;
+   }
+
+   .ccl-img4 {
+      max-width: 80px;
+      max-height: 95px;
+      margin-top: 15px;
+   }
+
+   .content-card-upper{
+      grid-area: txt;
+      word-wrap: break-word; 
+      align-items: center;   
+      text-align: center;
+      padding-top: 30px;
+   }
+
+   /* Nested grid for the area on the card */
+   .nested-content-card{
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: auto auto auto;
+      grid-template-areas: 
+      "c-title"
+      "c-intro"
+      "c-read";
+      text-align: center;
+   }
+
+   .card-intro{
+      grid-area: c-intro; 
+      padding-left: 40px;
+      padding-right: 40px;
+      margin-top: 0;
+      margin-bottom: 20px; 
+      text-align: center;
+   }
+
+   .card-intro-title {
+      grid-area: c-title; 
+      padding-left: 40px;
+      padding-right: 40px;
+      margin-top: 0;
+      text-align: center;
+   }
+
+   /* Text font for portfolio card */
+   #typography-1-title{ 
+      font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+      color: #000000;
+      font-size: 1.7em;
+      font-weight: 500;
+      letter-spacing: -.003em;
+   }
+
+   #typography-portfolio{
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 1.5em;
+   }
+
+   .card-continueReading{
+      grid-area: c-read; 
+      margin-top: 0;
+      text-align: center;
+      padding-top: 0px;  
+   }
+
+   /* Video and text area below */
+   .nested-vid-txt {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-auto-rows: auto auto;
+      grid-template-areas: 
+      "vid-l"
+      "text-r";
+      margin: 0;
+   }
+   
+   .project-text-right {
+      grid-area: text-r;
+      word-wrap: break-word; 
+      align-items: center;   
+      margin: auto; 
+   }
+   
+   .video-left-container {
+      background-color: none;
+      position: relative;  
+      padding-bottom: 50px;
+   }
+   
+   #video-player {
+      display: flex;
+      grid-area: vid-l;
+      justify-content: center;  
+      height: 100%;  
+   }
+
+   .arrow {
+      cursor: pointer;
+      /* border: solid #edf0f1; */
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 8px;
+      /* transition: border 2s ease-out; */
+   }
+   
+   .arrow:hover {
+      border-color: rgb(154, 153, 153);
+   }
+   
+   .right {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      position: absolute;
+      top: 50%;
+      left: 93%;
+   }
+   
+   .left {
+     transform: rotate(135deg);
+     -webkit-transform: rotate(135deg);
+     position: absolute;
+     top: 50%;
+     left: 4%;
+   }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) { 
+   .content-cards {
+      display: grid;
+      grid-template-columns:  450px;
+      grid-template-rows: 225px 225px;
+      grid-template-areas: 
+      "txt"
+      "img-l ";
+      background-color: white;
+   }
+
+   .card-layout {
+      display: grid;
+      grid-template-columns:  450px;
+      grid-auto-rows: 450px 450px 450px 450px;
+      grid-template-areas: 
+      "card1"
+      "card2"
+      "card3"
+      "card4";
+   }
+
+   .card1 {
+      grid-area: card1;
+      margin-bottom: 15px;
+   }
+
+   .card2 {
+      grid-area: card2;
+      margin-bottom: 15px;
+   }
+
+   .card3 {
+      grid-area: card3;
+      margin-bottom: 15px;
+   }
+
+   .card4 {
+      grid-area: card4;
+   }
+
+   .content-card-lower { 
+      grid-area: img-l;
+      background-size: cover;
+      margin-left: auto;
+      margin-right: auto;
+      z-index: +1;
+   }
+
+   .ccl-img1 {
+      max-width: 100px;
+      max-height: 105px;
+      margin-top: 30px;
+   }
+
+   .ccl-img2 {
+      max-width: 110px;
+      max-height: 105px;
+      margin-top: 30px;
+   }
+
+   .ccl-img3 {
+      max-width: 110px;
+      max-height: 125px;
+      margin-top: 30px;
+   }
+
+   .ccl-img4 {
+      max-width: 100px;
+      max-height: 105px;
+      margin-top: 30px;
+   }
+
+   .content-card-upper{
+      grid-area: txt;
+      word-wrap: break-word; 
+      align-items: center;   
+      text-align: center;
+      padding-top: 40px;
+   }
+
+   /* Nested grid for the area on the card */
+   .nested-content-card{
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: auto auto auto;
+      grid-template-areas: 
+      "c-title"
+      "c-intro"
+      "c-read";
+      text-align: center;
+   }
+
+   .card-intro{
+      grid-area: c-intro; 
+      padding-left: 40px;
+      padding-right: 40px;
+      margin-top: 0;
+      margin-bottom: 20px; 
+      text-align: center;
+   }
+
+   .card-intro-title {
+      grid-area: c-title; 
+      padding-left: 40px;
+      padding-right: 40px;
+      margin-top: 0;
+      text-align: center;
+   }
+
+   /* Text font for portfolio card */
+   #typography-1-title{ 
+      font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+      color: #000000;
+      font-size: 1.9em;
+      font-weight: 500;
+      letter-spacing: -.003em;
+   }
+
+   #typography-portfolio{
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 1.6em;
+   }
+
+   .card-continueReading{
+      grid-area: c-read; 
+      margin-top: 0;
+      text-align: center;
+      padding-top: 0px;  
+   }
+
+   /* Video and text area below */
+   .nested-vid-txt {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-auto-rows: auto auto;
+      grid-template-areas: 
+      "vid-l"
+      "text-r";
+      margin-bottom: 0;
+   }
+   
+   .project-text-right {
+      grid-area: text-r;
+      word-wrap: break-word; 
+      align-items: center;   
+      padding: 20px 50px;
+      margin: auto; 
+   }
+   
+   .video-left-container {
+      background-color: #9ea7aa;
+      padding: 40px 60px 55px 60px;
+      position: relative;  
+   }
+   
+   #video-player {
+      display: flex;
+      grid-area: vid-l;
+      justify-content: center;  
+      height: 100%;  
+   }
+
+   .arrow {
+      cursor: pointer;
+      /* border: solid #edf0f1; */
+      border: solid black;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 8px;
+      /* transition: border 2s ease-out; */
+   }
+   
+   .arrow:hover {
+      border-color: #edf0f1;
+   }
+   
+   .right {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      position: absolute;
+      top: 50%;
+      left: 93%;
+   }
+   
+   .left {
+     transform: rotate(135deg);
+     -webkit-transform: rotate(135deg);
+     position: absolute;
+     top: 50%;
+     left: 4%;
+   }
+
+   .arrow {
+      cursor: pointer;
+      /* border: solid #edf0f1; */
+      border: solid black;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 8px;
+      /* transition: border 2s ease-out; */
+   }
+   
+   .arrow:hover {
+      border-color: #edf0f1;
+   }
+   
+   .right {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      position: absolute;
+      top: 50%;
+      left: 93%;
+   }
+   
+   .left {
+     transform: rotate(135deg);
+     -webkit-transform: rotate(135deg);
+     position: absolute;
+     top: 50%;
+     left: 4%;
+   }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1000px) { 
    .content-cards {
       display: grid;
       grid-template-columns:  620px;
@@ -9,13 +454,12 @@
       "txt"
       "img-l ";
       background-color: white;
-      border: 5px solid blue; 
    }
 
    .card-layout {
       display: grid;
-      grid-template-columns:  minmax(150px, 600px);
-      grid-auto-rows: 600px 600px 600px 600px;
+      grid-template-columns:  620px;
+      grid-auto-rows: 620px 620px 620px 620px;
       grid-template-areas: 
       "card1"
       "card2"
@@ -49,102 +493,26 @@
       max-height: 250px;
       margin-left: auto;
       margin-right: auto;
-      height: 220px;
    }
 
-   .content-card-upper{
-      grid-area: txt;
-      word-wrap: break-word; 
-      align-items: center;   
-      text-align: center;
-   }
-}
-/* Nested grid for the area on the card */
-.nested-content-card{
-   display: grid;
-   grid-template-columns: 100%;
-   grid-template-rows: auto auto auto;
-   grid-template-areas: 
-   "c-title"
-   "c-intro"
-   "c-read";
-   text-align: center;
-}
-
-.card-intro{
-   grid-area: c-intro; 
-   padding-left: 40px;
-   padding-right: 40px;
-   margin-top: 0;
-   margin-bottom: 20px; 
-   text-align: center;
-}
-
-.card-intro-title {
-   grid-area: c-title; 
-   padding-top: 60px;
-   padding-left: 40px;
-   padding-right: 40px;
-   margin-top: 0;
-   text-align: center;
-}
-
-.card-continueReading{
-   grid-area: c-read; 
-   margin-top: 0;
-   text-align: center;
-   padding-top: 0px;  
-}
-
-@media(min-width: 600px) { 
-   .content-cards {
-      display: grid;
-      grid-template-columns:  620px;
-      grid-template-rows: 290px 330px;
-      grid-template-areas: 
-      "txt"
-      "img-l ";
-      background-color: white;
-      border: 5px solid black; 
+   .ccl-img1 {
+      max-width: 220px;
+      max-height: 170px;
    }
 
-   .card-layout {
-      display: grid;
-      grid-template-columns:  minmax(150px, 650px) minmax(150px, 650px) ;
-      grid-auto-rows: 620px;
-      grid-template-areas: 
-      "card1 card2"
-      "card3 card4";
+   .ccl-img2 {
+      max-width: 220px;
+      max-height: 200px;
    }
 
-   .card1 {
-      grid-area: card1;
-      margin-right: 15px;
-      margin-bottom: 15px;
+   .ccl-img3 {
+      max-width: 220px;
+      max-height: 190px;
    }
 
-   .card2 {
-      grid-area: card2;
-      margin-bottom: 15px;
-   }
-
-   .card3 {
-      grid-area: card3;
-      margin-right: 15px;
-   }
-
-   .card4 {
-      grid-area: card4;
-   }
-
-   .content-card-lower { 
-      grid-area: img-l;
-      background-size: cover;
-      max-width: 250px;
-      max-height: 250px;
-      margin-left: auto;
-      margin-right: auto;
-      height: 220px;
+   .ccl-img4 {
+      max-width: 220px;
+      max-height: 220px;
    }
 
    .content-card-upper{
@@ -184,15 +552,473 @@
       text-align: center;
    }
 
+   /* Text font for portfolio card */
+   #typography-1-title{ 
+      font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+      color: #000000;
+      font-size: 2.5em;
+      font-weight: 500;
+      letter-spacing: -.003em;
+   }
+
+   #typography-portfolio{
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 1.5em;
+   }
+
    .card-continueReading{
       grid-area: c-read; 
       margin-top: 0;
       text-align: center;
       padding-top: 0px;  
    }
+
+   /* Video and text area below */
+   .nested-vid-txt {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-auto-rows: auto auto;
+      grid-template-areas: 
+      "vid-l"
+      "text-r";
+      margin-bottom: 0;
+   }
+   
+   .project-text-right {
+      grid-area: text-r;
+      word-wrap: break-word; 
+      align-items: center;   
+      padding: 20px 50px;
+      margin: auto; 
+   }
+   
+   .video-left-container {
+      background-color: #9ea7aa;
+      padding: 40px 60px 55px 60px;
+      position: relative;  
+   }
+   
+   #video-player {
+      display: flex;
+      grid-area: vid-l;
+      justify-content: center;  
+      height: 100%;  
+   }
+
+   .arrow {
+      cursor: pointer;
+      /* border: solid #edf0f1; */
+      border: solid black;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 8px;
+      /* transition: border 2s ease-out; */
+   }
+   
+   .arrow:hover {
+      border-color: #edf0f1;
+   }
+   
+   .right {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      position: absolute;
+      top: 50%;
+      left: 93%;
+   }
+   
+   .left {
+     transform: rotate(135deg);
+     -webkit-transform: rotate(135deg);
+     position: absolute;
+     top: 50%;
+     left: 4%;
+   }
 }
 
-/* Styles for an individual project page */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 1000px) and (max-width: 1200px) { 
+   .content-cards {
+      display: grid;
+      grid-template-columns:  620px;
+      grid-template-rows: 290px 330px;
+      grid-template-areas: 
+      "txt"
+      "img-l ";
+      background-color: white;
+   }
+
+   .card-layout {
+      display: grid;
+      grid-template-columns:  620px;
+      grid-auto-rows: 620px 620px 620px 620px;
+      grid-template-areas: 
+      "card1"
+      "card2"
+      "card3"
+      "card4";
+   }
+
+   .card1 {
+      grid-area: card1;
+      margin-bottom: 15px;
+   }
+
+   .card2 {
+      grid-area: card2;
+      margin-bottom: 15px;
+   }
+
+   .card3 {
+      grid-area: card3;
+      margin-bottom: 15px;
+   }
+
+   .card4 {
+      grid-area: card4;
+   }
+
+   .content-card-lower { 
+      grid-area: img-l;
+      background-size: cover;
+      max-width: 250px;
+      max-height: 250px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   .ccl-img1 {
+      max-width: 220px;
+      max-height: 170px;
+   }
+
+   .ccl-img2 {
+      max-width: 220px;
+      max-height: 200px;
+   }
+
+   .ccl-img3 {
+      max-width: 220px;
+      max-height: 190px;
+   }
+
+   .ccl-img4 {
+      max-width: 220px;
+      max-height: 220px;
+   }
+
+   .content-card-upper{
+      grid-area: txt;
+      word-wrap: break-word; 
+      align-items: center;   
+      text-align: center;
+   }
+
+   /* Nested grid for the area on the card */
+   .nested-content-card{
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: auto auto auto;
+      grid-template-areas: 
+      "c-title"
+      "c-intro"
+      "c-read";
+      text-align: center;
+   }
+
+   .card-intro{
+      grid-area: c-intro; 
+      padding-left: 40px;
+      padding-right: 40px;
+      margin-top: 0;
+      margin-bottom: 20px; 
+      text-align: center;
+   }
+
+   .card-intro-title {
+      grid-area: c-title; 
+      padding-top: 60px;
+      padding-left: 40px;
+      padding-right: 40px;
+      margin-top: 0;
+      text-align: center;
+   }
+
+   /* Text font for portfolio card */
+   #typography-1-title{ 
+      font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+      color: #000000;
+      font-size: 2.5em;
+      font-weight: 500;
+      letter-spacing: -.003em;
+   }
+
+   #typography-portfolio{
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 1.5em;
+   }
+
+   .card-continueReading{
+      grid-area: c-read; 
+      margin-top: 0;
+      text-align: center;
+      padding-top: 0px;  
+   }
+
+   /* Video and text area below */
+   .nested-vid-txt {
+      display: grid;
+      grid-template-columns: 600px 1fr;
+      grid-auto-rows: auto;
+      grid-template-areas: 
+      "vid-l text-r";
+      margin-bottom: 30px;
+   }
+   
+   .project-text-right {
+      grid-area: text-r;
+      word-wrap: break-word; 
+      align-items: center;   
+      padding-left: 50px;
+      padding-right: 50px;
+      margin: auto; 
+   }
+   
+   .video-left-container {
+      background-color: #9ea7aa;
+      padding: clamp(40px, 5%, 40px) 60px 55px 60px;
+      position: relative; 
+   }
+   
+   #video-player {
+      display: flex;
+      grid-area: vid-l;
+      justify-content: center;  
+      height: 100%;  
+   }
+
+   .arrow {
+      cursor: pointer;
+      /* border: solid #edf0f1; */
+      border: solid black;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 8px;
+      /* transition: border 2s ease-out; */
+   }
+   
+   .arrow:hover {
+      border-color: #edf0f1;
+   }
+   
+   .right {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      position: absolute;
+      top: 50%;
+      left: 93%;
+   }
+   
+   .left {
+     transform: rotate(135deg);
+     -webkit-transform: rotate(135deg);
+     position: absolute;
+     top: 50%;
+     left: 4%;
+   }
+}
+
+/* Large devices */
+@media only screen and (min-width: 1200px) { 
+   .content-cards {
+      display: grid;
+      grid-template-columns:  620px;
+      grid-template-rows: 290px 330px;
+      grid-template-areas: 
+      "txt"
+      "img-l ";
+      background-color: white;
+   }
+
+   .card-layout {
+      display: grid;
+      grid-template-columns:  minmax(150px, 650px) minmax(150px, 650px) ;
+      grid-auto-rows: 620px;
+      grid-template-areas: 
+      "card1 card2"
+      "card3 card4";
+   }
+
+   .card1 {
+      grid-area: card1;
+      margin-right: 15px;
+      margin-bottom: 15px;
+   }
+
+   .card2 {
+      grid-area: card2;
+      margin-bottom: 15px;
+   }
+
+   .card3 {
+      grid-area: card3;
+      margin-right: 15px;
+   }
+
+   .card4 {
+      grid-area: card4;
+   }
+
+   .content-card-lower { 
+      grid-area: img-l;
+      background-size: cover;
+      max-width: 250px;
+      max-height: 250px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   .ccl-img1 {
+      max-width: 220px;
+      max-height: 170px;
+   }
+
+   .ccl-img2 {
+      max-width: 220px;
+      max-height: 200px;
+   }
+
+   .ccl-img3 {
+      max-width: 220px;
+      max-height: 190px;
+   }
+
+   .ccl-img4 {
+      max-width: 220px;
+      max-height: 220px;
+   }
+
+   .content-card-upper{
+      grid-area: txt;
+      word-wrap: break-word; 
+      align-items: center;   
+      text-align: center;
+   }
+
+   /* Nested grid for the area on the card */
+   .nested-content-card{
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: auto auto auto;
+      grid-template-areas: 
+      "c-title"
+      "c-intro"
+      "c-read";
+      text-align: center;
+   }
+
+   .card-intro{
+      grid-area: c-intro; 
+      padding-left: 40px;
+      padding-right: 40px;
+      margin-top: 0;
+      margin-bottom: 20px; 
+      text-align: center;
+   }
+
+   .card-intro-title {
+      grid-area: c-title; 
+      padding-top: 60px;
+      padding-left: 40px;
+      padding-right: 40px;
+      margin-top: 0;
+      text-align: center;
+   }
+
+   /* Text font for portfolio card */
+   #typography-1-title{ 
+      font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+      color: #000000;
+      font-size: 2.5em;
+      font-weight: 500;
+      letter-spacing: -.003em;
+   }
+
+   #typography-portfolio{
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 1.5em;
+   }
+
+   .card-continueReading{
+      grid-area: c-read; 
+      margin-top: 0;
+      text-align: center;
+      padding-top: 0px;  
+   }
+
+   .nested-vid-txt {
+      display: grid;
+      grid-template-columns: 600px 1fr;
+      grid-auto-rows: auto;
+      grid-template-areas: 
+      "vid-l text-r";
+      margin-bottom: 60px;
+   }
+   
+   .project-text-right {
+      grid-area: text-r;
+      word-wrap: break-word; 
+      align-items: center;   
+      padding-left: 50px;
+      padding-right: 50px;
+      margin: auto; 
+   }
+   
+   .video-left-container {
+      background-color: #9ea7aa;
+      padding: 40px 60px 55px 60px;
+      position: relative;  
+   }
+   
+   #video-player {
+      display: flex;
+      grid-area: vid-l;
+      justify-content: center;  
+      height: 100%;  
+   }
+
+   .arrow {
+      cursor: pointer;
+      /* border: solid #edf0f1; */
+      border: solid black;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 8px;
+      /* transition: border 2s ease-out; */
+   }
+   
+   .arrow:hover {
+      border-color: #edf0f1;
+   }
+   
+   .right {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      position: absolute;
+      top: 50%;
+      left: 93%;
+   }
+   
+   .left {
+     transform: rotate(135deg);
+     -webkit-transform: rotate(135deg);
+     position: absolute;
+     top: 50%;
+     left: 4%;
+   }
+}
+
+/******** Styles for an individual project page ********/
 
 /* Container for portfolio project text */
 .nested-grid-portfolio{
@@ -253,87 +1079,11 @@
    font-size: 1.3rem;
 }
 
-.nested-vid-txt {
-   display: grid;
-   grid-template-columns: 600px 1fr;
-   grid-auto-rows: auto;
-   /* margin: 20px; */
-   grid-template-areas: 
-   "vid-l text-r";
-   
-   /* padding-bottom: 60px; */
-   margin-bottom: 120px;
-}
-
-.project-text-right {
-   grid-area: text-r;
-   /* text-align: left; */
-   /* word-break: break-all; */
-   word-wrap: break-word; 
-   /* border: 2px solid red; */
-   /* padding-top: 20px; */
-   /* display: flex; */
-   /* justify-content: center; */ /* Align items horizontally */
-   align-items: center;  /* Align items vertically using flexbox */
-   padding-left: 50px;
-   padding-right: 50px;
-   margin: auto; /* Centering text vertically */
-}
-
-.video-left-container {
-   background-color: #9ea7aa;
-   padding: 60px;
-   position: relative; /* Needed this parent container for the button to be positioned relative, and the button positioned absolute. This helped to center the button. */
-   /* border: 2px solid black; */
-   /* box-shadow: 10px 10px 8px #6a7274; */
-}
-
-#video-player {
-   display: flex;
-   grid-area: vid-l;
-   justify-content: center;  /* Align items horizontally */
-   /* border: 60px solid #9ea7aa; */ /* I want buttons on the border. So I'll try a work around by adding a background color in the container and padding. */
-   /* border: 60px solid black; */
-   /* width: 600px; */
-   height: 100%;  /* The video was pushing the footer up because the height was 100%, it was too large. */
-   /* min-height: 200px; */ /* When making the page small, the video zooms in */
-}
-
 #video {
    width: 100%;
-   /* height: auto; */ /* It was set like this initially, to get it to stay the size inside of the container */
    height: 100%;
-   object-fit: cover;
+   object-fit: scale-down;
 }
-
-/*
-.controls {
-   display: flex;
-   position: absolute;
-}
-*/
-
-/* When you make an element position: relative, all the child elements which are position: absolute will be positioned inside the parent element. */
-
-.video-view {
-   position: relative;
-   width: 500px;
-   height: 300px;
- }
- 
- .video-view .video {
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-   background-color: #ccc;
- }
- 
- .video-view .video-content {
-   position: absolute;
-   bottom: 0px;
- }
-
 
 #button-1 {
    background-color: black;
@@ -404,33 +1154,5 @@
    border: 1px solid #edf0f1; 
 }
 
-.arrow {
-   cursor: pointer;
-   /* border: solid #edf0f1; */
-   border: solid black;
-   border-width: 0 3px 3px 0;
-   display: inline-block;
-   padding: 8px;
-   /* transition: border 2s ease-out; */
-}
 
-.arrow:hover {
-   border-color: #edf0f1;
-}
-
-.right {
-   transform: rotate(-45deg);
-   -webkit-transform: rotate(-45deg);
-   position: absolute;
-   top: 50%;
-   left: 93%;
-}
-
-.left {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-  position: absolute;
-  top: 50%;
-  left: 4%;
-}
 

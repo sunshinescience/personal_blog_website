@@ -12,16 +12,6 @@ body{
    height:100%;
    width: 100%;
    background-color: #e2e8ed;
-   /* background-color: #eef5f7; */
-   /* background-color: #eaeaea; */
-   /* background-color: #cfd8dc; */
-   /* background-color: #e4eef4; */
-   /* background-color: #e8f1f7; */
-   /* background-color: #d0d8dd; */
-   /* background-color: #d3dbe0; */
-   /* background-color: #dde4e6; */
-   /* background-color: #f6f6f8; */
-   /* background-color: #f3f3f4; */
    font-size: 16px;
 }
 
@@ -69,6 +59,8 @@ body{
    margin-bottom: 0;
    margin-right: 0;
    padding-left: 50px;
+   padding-top: 50px;
+   padding-bottom: 50px;
    text-align: left;
    margin-left: 0;
 }
@@ -305,3 +297,18 @@ body{
       color: black;
    }
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {} 

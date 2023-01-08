@@ -16,7 +16,6 @@
                         <div id="typography-2"> </div> <!-- Sunshine Abbott is a web developer based in the UK. -->
                         <div class="menu">
                             <a href="../index.html" id="typography-1">Portfolio</a>
-                            <a href="../posts/blog-homepage.html" id="typography-1">Articles</a>
                             <a href="../about/bio.html" id="typography-1">About</a>
                         </div>
                     </div>
@@ -24,31 +23,49 @@
                 <div class="content box">
                     <div class="nested-grid-portfolio">
                         <div class="portfolio-mid-title" id="portfolio-title">
-                            <p id="typography-portfolio-title">Treasure Map Maker
+                            <p id="typography-portfolio-title-map">Treasure Map Maker
                             </p>
                         </div>
                         <div class="portfolio-mid-text">
-                            <p id="typography-portfolio-title1">Built a treasure map maker, based on real road layouts from Google Maps. It teaches kids to follow directions in a fun and creative way!</p>
-                            <p id="typography-4"></p>
+                            <p id="typography-portfolio-title1">Create your own treasure map - coming soon!</p>
                         </div>
+                        <div class="nested-vid-txt" onclick="getVideo(event)">
+                            <div class="video-left-container" > 
+                                <div id="video-player"> 
+                                    <!-- Add in autoplay loop next to controls below? -->
+                                    <!-- 
+                                    <video id="video" controls> 
+                                        <source class="vid4" src="../images/Jamming_1_4.m4v" type="video/mp4">
+                                        Your browser does not support the video tag.  
+                                    </video>
+                                    -->
+                                    <video id="video" controls src="../images/TreasureMap1.mp4" type="video/mp4"> 
+                                        Your browser does not support the video tag.  
+                                    </video>
+                                </div>                                                            
+                                <div class="controls"> 
+                                    <p><i id="arrow-right" class="arrow right"></i></p> 
+                                    <p><i id="arrow-left" class="arrow left"></i></p>
+                                    <div id="button-1"></div>
+                                    <div id="button-2"></div>
+                                    <div id="button-3"></div>
+                                </div>                               
+                            </div>
+                            <div class="project-text-right">
+                                <p id="secTitle1" class="sectionTitle">Treasure Map Maker</p>
+                                <p id="typography-portfolio-txt">I'm creating a treasure map maker web app. A link will be provided soon.</p>
+                                <p id="typography-portfolio-txt">Currently, users can interact with the Google Maps JavaScript API.</p>
+                                <p id="typography-portfolio-txt"></p>
+                            </div>  
+                        </div>  
                     </div>
                     
                 </div>
-                    
                 <div class="footer box">
-                    <a href="https://github.com/sunshinescience">
-                        <img class="social-media-logo" alt="Social media logo" src="../images/GitHub-Mark-Light-120px-plus.png"/>
-                    </a>
-                    <a href="https://https://www.linkedin.com/in/sunshine-abbott-3998777/">
-                        <img class="social-media-logo" alt="Social media logo" src="../images/linkedin-4-64.png"/>
-                    </a>
-                    <a href="https://twitter.com/SunshineAbbott1">
-                        <img class="social-media-logo" alt="Social media logo" src="../images/Twitter_Social_Icon_Circle_White.png"/>
-                    </a>
-                    <a href="https://www.facebook.com/sunshine.abbott">
-                        <img class="social-media-logo" alt="Social media logo" src="../images/f_logo_RGB-White_512.png"/>
-                    </a>
+                    <a href="https://github.com/sunshinescience" id="typography-footer">Github</a>
+                    <a href="https://www.linkedin.com/in/sunshine-abbott/" id="typography-footer">LinkedIn</a>
                 </div>
-            </div>      
+            </div> 
+            <script src="../index.js"></script>         
     </body>
 </html>
